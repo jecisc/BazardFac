@@ -1,0 +1,2 @@
+vhdtdtfi -lib work fsm4.vhd -prj tp5.2 -o fsm4.spl -module fsm4 -template /usr/local/Xilinx/12.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e fsm4.spl /home/l2/ferlicotdelbe/tp/ARCHI/tp5.2/fsm4.sym 

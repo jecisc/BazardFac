@@ -1,0 +1,16 @@
+2  CBSSM appliqué sur un fichier
+
+Dans cette partie, il s’agit d’écrire un programme qui simule la transmission d’un fichier via un canal bruité.
+
+Question 4 Récupérez le fichier transmission_bruitee-squelette.ml et renommez-le en transmission_bruitee.ml.
+
+Question 5 Complétez la procédure transmission dans ce fichier. Cette procédure doit parcourir le fichier entree en lisant à chaque étape un octet, et recopier cet octet dans le fichier sortie en le faisant traverser un CBSSM de probabilité p.
+
+Question 6 Compilez le fichier transmission_bruitee.ml de façon à obtenir un programme exécutable, et vérifiez son fonctionnement.
+
+Question 7 Récupérez le fichier cigale.txt et appliquez votre programme de transmission bruitée sur ce fichier avec diverses probabilités comprises de 0 à 1/2. Observez l’effet sur le fichier cigale.txt. En particulier comptabilisez le nombre d’erreurs obtenues, et essayer de déterminer le seuil de probabilité à partir duquel le fichier d’origine devient méconnaissable.
+
+Pour comparer deux fichiers octet par octet, vous pourrez utiliser la commande cmp avec les options -l et -b.
+> cmp -l -b <fichier1> <fichier2>
+
+Question 8 Compressez le fichier cigale.txt pour produire un fichier cigale.zip. Appliquez votre programme sur ce fichier avec une probabilité égale à 1/1000=0.001. Parvenez-vous à décompresser le fichier produit ?

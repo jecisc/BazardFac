@@ -1,0 +1,35 @@
+import org.junit.*;
+import static org.junit.Assert.*;
+
+import hanoi.Plateau;
+import hanoi.utils.*;
+
+/**
+ * class PlateauTest.
+ * TP5 - POO
+ * @author : Ferlicot-Delbecque Cyril
+ */
+public class PlateauTest {	
+
+
+    @Test 
+	public void testDeplacementPossible(){
+
+    }
+	
+    @Test
+	public void testDeplacer (){
+	Plateau unPlateau = new Plateau (5);
+	unPlateau.deplacer(1, 2);
+	assertFalse("Disque deplacé ?", 
+	
+	
+    }
+
+
+    // ---Pour permettre l'execution des test----------------------
+    public static junit.framework.Test suite() {
+	return new junit.framework.JUnit4TestAdapter(RobotTest.class);
+    }
+
+}

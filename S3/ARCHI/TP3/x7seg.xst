@@ -1,0 +1,5 @@
+set -tmpdir "/home/l2/ferlicotdelbe/tp/ARCHI/TP3/xst/projnav.tmp"
+set -xsthdpdir "/home/l2/ferlicotdelbe/tp/ARCHI/TP3/xst"
+elaborate
+-ifn x7seg.prj
+-ifmt mixed

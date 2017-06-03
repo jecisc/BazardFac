@@ -1,0 +1,6 @@
+Ferlicot-Delbecque Cyril
+TP4 - POO
+
+Le TP a été terminé avec succès.
+Le répertoire a été nettoyé et il y a un Makefile pour executer l'intégralité du travail. 
+Les étiquettes qu'il est possibles d'utilisés sont données par la commande 'make help'.

@@ -1,0 +1,9 @@
+MODULE afficheur16
+	SUBMODULE compteur4
+		INSTANCE XLXI_1
+	SUBMODULE mux4x4
+		INSTANCE mux_anodes
+	SUBMODULE mux4x4
+		INSTANCE mux_data
+	SUBMODULE x7seg
+		INSTANCE XLXI_10

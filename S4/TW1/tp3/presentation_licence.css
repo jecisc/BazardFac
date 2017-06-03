@@ -1,0 +1,66 @@
+html, body {
+ margin:0;
+ background: rgb(217,198,163);
+}
+
+header, section {
+   padding-top:1px;   
+   padding-bottom:1px;
+}
+
+header {
+   background: rgb(141,166,129);
+   opacity: 1;
+   text-align: center;
+   color: white;
+}
+ 
+header a{
+    text-decoration: none;
+    color: white;
+}   
+
+section{
+    background: rgb(194,167,122);
+    padding: 10pt;
+    margin-bottom: 20pt;
+    
+}
+
+section#partie1{
+
+}
+
+h1{
+    front-weight: bold;
+}
+
+header+h1{
+    background-color: #a79160;
+    color: white;
+    padding-left: 5pt;
+}
+ 
+section h1{
+    background: rgb(145,52,32);
+    color: white;
+    padding-left: 4pt;
+    padding-bottom: 7pt;
+    padding-top: 3pt;
+}
+
+section abbr{
+    background: rgb(167,144,101);
+}
+
+.ue h1{
+    background-color: #808080;
+}
+    
+span.nom{
+    color: cornsilk; 
+}
+
+
+
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+ <meta charset="UTF-8" />
+ <title>club des fans de Star Wars</title>
+ <style type="text/css">
+   body {
+     font-family : Helvetica ;
+     margin-left : 10mm;
+     margin-right : 10mm ;
+   }
+   h1 {
+     color : blue ;
+   } 
+ </style>
+</head>
+<body>
+	<h1> Facture </h1>
+	<p>
+		<?php
+			echo (" 
+			$_GET['nom'] </br> 
+			$_GET['prenom'] </br> $_GET['voie'] </br>  $_GET['complement'] </br>  $_GET['cp'] </br>  $_GET['commune'] </br>  Figurines :");
+			print_r($_GET['fig']);
+			echo (" </br> Prix HT: 15"); 		
+		?>
+	</p>
+</body>

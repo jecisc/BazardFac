@@ -1,0 +1,6 @@
+[Inputs]
+clk
+travaux
+[Outputs]
+=Led[7:0]=
+[BiDir]

@@ -1,0 +1,1430 @@
+Release 12.4 - xst M.81d (lin)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Reading design: toplevel.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "toplevel.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "toplevel"
+Output Format                      : NGC
+Target Device                      : xc3s1200e-4-fg320
+
+---- Source Options
+Top Module Name                    : toplevel
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/l2/ferlicotdelbe/tp/ARCHI/tp6/x7seg.vhd" in Library work.
+Architecture behavioral of Entity x7seg is up to date.
+Compiling vhdl file "/home/l2/ferlicotdelbe/tp/ARCHI/tp6/afficheur16.vhf" in Library work.
+Architecture behavioral of Entity m2_1e_mxilinx_afficheur16 is up to date.
+Architecture behavioral of Entity m4_1e_mxilinx_afficheur16 is up to date.
+Architecture behavioral of Entity mux4x4_muser_afficheur16 is up to date.
+Architecture behavioral of Entity compteur4_muser_afficheur16 is up to date.
+Architecture behavioral of Entity afficheur16 is up to date.
+Compiling vhdl file "/home/l2/ferlicotdelbe/tp/ARCHI/tp6/toplevel.vhf" in Library work.
+Architecture behavioral of Entity ibuf8_mxilinx_toplevel is up to date.
+Architecture behavioral of Entity obuf8_mxilinx_toplevel is up to date.
+Architecture behavioral of Entity clkdiv_muser_toplevel is up to date.
+Architecture behavioral of Entity connecteur_muser_toplevel is up to date.
+Architecture behavioral of Entity connect16_muser_toplevel is up to date.
+Architecture behavioral of Entity fd16ce_mxilinx_toplevel is up to date.
+Architecture behavioral of Entity s3_muser_toplevel is up to date.
+Architecture behavioral of Entity toplevel is up to date.
+Compiling vhdl file "/home/l2/ferlicotdelbe/tp/ARCHI/tp6/S3.vhf" in Library work.
+Entity <M2_1E_MXILINX_S3> compiled.
+Entity <M2_1E_MXILINX_S3> (Architecture <BEHAVIORAL>) compiled.
+Entity <M4_1E_MXILINX_S3> compiled.
+Entity <M4_1E_MXILINX_S3> (Architecture <BEHAVIORAL>) compiled.
+Entity <mux4x4_MUSER_S3> compiled.
+Entity <mux4x4_MUSER_S3> (Architecture <BEHAVIORAL>) compiled.
+Entity <compteur4_MUSER_S3> compiled.
+Entity <compteur4_MUSER_S3> (Architecture <BEHAVIORAL>) compiled.
+Entity <afficheur16_MUSER_S3> compiled.
+Entity <afficheur16_MUSER_S3> (Architecture <BEHAVIORAL>) compiled.
+Entity <clkdiv_muser_s3> compiled.
+Entity <clkdiv_muser_s3> (Architecture <behavioral>) compiled.
+Entity <connecteur_muser_s3> compiled.
+Entity <connecteur_muser_s3> (Architecture <behavioral>) compiled.
+Entity <connect16_muser_s3> compiled.
+Entity <connect16_muser_s3> (Architecture <behavioral>) compiled.
+Entity <fd16ce_mxilinx_s3> compiled.
+Entity <fd16ce_mxilinx_s3> (Architecture <behavioral>) compiled.
+Entity <s3> compiled.
+Entity <s3> (Architecture <behavioral>) compiled.
+Compiling vhdl file "/home/l2/ferlicotdelbe/tp/ARCHI/tp6/clkdiv.vhf" in Library work.
+Architecture behavioral of Entity clkdiv is up to date.
+Compiling vhdl file "/home/l2/ferlicotdelbe/tp/ARCHI/tp6/connect16.vhf" in Library work.
+Architecture behavioral of Entity connecteur_muser_connect16 is up to date.
+Architecture behavioral of Entity connect16 is up to date.
+Compiling vhdl file "/home/l2/ferlicotdelbe/tp/ARCHI/tp6/compteur4.vhf" in Library work.
+Architecture behavioral of Entity compteur4 is up to date.
+Compiling vhdl file "/home/l2/ferlicotdelbe/tp/ARCHI/tp6/mux4x4.vhf" in Library work.
+Architecture behavioral of Entity m2_1e_mxilinx_mux4x4 is up to date.
+Architecture behavioral of Entity m4_1e_mxilinx_mux4x4 is up to date.
+Architecture behavioral of Entity mux4x4 is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <toplevel> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <S3_MUSER_toplevel> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <OBUF8_MXILINX_toplevel> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <IBUF8_MXILINX_toplevel> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FD16CE_MXILINX_toplevel> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <connect16_MUSER_toplevel> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <clkdiv_MUSER_toplevel> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <afficheur16> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <connecteur_MUSER_toplevel> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux4x4_MUSER_afficheur16> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <compteur4_MUSER_afficheur16> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <x7seg> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <M4_1E_MXILINX_afficheur16> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <M2_1E_MXILINX_afficheur16> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <toplevel> in library <work> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  XLXI_2_15" for instance <XLXI_2> in unit <toplevel>.
+    Set user-defined property "HU_SET =  XLXI_3_16" for instance <XLXI_3> in unit <toplevel>.
+Entity <toplevel> analyzed. Unit <toplevel> generated.
+
+Analyzing Entity <S3_MUSER_toplevel> in library <work> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  CO_13" for instance <CO> in unit <S3_MUSER_toplevel>.
+    Set user-defined property "HU_SET =  Ram_11" for instance <Ram> in unit <S3_MUSER_toplevel>.
+    Set user-defined property "HU_SET =  Rdest_10" for instance <Rdest> in unit <S3_MUSER_toplevel>.
+    Set user-defined property "HU_SET =  Rdm_12" for instance <Rdm> in unit <S3_MUSER_toplevel>.
+    Set user-defined property "HU_SET =  RI_14" for instance <RI> in unit <S3_MUSER_toplevel>.
+    Set user-defined property "HU_SET =  Rled_5" for instance <Rled> in unit <S3_MUSER_toplevel>.
+    Set user-defined property "HU_SET =  Rsrc1_8" for instance <Rsrc1> in unit <S3_MUSER_toplevel>.
+    Set user-defined property "HU_SET =  Rsrc2_9" for instance <Rsrc2> in unit <S3_MUSER_toplevel>.
+    Set user-defined property "HU_SET =  Rsw_6" for instance <Rsw> in unit <S3_MUSER_toplevel>.
+    Set user-defined property "HU_SET =  R1_0" for instance <R1> in unit <S3_MUSER_toplevel>.
+    Set user-defined property "HU_SET =  R2_1" for instance <R2> in unit <S3_MUSER_toplevel>.
+    Set user-defined property "HU_SET =  R3_2" for instance <R3> in unit <S3_MUSER_toplevel>.
+    Set user-defined property "HU_SET =  R4_3" for instance <R4> in unit <S3_MUSER_toplevel>.
+    Set user-defined property "HU_SET =  R5_4" for instance <R5> in unit <S3_MUSER_toplevel>.
+    Set user-defined property "HU_SET =  R7seg_7" for instance <R7seg> in unit <S3_MUSER_toplevel>.
+WARNING:Xst:753 - "/home/l2/ferlicotdelbe/tp/ARCHI/tp6/toplevel.vhf" line 1187: Unconnected output port 'clksec' of component 'clkdiv_MUSER_toplevel'.
+Entity <S3_MUSER_toplevel> analyzed. Unit <S3_MUSER_toplevel> generated.
+
+Analyzing Entity <FD16CE_MXILINX_toplevel> in library <work> (Architecture <behavioral>).
+    Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD16CE_MXILINX_toplevel>.
+    Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD16CE_MXILINX_toplevel>.
+    Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD16CE_MXILINX_toplevel>.
+    Set user-defined property "INIT =  0" for instance <I_Q3> in unit <FD16CE_MXILINX_toplevel>.
+    Set user-defined property "INIT =  0" for instance <I_Q4> in unit <FD16CE_MXILINX_toplevel>.
+    Set user-defined property "INIT =  0" for instance <I_Q5> in unit <FD16CE_MXILINX_toplevel>.
+    Set user-defined property "INIT =  0" for instance <I_Q6> in unit <FD16CE_MXILINX_toplevel>.
+    Set user-defined property "INIT =  0" for instance <I_Q7> in unit <FD16CE_MXILINX_toplevel>.
+    Set user-defined property "INIT =  0" for instance <I_Q8> in unit <FD16CE_MXILINX_toplevel>.
+    Set user-defined property "INIT =  0" for instance <I_Q9> in unit <FD16CE_MXILINX_toplevel>.
+    Set user-defined property "INIT =  0" for instance <I_Q10> in unit <FD16CE_MXILINX_toplevel>.
+    Set user-defined property "INIT =  0" for instance <I_Q11> in unit <FD16CE_MXILINX_toplevel>.
+    Set user-defined property "INIT =  0" for instance <I_Q12> in unit <FD16CE_MXILINX_toplevel>.
+    Set user-defined property "INIT =  0" for instance <I_Q13> in unit <FD16CE_MXILINX_toplevel>.
+    Set user-defined property "INIT =  0" for instance <I_Q14> in unit <FD16CE_MXILINX_toplevel>.
+    Set user-defined property "INIT =  0" for instance <I_Q15> in unit <FD16CE_MXILINX_toplevel>.
+Entity <FD16CE_MXILINX_toplevel> analyzed. Unit <FD16CE_MXILINX_toplevel> generated.
+
+Analyzing Entity <connect16_MUSER_toplevel> in library <work> (Architecture <behavioral>).
+Entity <connect16_MUSER_toplevel> analyzed. Unit <connect16_MUSER_toplevel> generated.
+
+Analyzing Entity <connecteur_MUSER_toplevel> in library <work> (Architecture <behavioral>).
+Entity <connecteur_MUSER_toplevel> analyzed. Unit <connecteur_MUSER_toplevel> generated.
+
+Analyzing Entity <clkdiv_MUSER_toplevel> in library <work> (Architecture <behavioral>).
+    Set user-defined property "INIT =  0" for instance <XLXI_1> in unit <clkdiv_MUSER_toplevel>.
+    Set user-defined property "INIT =  0" for instance <XLXI_3> in unit <clkdiv_MUSER_toplevel>.
+    Set user-defined property "INIT =  0" for instance <XLXI_10> in unit <clkdiv_MUSER_toplevel>.
+    Set user-defined property "INIT =  0" for instance <XLXI_12> in unit <clkdiv_MUSER_toplevel>.
+    Set user-defined property "INIT =  0" for instance <XLXI_14> in unit <clkdiv_MUSER_toplevel>.
+    Set user-defined property "INIT =  0" for instance <XLXI_16> in unit <clkdiv_MUSER_toplevel>.
+    Set user-defined property "INIT =  0" for instance <XLXI_26> in unit <clkdiv_MUSER_toplevel>.
+    Set user-defined property "INIT =  0" for instance <XLXI_56> in unit <clkdiv_MUSER_toplevel>.
+    Set user-defined property "INIT =  0" for instance <XLXI_58> in unit <clkdiv_MUSER_toplevel>.
+    Set user-defined property "INIT =  0" for instance <XLXI_60> in unit <clkdiv_MUSER_toplevel>.
+    Set user-defined property "INIT =  0" for instance <XLXI_62> in unit <clkdiv_MUSER_toplevel>.
+    Set user-defined property "INIT =  0" for instance <XLXI_64> in unit <clkdiv_MUSER_toplevel>.
+    Set user-defined property "INIT =  0" for instance <XLXI_66> in unit <clkdiv_MUSER_toplevel>.
+    Set user-defined property "INIT =  0" for instance <XLXI_68> in unit <clkdiv_MUSER_toplevel>.
+    Set user-defined property "INIT =  0" for instance <XLXI_70> in unit <clkdiv_MUSER_toplevel>.
+    Set user-defined property "INIT =  0" for instance <XLXI_72> in unit <clkdiv_MUSER_toplevel>.
+    Set user-defined property "INIT =  0" for instance <XLXI_74> in unit <clkdiv_MUSER_toplevel>.
+    Set user-defined property "INIT =  0" for instance <XLXI_76> in unit <clkdiv_MUSER_toplevel>.
+    Set user-defined property "INIT =  0" for instance <XLXI_78> in unit <clkdiv_MUSER_toplevel>.
+    Set user-defined property "INIT =  0" for instance <XLXI_80> in unit <clkdiv_MUSER_toplevel>.
+    Set user-defined property "INIT =  0" for instance <XLXI_82> in unit <clkdiv_MUSER_toplevel>.
+    Set user-defined property "INIT =  0" for instance <XLXI_84> in unit <clkdiv_MUSER_toplevel>.
+    Set user-defined property "INIT =  0" for instance <XLXI_86> in unit <clkdiv_MUSER_toplevel>.
+    Set user-defined property "INIT =  0" for instance <XLXI_88> in unit <clkdiv_MUSER_toplevel>.
+    Set user-defined property "INIT =  0" for instance <XLXI_90> in unit <clkdiv_MUSER_toplevel>.
+    Set user-defined property "INIT =  0" for instance <XLXI_92> in unit <clkdiv_MUSER_toplevel>.
+    Set user-defined property "INIT =  0" for instance <XLXI_94> in unit <clkdiv_MUSER_toplevel>.
+    Set user-defined property "INIT =  0" for instance <XLXI_96> in unit <clkdiv_MUSER_toplevel>.
+Entity <clkdiv_MUSER_toplevel> analyzed. Unit <clkdiv_MUSER_toplevel> generated.
+
+Analyzing Entity <afficheur16> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "/home/l2/ferlicotdelbe/tp/ARCHI/tp6/afficheur16.vhf" line 356: Unconnected output port 'anodes' of component 'x7seg'.
+Entity <afficheur16> analyzed. Unit <afficheur16> generated.
+
+Analyzing Entity <mux4x4_MUSER_afficheur16> in library <work> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  XLXI_1_2" for instance <XLXI_1> in unit <mux4x4_MUSER_afficheur16>.
+    Set user-defined property "HU_SET =  XLXI_2_3" for instance <XLXI_2> in unit <mux4x4_MUSER_afficheur16>.
+    Set user-defined property "HU_SET =  XLXI_3_4" for instance <XLXI_3> in unit <mux4x4_MUSER_afficheur16>.
+    Set user-defined property "HU_SET =  XLXI_4_5" for instance <XLXI_4> in unit <mux4x4_MUSER_afficheur16>.
+Entity <mux4x4_MUSER_afficheur16> analyzed. Unit <mux4x4_MUSER_afficheur16> generated.
+
+Analyzing Entity <M4_1E_MXILINX_afficheur16> in library <work> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  I_M01_1" for instance <I_M01> in unit <M4_1E_MXILINX_afficheur16>.
+    Set user-defined property "HU_SET =  I_M23_0" for instance <I_M23> in unit <M4_1E_MXILINX_afficheur16>.
+Entity <M4_1E_MXILINX_afficheur16> analyzed. Unit <M4_1E_MXILINX_afficheur16> generated.
+
+Analyzing Entity <M2_1E_MXILINX_afficheur16> in library <work> (Architecture <behavioral>).
+Entity <M2_1E_MXILINX_afficheur16> analyzed. Unit <M2_1E_MXILINX_afficheur16> generated.
+
+Analyzing Entity <compteur4_MUSER_afficheur16> in library <work> (Architecture <behavioral>).
+    Set user-defined property "INIT =  0" for instance <BaculeD_0> in unit <compteur4_MUSER_afficheur16>.
+    Set user-defined property "INIT =  0" for instance <BaculeD_1> in unit <compteur4_MUSER_afficheur16>.
+Entity <compteur4_MUSER_afficheur16> analyzed. Unit <compteur4_MUSER_afficheur16> generated.
+
+Analyzing Entity <x7seg> in library <work> (Architecture <behavioral>).
+Entity <x7seg> analyzed. Unit <x7seg> generated.
+
+Analyzing Entity <OBUF8_MXILINX_toplevel> in library <work> (Architecture <behavioral>).
+    Set user-defined property "DRIVE =  12" for instance <I_36_30> in unit <OBUF8_MXILINX_toplevel>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <I_36_30> in unit <OBUF8_MXILINX_toplevel>.
+    Set user-defined property "SLEW =  SLOW" for instance <I_36_30> in unit <OBUF8_MXILINX_toplevel>.
+    Set user-defined property "DRIVE =  12" for instance <I_36_31> in unit <OBUF8_MXILINX_toplevel>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <I_36_31> in unit <OBUF8_MXILINX_toplevel>.
+    Set user-defined property "SLEW =  SLOW" for instance <I_36_31> in unit <OBUF8_MXILINX_toplevel>.
+    Set user-defined property "DRIVE =  12" for instance <I_36_32> in unit <OBUF8_MXILINX_toplevel>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <I_36_32> in unit <OBUF8_MXILINX_toplevel>.
+    Set user-defined property "SLEW =  SLOW" for instance <I_36_32> in unit <OBUF8_MXILINX_toplevel>.
+    Set user-defined property "DRIVE =  12" for instance <I_36_33> in unit <OBUF8_MXILINX_toplevel>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <I_36_33> in unit <OBUF8_MXILINX_toplevel>.
+    Set user-defined property "SLEW =  SLOW" for instance <I_36_33> in unit <OBUF8_MXILINX_toplevel>.
+    Set user-defined property "DRIVE =  12" for instance <I_36_34> in unit <OBUF8_MXILINX_toplevel>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <I_36_34> in unit <OBUF8_MXILINX_toplevel>.
+    Set user-defined property "SLEW =  SLOW" for instance <I_36_34> in unit <OBUF8_MXILINX_toplevel>.
+    Set user-defined property "DRIVE =  12" for instance <I_36_35> in unit <OBUF8_MXILINX_toplevel>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <I_36_35> in unit <OBUF8_MXILINX_toplevel>.
+    Set user-defined property "SLEW =  SLOW" for instance <I_36_35> in unit <OBUF8_MXILINX_toplevel>.
+    Set user-defined property "DRIVE =  12" for instance <I_36_36> in unit <OBUF8_MXILINX_toplevel>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <I_36_36> in unit <OBUF8_MXILINX_toplevel>.
+    Set user-defined property "SLEW =  SLOW" for instance <I_36_36> in unit <OBUF8_MXILINX_toplevel>.
+    Set user-defined property "DRIVE =  12" for instance <I_36_37> in unit <OBUF8_MXILINX_toplevel>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <I_36_37> in unit <OBUF8_MXILINX_toplevel>.
+    Set user-defined property "SLEW =  SLOW" for instance <I_36_37> in unit <OBUF8_MXILINX_toplevel>.
+Entity <OBUF8_MXILINX_toplevel> analyzed. Unit <OBUF8_MXILINX_toplevel> generated.
+
+Analyzing Entity <IBUF8_MXILINX_toplevel> in library <work> (Architecture <behavioral>).
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <I_36_30> in unit <IBUF8_MXILINX_toplevel>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <I_36_30> in unit <IBUF8_MXILINX_toplevel>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <I_36_30> in unit <IBUF8_MXILINX_toplevel>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <I_36_31> in unit <IBUF8_MXILINX_toplevel>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <I_36_31> in unit <IBUF8_MXILINX_toplevel>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <I_36_31> in unit <IBUF8_MXILINX_toplevel>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <I_36_32> in unit <IBUF8_MXILINX_toplevel>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <I_36_32> in unit <IBUF8_MXILINX_toplevel>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <I_36_32> in unit <IBUF8_MXILINX_toplevel>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <I_36_33> in unit <IBUF8_MXILINX_toplevel>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <I_36_33> in unit <IBUF8_MXILINX_toplevel>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <I_36_33> in unit <IBUF8_MXILINX_toplevel>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <I_36_34> in unit <IBUF8_MXILINX_toplevel>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <I_36_34> in unit <IBUF8_MXILINX_toplevel>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <I_36_34> in unit <IBUF8_MXILINX_toplevel>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <I_36_35> in unit <IBUF8_MXILINX_toplevel>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <I_36_35> in unit <IBUF8_MXILINX_toplevel>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <I_36_35> in unit <IBUF8_MXILINX_toplevel>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <I_36_36> in unit <IBUF8_MXILINX_toplevel>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <I_36_36> in unit <IBUF8_MXILINX_toplevel>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <I_36_36> in unit <IBUF8_MXILINX_toplevel>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <I_36_37> in unit <IBUF8_MXILINX_toplevel>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <I_36_37> in unit <IBUF8_MXILINX_toplevel>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <I_36_37> in unit <IBUF8_MXILINX_toplevel>.
+Entity <IBUF8_MXILINX_toplevel> analyzed. Unit <IBUF8_MXILINX_toplevel> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <x7seg>.
+    Related source file is "/home/l2/ferlicotdelbe/tp/ARCHI/tp6/x7seg.vhd".
+    Found 16x7-bit ROM for signal <sevenseg>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <x7seg> synthesized.
+
+
+Synthesizing Unit <OBUF8_MXILINX_toplevel>.
+    Related source file is "/home/l2/ferlicotdelbe/tp/ARCHI/tp6/toplevel.vhf".
+Unit <OBUF8_MXILINX_toplevel> synthesized.
+
+
+Synthesizing Unit <IBUF8_MXILINX_toplevel>.
+    Related source file is "/home/l2/ferlicotdelbe/tp/ARCHI/tp6/toplevel.vhf".
+Unit <IBUF8_MXILINX_toplevel> synthesized.
+
+
+Synthesizing Unit <FD16CE_MXILINX_toplevel>.
+    Related source file is "/home/l2/ferlicotdelbe/tp/ARCHI/tp6/toplevel.vhf".
+Unit <FD16CE_MXILINX_toplevel> synthesized.
+
+
+Synthesizing Unit <clkdiv_MUSER_toplevel>.
+    Related source file is "/home/l2/ferlicotdelbe/tp/ARCHI/tp6/toplevel.vhf".
+Unit <clkdiv_MUSER_toplevel> synthesized.
+
+
+Synthesizing Unit <connecteur_MUSER_toplevel>.
+    Related source file is "/home/l2/ferlicotdelbe/tp/ARCHI/tp6/toplevel.vhf".
+Unit <connecteur_MUSER_toplevel> synthesized.
+
+
+Synthesizing Unit <compteur4_MUSER_afficheur16>.
+    Related source file is "/home/l2/ferlicotdelbe/tp/ARCHI/tp6/afficheur16.vhf".
+Unit <compteur4_MUSER_afficheur16> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_afficheur16>.
+    Related source file is "/home/l2/ferlicotdelbe/tp/ARCHI/tp6/afficheur16.vhf".
+Unit <M2_1E_MXILINX_afficheur16> synthesized.
+
+
+Synthesizing Unit <connect16_MUSER_toplevel>.
+    Related source file is "/home/l2/ferlicotdelbe/tp/ARCHI/tp6/toplevel.vhf".
+Unit <connect16_MUSER_toplevel> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_afficheur16>.
+    Related source file is "/home/l2/ferlicotdelbe/tp/ARCHI/tp6/afficheur16.vhf".
+Unit <M4_1E_MXILINX_afficheur16> synthesized.
+
+
+Synthesizing Unit <mux4x4_MUSER_afficheur16>.
+    Related source file is "/home/l2/ferlicotdelbe/tp/ARCHI/tp6/afficheur16.vhf".
+Unit <mux4x4_MUSER_afficheur16> synthesized.
+
+
+Synthesizing Unit <afficheur16>.
+    Related source file is "/home/l2/ferlicotdelbe/tp/ARCHI/tp6/afficheur16.vhf".
+Unit <afficheur16> synthesized.
+
+
+Synthesizing Unit <S3_MUSER_toplevel>.
+    Related source file is "/home/l2/ferlicotdelbe/tp/ARCHI/tp6/toplevel.vhf".
+WARNING:Xst:653 - Signal <Rsw_CLR_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <Rsrc2_CLR_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <Rsrc2_CE_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <Rsrc1_CLR_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <Rsrc1_CE_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <Rled_CLR_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <Rdm_D_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000.
+WARNING:Xst:653 - Signal <Rdm_CLR_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <Rdm_CE_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <Rdest_D_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000.
+WARNING:Xst:653 - Signal <Rdest_CLR_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <Rdest_CE_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <Ram_CLR_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <Ram_CE_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <RI_D_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000.
+WARNING:Xst:653 - Signal <RI_CLR_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <RI_CE_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <R7seg_CLR_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <R5_CLR_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <R5_CE_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <R4_CLR_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <R4_CE_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <R3_CLR_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <R3_CE_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <R2_CLR_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <R2_CE_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <R1_CLR_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <R1_CE_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <CO_D_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000.
+WARNING:Xst:653 - Signal <CO_CLR_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <CO_CE_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <S3_MUSER_toplevel> synthesized.
+
+
+Synthesizing Unit <toplevel>.
+    Related source file is "/home/l2/ferlicotdelbe/tp/ARCHI/tp6/toplevel.vhf".
+WARNING:Xst:646 - Signal <ld<15:8>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <toplevel> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Registers                                            : 270
+ Flip-Flops                                            : 270
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <toplevel> ...
+
+Optimizing unit <OBUF8_MXILINX_toplevel> ...
+
+Optimizing unit <IBUF8_MXILINX_toplevel> ...
+
+Optimizing unit <FD16CE_MXILINX_toplevel> ...
+
+Optimizing unit <clkdiv_MUSER_toplevel> ...
+
+Optimizing unit <M2_1E_MXILINX_afficheur16> ...
+
+Optimizing unit <connect16_MUSER_toplevel> ...
+
+Optimizing unit <M4_1E_MXILINX_afficheur16> ...
+
+Optimizing unit <S3_MUSER_toplevel> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block toplevel, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 270
+ Flip-Flops                                            : 270
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : toplevel.ngr
+Top Level Output File Name         : toplevel
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 28
+
+Cell Usage :
+# BELS                             : 575
+#      AND2                        : 240
+#      AND3                        : 16
+#      AND3B1                      : 16
+#      GND                         : 1
+#      INV                         : 30
+#      LUT4                        : 7
+#      MUXF5                       : 8
+#      OR2                         : 256
+#      VCC                         : 1
+# FlipFlops/Latches                : 270
+#      FD                          : 30
+#      FDCE                        : 240
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 27
+#      IBUF                        : 8
+#      OBUF                        : 19
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1200efg320-4 
+
+ Number of Slices:                      135  out of   8672     1%  
+ Number of Slice Flip Flops:            270  out of  17344     1%  
+ Number of 4 input LUTs:                 37  out of  17344     0%  
+ Number of IOs:                          28
+ Number of bonded IOBs:                  28  out of    250    11%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+--------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                | Load  |
+-----------------------------------+--------------------------------------+-------+
+clk                                | BUFGP                                | 241   |
+mon_S3/XLXI_49/XLXN_2              | NONE(mon_S3/XLXI_49/XLXI_3)          | 1     |
+mon_S3/XLXI_49/XLXN_14             | NONE(mon_S3/XLXI_49/XLXI_10)         | 1     |
+mon_S3/XLXI_49/XLXN_4              | NONE(mon_S3/XLXI_49/XLXI_12)         | 1     |
+mon_S3/XLXI_49/XLXN_18             | NONE(mon_S3/XLXI_49/XLXI_14)         | 1     |
+mon_S3/XLXI_49/XLXN_12             | NONE(mon_S3/XLXI_49/XLXI_16)         | 1     |
+mon_S3/XLXI_49/XLXN_16             | NONE(mon_S3/XLXI_49/XLXI_26)         | 1     |
+mon_S3/XLXI_49/XLXN_63             | NONE(mon_S3/XLXI_49/XLXI_56)         | 1     |
+mon_S3/XLXI_49/XLXN_28             | NONE(mon_S3/XLXI_49/XLXI_58)         | 1     |
+mon_S3/XLXI_49/XLXN_67             | NONE(mon_S3/XLXI_49/XLXI_60)         | 1     |
+mon_S3/XLXI_49/XLXN_61             | NONE(mon_S3/XLXI_49/XLXI_62)         | 1     |
+mon_S3/XLXI_49/XLXN_71             | NONE(mon_S3/XLXI_49/XLXI_64)         | 1     |
+mon_S3/XLXI_49/XLXN_65             | NONE(mon_S3/XLXI_49/XLXI_66)         | 1     |
+mon_S3/XLXI_49/XLXN_69             | NONE(mon_S3/XLXI_49/XLXI_68)         | 1     |
+mon_S3/XLXI_49/XLXN_77             | NONE(mon_S3/XLXI_49/XLXI_70)         | 1     |
+mon_S3/XLXI_49/XLXN_73             | NONE(mon_S3/XLXI_49/XLXI_72)         | 1     |
+mon_S3/XLXI_49/XLXN_81             | NONE(mon_S3/XLXI_49/XLXI_74)         | 1     |
+mon_S3/XLXI_49/XLXN_75             | NONE(mon_S3/XLXI_49/XLXI_76)         | 1     |
+mon_S3/XLXI_49/XLXN_85             | NONE(mon_S3/XLXI_49/XLXI_78)         | 1     |
+mon_S3/XLXN_79                     | NONE(mon_S3/XLXI_49/XLXI_80)         | 2     |
+mon_S3/XLXI_49/XLXN_83             | NONE(mon_S3/XLXI_49/XLXI_82)         | 1     |
+mon_S3/XLXI_49/xyx                 | NONE(mon_S3/XLXI_49/XLXI_84)         | 1     |
+mon_S3/XLXI_49/XLXN_87             | NONE(mon_S3/XLXI_49/XLXI_86)         | 1     |
+mon_S3/XLXI_49/XLXN_95             | NONE(mon_S3/XLXI_49/XLXI_88)         | 1     |
+mon_S3/XLXI_49/XLXN_89             | NONE(mon_S3/XLXI_49/XLXI_90)         | 1     |
+mon_S3/XLXI_49/clksec_DUMMY        | NONE(mon_S3/XLXI_49/XLXI_92)         | 1     |
+mon_S3/XLXI_49/XLXN_93             | NONE(mon_S3/XLXI_49/XLXI_94)         | 1     |
+mon_S3/XLXI_49/XLXN_97             | NONE(mon_S3/XLXI_49/XLXI_96)         | 1     |
+mon_S3/XLXI_50/XLXN_19<0>          | NONE(mon_S3/XLXI_50/XLXI_1/BaculeD_1)| 1     |
+-----------------------------------+--------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+N0(XST_GND:G)                      | NONE(mon_S3/CO/I_Q0)   | 240   |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 19.765ns (Maximum Frequency: 50.594MHz)
+   Minimum input arrival time before clock: 1.946ns
+   Maximum output required time after clock: 9.282ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 19.765ns (frequency: 50.594MHz)
+  Total number of paths / destination ports: 2401 / 161
+-------------------------------------------------------------------------
+Delay:               19.765ns (Levels of Logic = 17)
+  Source:            mon_S3/R1/I_Q0 (FF)
+  Destination:       mon_S3/Ram/I_Q0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: mon_S3/R1/I_Q0 to mon_S3/Ram/I_Q0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             1   0.591   0.420  I_Q0 (Q<0>)
+     end scope: 'mon_S3/R1'
+     AND2:I0->O            1   0.704   0.420  mon_S3/CR1/C0/XLXI_1 (mon_S3/CR1/C0/XLXN_1)
+     OR2:I1->O             1   0.704   0.420  mon_S3/CR1/C0/XLXI_2 (mon_S3/XLXN_31<0>)
+     OR2:I0->O             1   0.704   0.420  mon_S3/CR2/C0/XLXI_2 (mon_S3/XLXN_32<0>)
+     OR2:I0->O             1   0.704   0.420  mon_S3/CR3/C0/XLXI_2 (mon_S3/XLXN_33<0>)
+     OR2:I0->O             1   0.704   0.420  mon_S3/CR4/C0/XLXI_2 (mon_S3/XLXN_34<0>)
+     OR2:I0->O             1   0.704   0.420  mon_S3/CR5/C0/XLXI_2 (mon_S3/XLXN_35<0>)
+     OR2:I0->O             1   0.704   0.420  mon_S3/CRled/C0/XLXI_2 (mon_S3/XLXN_36<0>)
+     OR2:I0->O             1   0.704   0.420  mon_S3/CRsw/C0/XLXI_2 (mon_S3/XLXN_37<0>)
+     OR2:I0->O             1   0.704   0.420  mon_S3/CR7seg/C0/XLXI_2 (mon_S3/XLXN_39<0>)
+     OR2:I0->O             1   0.704   0.420  mon_S3/CRsrc1/C0/XLXI_2 (mon_S3/XLXN_38<0>)
+     OR2:I0->O             1   0.704   0.420  mon_S3/CRsrc2/C0/XLXI_2 (mon_S3/XLXN_40<0>)
+     OR2:I0->O             1   0.704   0.420  mon_S3/CRdest/C0/XLXI_2 (mon_S3/XLXN_41<0>)
+     OR2:I0->O             1   0.704   0.420  mon_S3/CRam/C0/XLXI_2 (mon_S3/XLXN_42<0>)
+     OR2:I0->O             1   0.704   0.420  mon_S3/CRdm/C0/XLXI_2 (mon_S3/XLXN_43<0>)
+     OR2:I0->O             1   0.704   0.420  mon_S3/CRO/C0/XLXI_2 (mon_S3/XLXN_45<0>)
+     OR2:I0->O            10   0.704   0.882  mon_S3/CRI/C0/XLXI_2 (mon_S3/bus_data<0>)
+     begin scope: 'mon_S3/R7seg'
+     FDCE:D                    0.308          I_Q0
+    ----------------------------------------
+    Total                     19.765ns (12.163ns logic, 7.602ns route)
+                                       (61.5% logic, 38.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mon_S3/XLXI_49/XLXN_2'
+  Clock period: 2.470ns (frequency: 404.858MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.470ns (Levels of Logic = 1)
+  Source:            mon_S3/XLXI_49/XLXI_3 (FF)
+  Destination:       mon_S3/XLXI_49/XLXI_3 (FF)
+  Source Clock:      mon_S3/XLXI_49/XLXN_2 rising
+  Destination Clock: mon_S3/XLXI_49/XLXN_2 rising
+
+  Data Path: mon_S3/XLXI_49/XLXI_3 to mon_S3/XLXI_49/XLXI_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.591   0.447  mon_S3/XLXI_49/XLXI_3 (mon_S3/XLXI_49/XLXN_4)
+     INV:I->O              1   0.704   0.420  mon_S3/XLXI_49/XLXI_4 (mon_S3/XLXI_49/XLXN_3)
+     FD:D                      0.308          mon_S3/XLXI_49/XLXI_3
+    ----------------------------------------
+    Total                      2.470ns (1.603ns logic, 0.867ns route)
+                                       (64.9% logic, 35.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mon_S3/XLXI_49/XLXN_14'
+  Clock period: 2.470ns (frequency: 404.858MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.470ns (Levels of Logic = 1)
+  Source:            mon_S3/XLXI_49/XLXI_10 (FF)
+  Destination:       mon_S3/XLXI_49/XLXI_10 (FF)
+  Source Clock:      mon_S3/XLXI_49/XLXN_14 rising
+  Destination Clock: mon_S3/XLXI_49/XLXN_14 rising
+
+  Data Path: mon_S3/XLXI_49/XLXI_10 to mon_S3/XLXI_49/XLXI_10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.591   0.447  mon_S3/XLXI_49/XLXI_10 (mon_S3/XLXI_49/XLXN_12)
+     INV:I->O              1   0.704   0.420  mon_S3/XLXI_49/XLXI_9 (mon_S3/XLXI_49/XLXN_13)
+     FD:D                      0.308          mon_S3/XLXI_49/XLXI_10
+    ----------------------------------------
+    Total                      2.470ns (1.603ns logic, 0.867ns route)
+                                       (64.9% logic, 35.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mon_S3/XLXI_49/XLXN_4'
+  Clock period: 2.470ns (frequency: 404.858MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.470ns (Levels of Logic = 1)
+  Source:            mon_S3/XLXI_49/XLXI_12 (FF)
+  Destination:       mon_S3/XLXI_49/XLXI_12 (FF)
+  Source Clock:      mon_S3/XLXI_49/XLXN_4 rising
+  Destination Clock: mon_S3/XLXI_49/XLXN_4 rising
+
+  Data Path: mon_S3/XLXI_49/XLXI_12 to mon_S3/XLXI_49/XLXI_12
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.591   0.447  mon_S3/XLXI_49/XLXI_12 (mon_S3/XLXI_49/XLXN_14)
+     INV:I->O              1   0.704   0.420  mon_S3/XLXI_49/XLXI_11 (mon_S3/XLXI_49/XLXN_15)
+     FD:D                      0.308          mon_S3/XLXI_49/XLXI_12
+    ----------------------------------------
+    Total                      2.470ns (1.603ns logic, 0.867ns route)
+                                       (64.9% logic, 35.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mon_S3/XLXI_49/XLXN_18'
+  Clock period: 2.470ns (frequency: 404.858MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.470ns (Levels of Logic = 1)
+  Source:            mon_S3/XLXI_49/XLXI_14 (FF)
+  Destination:       mon_S3/XLXI_49/XLXI_14 (FF)
+  Source Clock:      mon_S3/XLXI_49/XLXN_18 rising
+  Destination Clock: mon_S3/XLXI_49/XLXN_18 rising
+
+  Data Path: mon_S3/XLXI_49/XLXI_14 to mon_S3/XLXI_49/XLXI_14
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.591   0.447  mon_S3/XLXI_49/XLXI_14 (mon_S3/XLXI_49/XLXN_16)
+     INV:I->O              1   0.704   0.420  mon_S3/XLXI_49/XLXI_13 (mon_S3/XLXI_49/XLXN_17)
+     FD:D                      0.308          mon_S3/XLXI_49/XLXI_14
+    ----------------------------------------
+    Total                      2.470ns (1.603ns logic, 0.867ns route)
+                                       (64.9% logic, 35.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mon_S3/XLXI_49/XLXN_12'
+  Clock period: 2.470ns (frequency: 404.858MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.470ns (Levels of Logic = 1)
+  Source:            mon_S3/XLXI_49/XLXI_16 (FF)
+  Destination:       mon_S3/XLXI_49/XLXI_16 (FF)
+  Source Clock:      mon_S3/XLXI_49/XLXN_12 rising
+  Destination Clock: mon_S3/XLXI_49/XLXN_12 rising
+
+  Data Path: mon_S3/XLXI_49/XLXI_16 to mon_S3/XLXI_49/XLXI_16
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.591   0.447  mon_S3/XLXI_49/XLXI_16 (mon_S3/XLXI_49/XLXN_18)
+     INV:I->O              1   0.704   0.420  mon_S3/XLXI_49/XLXI_15 (mon_S3/XLXI_49/XLXN_19)
+     FD:D                      0.308          mon_S3/XLXI_49/XLXI_16
+    ----------------------------------------
+    Total                      2.470ns (1.603ns logic, 0.867ns route)
+                                       (64.9% logic, 35.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mon_S3/XLXI_49/XLXN_16'
+  Clock period: 2.470ns (frequency: 404.858MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.470ns (Levels of Logic = 1)
+  Source:            mon_S3/XLXI_49/XLXI_26 (FF)
+  Destination:       mon_S3/XLXI_49/XLXI_26 (FF)
+  Source Clock:      mon_S3/XLXI_49/XLXN_16 rising
+  Destination Clock: mon_S3/XLXI_49/XLXN_16 rising
+
+  Data Path: mon_S3/XLXI_49/XLXI_26 to mon_S3/XLXI_49/XLXI_26
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.591   0.447  mon_S3/XLXI_49/XLXI_26 (mon_S3/XLXI_49/XLXN_28)
+     INV:I->O              1   0.704   0.420  mon_S3/XLXI_49/XLXI_25 (mon_S3/XLXI_49/XLXN_29)
+     FD:D                      0.308          mon_S3/XLXI_49/XLXI_26
+    ----------------------------------------
+    Total                      2.470ns (1.603ns logic, 0.867ns route)
+                                       (64.9% logic, 35.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mon_S3/XLXI_49/XLXN_63'
+  Clock period: 2.470ns (frequency: 404.858MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.470ns (Levels of Logic = 1)
+  Source:            mon_S3/XLXI_49/XLXI_56 (FF)
+  Destination:       mon_S3/XLXI_49/XLXI_56 (FF)
+  Source Clock:      mon_S3/XLXI_49/XLXN_63 rising
+  Destination Clock: mon_S3/XLXI_49/XLXN_63 rising
+
+  Data Path: mon_S3/XLXI_49/XLXI_56 to mon_S3/XLXI_49/XLXI_56
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.591   0.447  mon_S3/XLXI_49/XLXI_56 (mon_S3/XLXI_49/XLXN_61)
+     INV:I->O              1   0.704   0.420  mon_S3/XLXI_49/XLXI_55 (mon_S3/XLXI_49/XLXN_62)
+     FD:D                      0.308          mon_S3/XLXI_49/XLXI_56
+    ----------------------------------------
+    Total                      2.470ns (1.603ns logic, 0.867ns route)
+                                       (64.9% logic, 35.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mon_S3/XLXI_49/XLXN_28'
+  Clock period: 2.470ns (frequency: 404.858MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.470ns (Levels of Logic = 1)
+  Source:            mon_S3/XLXI_49/XLXI_58 (FF)
+  Destination:       mon_S3/XLXI_49/XLXI_58 (FF)
+  Source Clock:      mon_S3/XLXI_49/XLXN_28 rising
+  Destination Clock: mon_S3/XLXI_49/XLXN_28 rising
+
+  Data Path: mon_S3/XLXI_49/XLXI_58 to mon_S3/XLXI_49/XLXI_58
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.591   0.447  mon_S3/XLXI_49/XLXI_58 (mon_S3/XLXI_49/XLXN_63)
+     INV:I->O              1   0.704   0.420  mon_S3/XLXI_49/XLXI_57 (mon_S3/XLXI_49/XLXN_64)
+     FD:D                      0.308          mon_S3/XLXI_49/XLXI_58
+    ----------------------------------------
+    Total                      2.470ns (1.603ns logic, 0.867ns route)
+                                       (64.9% logic, 35.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mon_S3/XLXI_49/XLXN_67'
+  Clock period: 2.470ns (frequency: 404.858MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.470ns (Levels of Logic = 1)
+  Source:            mon_S3/XLXI_49/XLXI_60 (FF)
+  Destination:       mon_S3/XLXI_49/XLXI_60 (FF)
+  Source Clock:      mon_S3/XLXI_49/XLXN_67 rising
+  Destination Clock: mon_S3/XLXI_49/XLXN_67 rising
+
+  Data Path: mon_S3/XLXI_49/XLXI_60 to mon_S3/XLXI_49/XLXI_60
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.591   0.447  mon_S3/XLXI_49/XLXI_60 (mon_S3/XLXI_49/XLXN_65)
+     INV:I->O              1   0.704   0.420  mon_S3/XLXI_49/XLXI_59 (mon_S3/XLXI_49/XLXN_66)
+     FD:D                      0.308          mon_S3/XLXI_49/XLXI_60
+    ----------------------------------------
+    Total                      2.470ns (1.603ns logic, 0.867ns route)
+                                       (64.9% logic, 35.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mon_S3/XLXI_49/XLXN_61'
+  Clock period: 2.470ns (frequency: 404.858MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.470ns (Levels of Logic = 1)
+  Source:            mon_S3/XLXI_49/XLXI_62 (FF)
+  Destination:       mon_S3/XLXI_49/XLXI_62 (FF)
+  Source Clock:      mon_S3/XLXI_49/XLXN_61 rising
+  Destination Clock: mon_S3/XLXI_49/XLXN_61 rising
+
+  Data Path: mon_S3/XLXI_49/XLXI_62 to mon_S3/XLXI_49/XLXI_62
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.591   0.447  mon_S3/XLXI_49/XLXI_62 (mon_S3/XLXI_49/XLXN_67)
+     INV:I->O              1   0.704   0.420  mon_S3/XLXI_49/XLXI_61 (mon_S3/XLXI_49/XLXN_68)
+     FD:D                      0.308          mon_S3/XLXI_49/XLXI_62
+    ----------------------------------------
+    Total                      2.470ns (1.603ns logic, 0.867ns route)
+                                       (64.9% logic, 35.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mon_S3/XLXI_49/XLXN_71'
+  Clock period: 2.470ns (frequency: 404.858MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.470ns (Levels of Logic = 1)
+  Source:            mon_S3/XLXI_49/XLXI_64 (FF)
+  Destination:       mon_S3/XLXI_49/XLXI_64 (FF)
+  Source Clock:      mon_S3/XLXI_49/XLXN_71 rising
+  Destination Clock: mon_S3/XLXI_49/XLXN_71 rising
+
+  Data Path: mon_S3/XLXI_49/XLXI_64 to mon_S3/XLXI_49/XLXI_64
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.591   0.447  mon_S3/XLXI_49/XLXI_64 (mon_S3/XLXI_49/XLXN_69)
+     INV:I->O              1   0.704   0.420  mon_S3/XLXI_49/XLXI_63 (mon_S3/XLXI_49/XLXN_70)
+     FD:D                      0.308          mon_S3/XLXI_49/XLXI_64
+    ----------------------------------------
+    Total                      2.470ns (1.603ns logic, 0.867ns route)
+                                       (64.9% logic, 35.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mon_S3/XLXI_49/XLXN_65'
+  Clock period: 2.470ns (frequency: 404.858MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.470ns (Levels of Logic = 1)
+  Source:            mon_S3/XLXI_49/XLXI_66 (FF)
+  Destination:       mon_S3/XLXI_49/XLXI_66 (FF)
+  Source Clock:      mon_S3/XLXI_49/XLXN_65 rising
+  Destination Clock: mon_S3/XLXI_49/XLXN_65 rising
+
+  Data Path: mon_S3/XLXI_49/XLXI_66 to mon_S3/XLXI_49/XLXI_66
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.591   0.447  mon_S3/XLXI_49/XLXI_66 (mon_S3/XLXI_49/XLXN_71)
+     INV:I->O              1   0.704   0.420  mon_S3/XLXI_49/XLXI_65 (mon_S3/XLXI_49/XLXN_72)
+     FD:D                      0.308          mon_S3/XLXI_49/XLXI_66
+    ----------------------------------------
+    Total                      2.470ns (1.603ns logic, 0.867ns route)
+                                       (64.9% logic, 35.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mon_S3/XLXI_49/XLXN_69'
+  Clock period: 2.470ns (frequency: 404.858MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.470ns (Levels of Logic = 1)
+  Source:            mon_S3/XLXI_49/XLXI_68 (FF)
+  Destination:       mon_S3/XLXI_49/XLXI_68 (FF)
+  Source Clock:      mon_S3/XLXI_49/XLXN_69 rising
+  Destination Clock: mon_S3/XLXI_49/XLXN_69 rising
+
+  Data Path: mon_S3/XLXI_49/XLXI_68 to mon_S3/XLXI_49/XLXI_68
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.591   0.447  mon_S3/XLXI_49/XLXI_68 (mon_S3/XLXI_49/XLXN_73)
+     INV:I->O              1   0.704   0.420  mon_S3/XLXI_49/XLXI_67 (mon_S3/XLXI_49/XLXN_74)
+     FD:D                      0.308          mon_S3/XLXI_49/XLXI_68
+    ----------------------------------------
+    Total                      2.470ns (1.603ns logic, 0.867ns route)
+                                       (64.9% logic, 35.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mon_S3/XLXI_49/XLXN_77'
+  Clock period: 2.470ns (frequency: 404.858MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.470ns (Levels of Logic = 1)
+  Source:            mon_S3/XLXI_49/XLXI_70 (FF)
+  Destination:       mon_S3/XLXI_49/XLXI_70 (FF)
+  Source Clock:      mon_S3/XLXI_49/XLXN_77 rising
+  Destination Clock: mon_S3/XLXI_49/XLXN_77 rising
+
+  Data Path: mon_S3/XLXI_49/XLXI_70 to mon_S3/XLXI_49/XLXI_70
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.591   0.447  mon_S3/XLXI_49/XLXI_70 (mon_S3/XLXI_49/XLXN_75)
+     INV:I->O              1   0.704   0.420  mon_S3/XLXI_49/XLXI_69 (mon_S3/XLXI_49/XLXN_76)
+     FD:D                      0.308          mon_S3/XLXI_49/XLXI_70
+    ----------------------------------------
+    Total                      2.470ns (1.603ns logic, 0.867ns route)
+                                       (64.9% logic, 35.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mon_S3/XLXI_49/XLXN_73'
+  Clock period: 2.470ns (frequency: 404.858MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.470ns (Levels of Logic = 1)
+  Source:            mon_S3/XLXI_49/XLXI_72 (FF)
+  Destination:       mon_S3/XLXI_49/XLXI_72 (FF)
+  Source Clock:      mon_S3/XLXI_49/XLXN_73 rising
+  Destination Clock: mon_S3/XLXI_49/XLXN_73 rising
+
+  Data Path: mon_S3/XLXI_49/XLXI_72 to mon_S3/XLXI_49/XLXI_72
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.591   0.447  mon_S3/XLXI_49/XLXI_72 (mon_S3/XLXI_49/XLXN_77)
+     INV:I->O              1   0.704   0.420  mon_S3/XLXI_49/XLXI_71 (mon_S3/XLXI_49/XLXN_78)
+     FD:D                      0.308          mon_S3/XLXI_49/XLXI_72
+    ----------------------------------------
+    Total                      2.470ns (1.603ns logic, 0.867ns route)
+                                       (64.9% logic, 35.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mon_S3/XLXI_49/XLXN_81'
+  Clock period: 2.554ns (frequency: 391.543MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.554ns (Levels of Logic = 1)
+  Source:            mon_S3/XLXI_49/XLXI_74 (FF)
+  Destination:       mon_S3/XLXI_49/XLXI_74 (FF)
+  Source Clock:      mon_S3/XLXI_49/XLXN_81 rising
+  Destination Clock: mon_S3/XLXI_49/XLXN_81 rising
+
+  Data Path: mon_S3/XLXI_49/XLXI_74 to mon_S3/XLXI_49/XLXI_74
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.591   0.531  mon_S3/XLXI_49/XLXI_74 (mon_S3/XLXN_79)
+     INV:I->O              1   0.704   0.420  mon_S3/XLXI_49/XLXI_73 (mon_S3/XLXI_49/XLXN_80)
+     FD:D                      0.308          mon_S3/XLXI_49/XLXI_74
+    ----------------------------------------
+    Total                      2.554ns (1.603ns logic, 0.951ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mon_S3/XLXI_49/XLXN_75'
+  Clock period: 2.470ns (frequency: 404.858MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.470ns (Levels of Logic = 1)
+  Source:            mon_S3/XLXI_49/XLXI_76 (FF)
+  Destination:       mon_S3/XLXI_49/XLXI_76 (FF)
+  Source Clock:      mon_S3/XLXI_49/XLXN_75 rising
+  Destination Clock: mon_S3/XLXI_49/XLXN_75 rising
+
+  Data Path: mon_S3/XLXI_49/XLXI_76 to mon_S3/XLXI_49/XLXI_76
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.591   0.447  mon_S3/XLXI_49/XLXI_76 (mon_S3/XLXI_49/XLXN_81)
+     INV:I->O              1   0.704   0.420  mon_S3/XLXI_49/XLXI_75 (mon_S3/XLXI_49/XLXN_82)
+     FD:D                      0.308          mon_S3/XLXI_49/XLXI_76
+    ----------------------------------------
+    Total                      2.470ns (1.603ns logic, 0.867ns route)
+                                       (64.9% logic, 35.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mon_S3/XLXI_49/XLXN_85'
+  Clock period: 2.470ns (frequency: 404.858MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.470ns (Levels of Logic = 1)
+  Source:            mon_S3/XLXI_49/XLXI_78 (FF)
+  Destination:       mon_S3/XLXI_49/XLXI_78 (FF)
+  Source Clock:      mon_S3/XLXI_49/XLXN_85 rising
+  Destination Clock: mon_S3/XLXI_49/XLXN_85 rising
+
+  Data Path: mon_S3/XLXI_49/XLXI_78 to mon_S3/XLXI_49/XLXI_78
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.591   0.447  mon_S3/XLXI_49/XLXI_78 (mon_S3/XLXI_49/XLXN_83)
+     INV:I->O              1   0.704   0.420  mon_S3/XLXI_49/XLXI_77 (mon_S3/XLXI_49/XLXN_84)
+     FD:D                      0.308          mon_S3/XLXI_49/XLXI_78
+    ----------------------------------------
+    Total                      2.470ns (1.603ns logic, 0.867ns route)
+                                       (64.9% logic, 35.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mon_S3/XLXN_79'
+  Clock period: 3.313ns (frequency: 301.884MHz)
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Delay:               3.313ns (Levels of Logic = 1)
+  Source:            mon_S3/XLXI_50/XLXI_1/BaculeD_0 (FF)
+  Destination:       mon_S3/XLXI_50/XLXI_1/BaculeD_0 (FF)
+  Source Clock:      mon_S3/XLXN_79 rising
+  Destination Clock: mon_S3/XLXN_79 rising
+
+  Data Path: mon_S3/XLXI_50/XLXI_1/BaculeD_0 to mon_S3/XLXI_50/XLXI_1/BaculeD_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              33   0.591   1.263  mon_S3/XLXI_50/XLXI_1/BaculeD_0 (mon_S3/XLXI_50/XLXN_19<0>)
+     INV:I->O              2   0.704   0.447  mon_S3/XLXI_50/XLXI_1/XLXI_3 (mon_S3/XLXI_50/XLXI_1/XLXN_2)
+     FD:D                      0.308          mon_S3/XLXI_50/XLXI_1/BaculeD_0
+    ----------------------------------------
+    Total                      3.313ns (1.603ns logic, 1.710ns route)
+                                       (48.4% logic, 51.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mon_S3/XLXI_49/XLXN_83'
+  Clock period: 2.470ns (frequency: 404.858MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.470ns (Levels of Logic = 1)
+  Source:            mon_S3/XLXI_49/XLXI_82 (FF)
+  Destination:       mon_S3/XLXI_49/XLXI_82 (FF)
+  Source Clock:      mon_S3/XLXI_49/XLXN_83 rising
+  Destination Clock: mon_S3/XLXI_49/XLXN_83 rising
+
+  Data Path: mon_S3/XLXI_49/XLXI_82 to mon_S3/XLXI_49/XLXI_82
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.591   0.447  mon_S3/XLXI_49/XLXI_82 (mon_S3/XLXI_49/XLXN_87)
+     INV:I->O              1   0.704   0.420  mon_S3/XLXI_49/XLXI_81 (mon_S3/XLXI_49/XLXN_88)
+     FD:D                      0.308          mon_S3/XLXI_49/XLXI_82
+    ----------------------------------------
+    Total                      2.470ns (1.603ns logic, 0.867ns route)
+                                       (64.9% logic, 35.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mon_S3/XLXI_49/xyx'
+  Clock period: 2.470ns (frequency: 404.858MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.470ns (Levels of Logic = 1)
+  Source:            mon_S3/XLXI_49/XLXI_84 (FF)
+  Destination:       mon_S3/XLXI_49/XLXI_84 (FF)
+  Source Clock:      mon_S3/XLXI_49/xyx rising
+  Destination Clock: mon_S3/XLXI_49/xyx rising
+
+  Data Path: mon_S3/XLXI_49/XLXI_84 to mon_S3/XLXI_49/XLXI_84
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.591   0.447  mon_S3/XLXI_49/XLXI_84 (mon_S3/XLXI_49/XLXN_89)
+     INV:I->O              1   0.704   0.420  mon_S3/XLXI_49/XLXI_83 (mon_S3/XLXI_49/XLXN_90)
+     FD:D                      0.308          mon_S3/XLXI_49/XLXI_84
+    ----------------------------------------
+    Total                      2.470ns (1.603ns logic, 0.867ns route)
+                                       (64.9% logic, 35.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mon_S3/XLXI_49/XLXN_87'
+  Clock period: 2.470ns (frequency: 404.858MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.470ns (Levels of Logic = 1)
+  Source:            mon_S3/XLXI_49/XLXI_86 (FF)
+  Destination:       mon_S3/XLXI_49/XLXI_86 (FF)
+  Source Clock:      mon_S3/XLXI_49/XLXN_87 rising
+  Destination Clock: mon_S3/XLXI_49/XLXN_87 rising
+
+  Data Path: mon_S3/XLXI_49/XLXI_86 to mon_S3/XLXI_49/XLXI_86
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.591   0.447  mon_S3/XLXI_49/XLXI_86 (mon_S3/XLXI_49/xyx)
+     INV:I->O              1   0.704   0.420  mon_S3/XLXI_49/XLXI_85 (mon_S3/XLXI_49/XLXN_92)
+     FD:D                      0.308          mon_S3/XLXI_49/XLXI_86
+    ----------------------------------------
+    Total                      2.470ns (1.603ns logic, 0.867ns route)
+                                       (64.9% logic, 35.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mon_S3/XLXI_49/XLXN_95'
+  Clock period: 2.470ns (frequency: 404.858MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.470ns (Levels of Logic = 1)
+  Source:            mon_S3/XLXI_49/XLXI_88 (FF)
+  Destination:       mon_S3/XLXI_49/XLXI_88 (FF)
+  Source Clock:      mon_S3/XLXI_49/XLXN_95 rising
+  Destination Clock: mon_S3/XLXI_49/XLXN_95 rising
+
+  Data Path: mon_S3/XLXI_49/XLXI_88 to mon_S3/XLXI_49/XLXI_88
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.591   0.447  mon_S3/XLXI_49/XLXI_88 (mon_S3/XLXI_49/XLXN_93)
+     INV:I->O              1   0.704   0.420  mon_S3/XLXI_49/XLXI_87 (mon_S3/XLXI_49/XLXN_94)
+     FD:D                      0.308          mon_S3/XLXI_49/XLXI_88
+    ----------------------------------------
+    Total                      2.470ns (1.603ns logic, 0.867ns route)
+                                       (64.9% logic, 35.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mon_S3/XLXI_49/XLXN_89'
+  Clock period: 2.470ns (frequency: 404.858MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.470ns (Levels of Logic = 1)
+  Source:            mon_S3/XLXI_49/XLXI_90 (FF)
+  Destination:       mon_S3/XLXI_49/XLXI_90 (FF)
+  Source Clock:      mon_S3/XLXI_49/XLXN_89 rising
+  Destination Clock: mon_S3/XLXI_49/XLXN_89 rising
+
+  Data Path: mon_S3/XLXI_49/XLXI_90 to mon_S3/XLXI_49/XLXI_90
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.591   0.447  mon_S3/XLXI_49/XLXI_90 (mon_S3/XLXI_49/XLXN_95)
+     INV:I->O              1   0.704   0.420  mon_S3/XLXI_49/XLXI_89 (mon_S3/XLXI_49/XLXN_96)
+     FD:D                      0.308          mon_S3/XLXI_49/XLXI_90
+    ----------------------------------------
+    Total                      2.470ns (1.603ns logic, 0.867ns route)
+                                       (64.9% logic, 35.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mon_S3/XLXI_49/clksec_DUMMY'
+  Clock period: 2.470ns (frequency: 404.858MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.470ns (Levels of Logic = 1)
+  Source:            mon_S3/XLXI_49/XLXI_92 (FF)
+  Destination:       mon_S3/XLXI_49/XLXI_92 (FF)
+  Source Clock:      mon_S3/XLXI_49/clksec_DUMMY rising
+  Destination Clock: mon_S3/XLXI_49/clksec_DUMMY rising
+
+  Data Path: mon_S3/XLXI_49/XLXI_92 to mon_S3/XLXI_49/XLXI_92
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.591   0.447  mon_S3/XLXI_49/XLXI_92 (mon_S3/XLXI_49/XLXN_97)
+     INV:I->O              1   0.704   0.420  mon_S3/XLXI_49/XLXI_91 (mon_S3/XLXI_49/XLXN_98)
+     FD:D                      0.308          mon_S3/XLXI_49/XLXI_92
+    ----------------------------------------
+    Total                      2.470ns (1.603ns logic, 0.867ns route)
+                                       (64.9% logic, 35.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mon_S3/XLXI_49/XLXN_93'
+  Clock period: 2.470ns (frequency: 404.858MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.470ns (Levels of Logic = 1)
+  Source:            mon_S3/XLXI_49/XLXI_94 (FF)
+  Destination:       mon_S3/XLXI_49/XLXI_94 (FF)
+  Source Clock:      mon_S3/XLXI_49/XLXN_93 rising
+  Destination Clock: mon_S3/XLXI_49/XLXN_93 rising
+
+  Data Path: mon_S3/XLXI_49/XLXI_94 to mon_S3/XLXI_49/XLXI_94
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.591   0.447  mon_S3/XLXI_49/XLXI_94 (mon_S3/XLXI_49/clksec_DUMMY)
+     INV:I->O              1   0.704   0.420  mon_S3/XLXI_49/XLXI_93 (mon_S3/XLXI_49/XLXN_100)
+     FD:D                      0.308          mon_S3/XLXI_49/XLXI_94
+    ----------------------------------------
+    Total                      2.470ns (1.603ns logic, 0.867ns route)
+                                       (64.9% logic, 35.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mon_S3/XLXI_49/XLXN_97'
+  Clock period: 2.443ns (frequency: 409.333MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.443ns (Levels of Logic = 1)
+  Source:            mon_S3/XLXI_49/XLXI_96 (FF)
+  Destination:       mon_S3/XLXI_49/XLXI_96 (FF)
+  Source Clock:      mon_S3/XLXI_49/XLXN_97 rising
+  Destination Clock: mon_S3/XLXI_49/XLXN_97 rising
+
+  Data Path: mon_S3/XLXI_49/XLXI_96 to mon_S3/XLXI_49/XLXI_96
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.591   0.420  mon_S3/XLXI_49/XLXI_96 (mon_S3/XLXI_49/xxx)
+     INV:I->O              1   0.704   0.420  mon_S3/XLXI_49/XLXI_95 (mon_S3/XLXI_49/XLXN_102)
+     FD:D                      0.308          mon_S3/XLXI_49/XLXI_96
+    ----------------------------------------
+    Total                      2.443ns (1.603ns logic, 0.840ns route)
+                                       (65.6% logic, 34.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mon_S3/XLXI_50/XLXN_19<0>'
+  Clock period: 2.843ns (frequency: 351.741MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.843ns (Levels of Logic = 1)
+  Source:            mon_S3/XLXI_50/XLXI_1/BaculeD_1 (FF)
+  Destination:       mon_S3/XLXI_50/XLXI_1/BaculeD_1 (FF)
+  Source Clock:      mon_S3/XLXI_50/XLXN_19<0> falling
+  Destination Clock: mon_S3/XLXI_50/XLXN_19<0> falling
+
+  Data Path: mon_S3/XLXI_50/XLXI_1/BaculeD_1 to mon_S3/XLXI_50/XLXI_1/BaculeD_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               9   0.591   0.820  mon_S3/XLXI_50/XLXI_1/BaculeD_1 (mon_S3/XLXI_50/XLXN_19<1>)
+     INV:I->O              1   0.704   0.420  mon_S3/XLXI_50/XLXI_1/XLXI_13 (mon_S3/XLXI_50/XLXI_1/XLXN_13)
+     FD:D                      0.308          mon_S3/XLXI_50/XLXI_1/BaculeD_1
+    ----------------------------------------
+    Total                      2.843ns (1.603ns logic, 1.240ns route)
+                                       (56.4% logic, 43.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              1.946ns (Levels of Logic = 3)
+  Source:            switches<0> (PAD)
+  Destination:       mon_S3/Rsw/I_Q0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: switches<0> to mon_S3/Rsw/I_Q0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     begin scope: 'XLXI_3'
+     IBUF:I->O             1   1.218   0.420  I_36_37 (O<0>)
+     end scope: 'XLXI_3'
+     begin scope: 'mon_S3/Rsw'
+     FDCE:D                    0.308          I_Q0
+    ----------------------------------------
+    Total                      1.946ns (1.526ns logic, 0.420ns route)
+                                       (78.4% logic, 21.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'mon_S3/XLXI_50/XLXN_19<0>'
+  Total number of paths / destination ports: 32 / 11
+-------------------------------------------------------------------------
+Offset:              7.429ns (Levels of Logic = 4)
+  Source:            mon_S3/XLXI_50/XLXI_1/BaculeD_1 (FF)
+  Destination:       sevenseg<6> (PAD)
+  Source Clock:      mon_S3/XLXI_50/XLXN_19<0> falling
+
+  Data Path: mon_S3/XLXI_50/XLXI_1/BaculeD_1 to sevenseg<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               9   0.591   0.820  mon_S3/XLXI_50/XLXI_1/BaculeD_1 (mon_S3/XLXI_50/XLXN_19<1>)
+     begin scope: 'mon_S3/XLXI_50/mux_data/XLXI_4'
+     MUXF5:S->O            7   0.739   0.883  I_O (O)
+     end scope: 'mon_S3/XLXI_50/mux_data/XLXI_4'
+     LUT4:I0->O            1   0.704   0.420  mon_S3/XLXI_50/XLXI_10/Mrom_sevenseg31 (sevenseg_3_OBUF)
+     OBUF:I->O                 3.272          sevenseg_3_OBUF (sevenseg<3>)
+    ----------------------------------------
+    Total                      7.429ns (5.306ns logic, 2.123ns route)
+                                       (71.4% logic, 28.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'mon_S3/XLXN_79'
+  Total number of paths / destination ports: 128 / 11
+-------------------------------------------------------------------------
+Offset:              9.282ns (Levels of Logic = 7)
+  Source:            mon_S3/XLXI_50/XLXI_1/BaculeD_0 (FF)
+  Destination:       sevenseg<6> (PAD)
+  Source Clock:      mon_S3/XLXN_79 rising
+
+  Data Path: mon_S3/XLXI_50/XLXI_1/BaculeD_0 to sevenseg<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              33   0.591   1.263  mon_S3/XLXI_50/XLXI_1/BaculeD_0 (mon_S3/XLXI_50/XLXN_19<0>)
+     begin scope: 'mon_S3/XLXI_50/mux_data/XLXI_4'
+     begin scope: 'I_M23'
+     AND3:I2->O            1   0.704   0.420  I_36_30 (M1)
+     OR2:I0->O             1   0.704   0.000  I_36_38 (O)
+     end scope: 'I_M23'
+     MUXF5:I1->O           7   0.321   0.883  I_O (O)
+     end scope: 'mon_S3/XLXI_50/mux_data/XLXI_4'
+     LUT4:I0->O            1   0.704   0.420  mon_S3/XLXI_50/XLXI_10/Mrom_sevenseg31 (sevenseg_3_OBUF)
+     OBUF:I->O                 3.272          sevenseg_3_OBUF (sevenseg<3>)
+    ----------------------------------------
+    Total                      9.282ns (6.296ns logic, 2.986ns route)
+                                       (67.8% logic, 32.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 120 / 15
+-------------------------------------------------------------------------
+Offset:              8.466ns (Levels of Logic = 8)
+  Source:            mon_S3/R7seg/I_Q5 (FF)
+  Destination:       sevenseg<6> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: mon_S3/R7seg/I_Q5 to sevenseg<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.591   0.447  I_Q5 (Q<5>)
+     end scope: 'mon_S3/R7seg'
+     begin scope: 'mon_S3/XLXI_50/mux_data/XLXI_3'
+     begin scope: 'I_M01'
+     AND3:I0->O            1   0.704   0.420  I_36_30 (M1)
+     OR2:I0->O             1   0.704   0.000  I_36_38 (O)
+     end scope: 'I_M01'
+     MUXF5:I0->O           7   0.321   0.883  I_O (O)
+     end scope: 'mon_S3/XLXI_50/mux_data/XLXI_3'
+     LUT4:I0->O            1   0.704   0.420  mon_S3/XLXI_50/XLXI_10/Mrom_sevenseg21 (sevenseg_2_OBUF)
+     OBUF:I->O                 3.272          sevenseg_2_OBUF (sevenseg<2>)
+    ----------------------------------------
+    Total                      8.466ns (6.296ns logic, 2.170ns route)
+                                       (74.4% logic, 25.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 3.94 secs
+ 
+--> 
+
+
+Total memory usage is 163316 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   34 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

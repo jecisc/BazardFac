@@ -1,0 +1,3 @@
+sch2sym -intstyle ise -family spartan3e -refsym S3 /home/l2/ferlicotdelbe/tp/ARCHI/tp7/S3.sch /home/l2/ferlicotdelbe/tp/ARCHI/tp7/S3.sym 
+sch2sym -intstyle ise -family spartan3e -refsym S3 /home/l2/ferlicotdelbe/tp/ARCHI/tp7/S3.sch /home/l2/ferlicotdelbe/tp/ARCHI/tp7/S3.sym 
+sch2sym -intstyle ise -family spartan3e -refsym S3 /home/l2/ferlicotdelbe/tp/ARCHI/tp7/S3.sch /home/l2/ferlicotdelbe/tp/ARCHI/tp7/S3.sym 

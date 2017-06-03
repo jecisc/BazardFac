@@ -1,0 +1,432 @@
+Release 12.4 par M.81d (lin)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+115p10::  Mon Oct 21 11:37:49 2013
+
+par -w -intstyle ise -ol high -t 1 toplevel_map.ncd toplevel.ncd toplevel.pcf 
+
+
+Constraints file: toplevel.pcf.
+Loading device for application Rf_Device from file '3s1200e.nph' in environment /usr/local/Xilinx/12.4/ISE_DS/ISE/.
+   "toplevel" is an NCD, version 3.2, device xc3s1200e, package fg320, speed -4
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+INFO:Security:54 - 'xc3s1200e' is a WebPack part.
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue
+to function, but you no longer qualify for Xilinx software updates or new releases.
+
+----------------------------------------------------------------------
+
+Initializing temperature to 85.000 Celsius. (default - Range: -40.000 to 100.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.320 Volts)
+
+INFO:Par:282 - No user timing constraints were detected or you have set the option to ignore timing constraints ("par
+   -x"). Place and Route will run in "Performance Evaluation Mode" to automatically improve the performance of all
+   internal clocks in this design. Because there are not defined timing requirements, a timing score will not be
+   reported in the PAR report in this mode. The PAR timing summary will list the performance achieved for each clock.
+   Note: For the fastest runtime, set the effort level to "std".  For best performance, set the effort level to "high".
+
+Device speed data version:  "PRODUCTION 1.27 2010-11-18".
+
+
+Design Summary Report:
+
+ Number of External IOBs                          10 out of 250     4%
+
+   Number of External Input IOBs                  2
+
+      Number of External Input IBUFs              2
+        Number of LOCed External Input IBUFs      1 out of 2      50%
+
+
+   Number of External Output IOBs                 8
+
+      Number of External Output IOBs              8
+        Number of LOCed External Output IOBs      2 out of 8      25%
+
+
+   Number of External Bidir IOBs                  0
+
+
+   Number of BUFGMUXs                        1 out of 24      4%
+   Number of Slices                         34 out of 8672    1%
+      Number of SLICEMs                      0 out of 4336    0%
+
+
+
+Overall effort level (-ol):   High 
+Placer effort level (-pl):    High 
+Placer cost table entry (-t): 1
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 1 secs 
+Finished initial Timing Analysis.  REAL time: 1 secs 
+
+
+Starting Placer
+Total REAL time at the beginning of Placer: 1 secs 
+Total CPU  time at the beginning of Placer: 1 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:d0fa055b) REAL time: 1 secs 
+
+Phase 2.7  Design Feasibility Check
+WARNING:Place:837 - Partially locked IO Bus is found. 
+    Following components of the bus are not locked: 
+   	 Comp: Led<7>
+   	 Comp: Led<6>
+   	 Comp: Led<5>
+   	 Comp: Led<4>
+   	 Comp: Led<3>
+   	 Comp: Led<2>
+
+INFO:Place:834 - Only a subset of IOs are locked. Out of 8 IOs, 2 are locked and 6 are not locked. If you would like to
+   print the names of these IOs, please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
+Phase 2.7  Design Feasibility Check (Checksum:d0fa055b) REAL time: 1 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:d0fa055b) REAL time: 1 secs 
+
+Phase 4.2  Initial Clock and IO Placement
+.......
+Phase 4.2  Initial Clock and IO Placement (Checksum:f133ee3b) REAL time: 1 secs 
+
+Phase 5.30  Global Clock Region Assignment
+Phase 5.30  Global Clock Region Assignment (Checksum:f133ee3b) REAL time: 1 secs 
+
+Phase 6.36  Local Placement Optimization
+Phase 6.36  Local Placement Optimization (Checksum:f133ee3b) REAL time: 1 secs 
+
+Phase 7.3  Local Placement Optimization
+......
+Phase 7.3  Local Placement Optimization (Checksum:1ec0606a) REAL time: 2 secs 
+
+Phase 8.5  Local Placement Optimization
+Phase 8.5  Local Placement Optimization (Checksum:1ec0606a) REAL time: 2 secs 
+
+Phase 9.8  Global Placement
+..
+Phase 9.8  Global Placement (Checksum:3bc77f5e) REAL time: 8 secs 
+
+Phase 10.5  Local Placement Optimization
+Phase 10.5  Local Placement Optimization (Checksum:3bc77f5e) REAL time: 8 secs 
+
+Phase 11.18  Placement Optimization
+Phase 11.18  Placement Optimization (Checksum:d7c8e11) REAL time: 8 secs 
+
+Phase 12.5  Local Placement Optimization
+Phase 12.5  Local Placement Optimization (Checksum:d7c8e11) REAL time: 8 secs 
+
+Total REAL time to Placer completion: 8 secs 
+Total CPU  time to Placer completion: 8 secs 
+Writing design to file toplevel.ncd
+
+
+
+Starting Router
+
+
+Phase  1  : 88 unrouted;      REAL time: 15 secs 
+
+Phase  2  : 79 unrouted;      REAL time: 15 secs 
+
+Phase  3  : 0 unrouted;      REAL time: 15 secs 
+
+Phase  4  : 2 unrouted; (Par is working to improve performance)     REAL time: 16 secs 
+
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 16 secs 
+
+Updating file: toplevel.ncd with current fully routed design.
+
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 17 secs 
+
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 18 secs 
+
+Updating file: toplevel.ncd with current fully routed design.
+
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 18 secs 
+
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 18 secs 
+
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 18 secs 
+
+Phase 11  : 0 unrouted; (Par is working to improve performance)     REAL time: 18 secs 
+
+Phase 12  : 0 unrouted; (Par is working to improve performance)     REAL time: 18 secs 
+WARNING:Route:455 - CLK Net:XLXI_1/XLXN_3 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_1/XLXN_68 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXN_1 may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_1/XLXN_71 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_1/XLXN_115 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_1/XLXN_152 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_1/XLXN_119 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_1/XLXN_123 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_1/XLXN_124 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_1/XLXN_154 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_1/XLXN_118 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_1/XLXN_156 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_1/XLXN_16 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_1/XLXN_18 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_1/XLXN_45 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_1/XLXN_46 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_1/XLXN_54 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_1/XLXN_55 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_1/clk190_DUMMY may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_1/XLXN_51 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_1/XLXN_61 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_1/XLXN_69 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_1/XLXN_65 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_1/XLXN_60 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_1/XLXN_63 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_1/XLXN_1 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+
+Total REAL time to Router completion: 18 secs 
+Total CPU time to Router completion: 18 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|           clk_BUFGP | BUFGMUX_X2Y11| No   |    1 |  0.000     |  0.286      |
++---------------------+--------------+------+------+------------+-------------+
+|              XLXN_1 |         Local|      |    9 |  0.023     |  0.758      |
++---------------------+--------------+------+------+------------+-------------+
+|     XLXI_1/XLXN_115 |         Local|      |    2 |  0.000     |  2.164      |
++---------------------+--------------+------+------+------------+-------------+
+|     XLXI_1/XLXN_152 |         Local|      |    2 |  0.000     |  2.512      |
++---------------------+--------------+------+------+------------+-------------+
+|     XLXI_1/XLXN_119 |         Local|      |    2 |  0.000     |  1.305      |
++---------------------+--------------+------+------+------------+-------------+
+|     XLXI_1/XLXN_123 |         Local|      |    2 |  0.000     |  1.827      |
++---------------------+--------------+------+------+------------+-------------+
+|     XLXI_1/XLXN_124 |         Local|      |    2 |  0.000     |  1.318      |
++---------------------+--------------+------+------+------------+-------------+
+|     XLXI_1/XLXN_154 |         Local|      |    2 |  0.000     |  0.941      |
++---------------------+--------------+------+------+------------+-------------+
+|     XLXI_1/XLXN_118 |         Local|      |    2 |  0.000     |  0.939      |
++---------------------+--------------+------+------+------------+-------------+
+|     XLXI_1/XLXN_156 |         Local|      |    2 |  0.000     |  0.941      |
++---------------------+--------------+------+------+------------+-------------+
+|      XLXI_1/XLXN_16 |         Local|      |    2 |  0.000     |  0.943      |
++---------------------+--------------+------+------+------------+-------------+
+|       XLXI_1/XLXN_3 |         Local|      |    2 |  0.000     |  1.209      |
++---------------------+--------------+------+------+------------+-------------+
+|      XLXI_1/XLXN_18 |         Local|      |    2 |  0.000     |  0.941      |
++---------------------+--------------+------+------+------------+-------------+
+|      XLXI_1/XLXN_45 |         Local|      |    2 |  0.000     |  0.731      |
++---------------------+--------------+------+------+------------+-------------+
+|      XLXI_1/XLXN_46 |         Local|      |    2 |  0.000     |  0.941      |
++---------------------+--------------+------+------+------------+-------------+
+|      XLXI_1/XLXN_54 |         Local|      |    2 |  0.000     |  0.939      |
++---------------------+--------------+------+------+------------+-------------+
+|      XLXI_1/XLXN_55 |         Local|      |    2 |  0.000     |  0.939      |
++---------------------+--------------+------+------+------------+-------------+
+| XLXI_1/clk190_DUMMY |         Local|      |    2 |  0.000     |  0.943      |
++---------------------+--------------+------+------+------------+-------------+
+|      XLXI_1/XLXN_51 |         Local|      |    2 |  0.000     |  1.244      |
++---------------------+--------------+------+------+------------+-------------+
+|      XLXI_1/XLXN_61 |         Local|      |    2 |  0.000     |  0.673      |
++---------------------+--------------+------+------+------------+-------------+
+|      XLXI_1/XLXN_69 |         Local|      |    2 |  0.000     |  1.541      |
++---------------------+--------------+------+------+------------+-------------+
+|      XLXI_1/XLXN_65 |         Local|      |    2 |  0.000     |  0.941      |
++---------------------+--------------+------+------+------------+-------------+
+|      XLXI_1/XLXN_60 |         Local|      |    2 |  0.000     |  0.941      |
++---------------------+--------------+------+------+------------+-------------+
+|      XLXI_1/XLXN_68 |         Local|      |    2 |  0.000     |  0.940      |
++---------------------+--------------+------+------+------------+-------------+
+|      XLXI_1/XLXN_63 |         Local|      |    2 |  0.000     |  1.219      |
++---------------------+--------------+------+------+------------+-------------+
+|      XLXI_1/XLXN_71 |         Local|      |    2 |  0.000     |  0.965      |
++---------------------+--------------+------+------+------------+-------------+
+|       XLXI_1/XLXN_1 |         Local|      |    2 |  0.000     |  1.525      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+Timing Score: 0 (Setup: 0, Hold: 0)
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     1.514ns|     N/A|           0
+  _BUFGP                                    | HOLD        |     1.058ns|            |       0|           0
+                                            | MINPERIOD   |         N/A|     1.596ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.607ns|     N/A|           0
+  N_1                                       | HOLD        |     1.101ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.511ns|     N/A|           0
+  I_1/XLXN_115                              | HOLD        |     1.055ns|            |       0|           0
+                                            | MINPERIOD   |         N/A|     1.652ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.422ns|     N/A|           0
+  I_1/XLXN_152                              | HOLD        |     0.984ns|            |       0|           0
+                                            | MINPERIOD   |         N/A|     1.596ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.474ns|     N/A|           0
+  I_1/XLXN_119                              | HOLD        |     1.026ns|            |       0|           0
+                                            | MINPERIOD   |         N/A|     1.596ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.560ns|     N/A|           0
+  I_1/XLXN_123                              | HOLD        |     1.094ns|            |       0|           0
+                                            | MINPERIOD   |         N/A|     1.652ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.511ns|     N/A|           0
+  I_1/XLXN_124                              | HOLD        |     1.055ns|            |       0|           0
+                                            | MINPERIOD   |         N/A|     1.652ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.474ns|     N/A|           0
+  I_1/XLXN_154                              | HOLD        |     1.025ns|            |       0|           0
+                                            | MINPERIOD   |         N/A|     1.596ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.474ns|     N/A|           0
+  I_1/XLXN_118                              | HOLD        |     1.025ns|            |       0|           0
+                                            | MINPERIOD   |         N/A|     1.596ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.560ns|     N/A|           0
+  I_1/XLXN_156                              | HOLD        |     1.094ns|            |       0|           0
+                                            | MINPERIOD   |         N/A|     1.652ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.474ns|     N/A|           0
+  I_1/XLXN_16                               | HOLD        |     1.025ns|            |       0|           0
+                                            | MINPERIOD   |         N/A|     1.596ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.560ns|     N/A|           0
+  I_1/XLXN_3                                | HOLD        |     1.094ns|            |       0|           0
+                                            | MINPERIOD   |         N/A|     1.652ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.560ns|     N/A|           0
+  I_1/XLXN_18                               | HOLD        |     1.094ns|            |       0|           0
+                                            | MINPERIOD   |         N/A|     1.652ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.560ns|     N/A|           0
+  I_1/XLXN_45                               | HOLD        |     1.094ns|            |       0|           0
+                                            | MINPERIOD   |         N/A|     1.652ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.474ns|     N/A|           0
+  I_1/XLXN_46                               | HOLD        |     1.025ns|            |       0|           0
+                                            | MINPERIOD   |         N/A|     1.596ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.474ns|     N/A|           0
+  I_1/XLXN_54                               | HOLD        |     1.025ns|            |       0|           0
+                                            | MINPERIOD   |         N/A|     1.596ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.474ns|     N/A|           0
+  I_1/XLXN_55                               | HOLD        |     1.025ns|            |       0|           0
+                                            | MINPERIOD   |         N/A|     1.596ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.560ns|     N/A|           0
+  I_1/clk190_DUMMY                          | HOLD        |     1.094ns|            |       0|           0
+                                            | MINPERIOD   |         N/A|     1.652ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.474ns|     N/A|           0
+  I_1/XLXN_51                               | HOLD        |     1.026ns|            |       0|           0
+                                            | MINPERIOD   |         N/A|     1.596ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.560ns|     N/A|           0
+  I_1/XLXN_61                               | HOLD        |     1.094ns|            |       0|           0
+                                            | MINPERIOD   |         N/A|     1.652ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.476ns|     N/A|           0
+  I_1/XLXN_69                               | HOLD        |     1.028ns|            |       0|           0
+                                            | MINPERIOD   |         N/A|     1.596ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.474ns|     N/A|           0
+  I_1/XLXN_65                               | HOLD        |     1.025ns|            |       0|           0
+                                            | MINPERIOD   |         N/A|     1.596ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.560ns|     N/A|           0
+  I_1/XLXN_60                               | HOLD        |     1.094ns|            |       0|           0
+                                            | MINPERIOD   |         N/A|     1.652ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.531ns|     N/A|           0
+  I_1/XLXN_68                               | HOLD        |     1.072ns|            |       0|           0
+                                            | MINPERIOD   |         N/A|     1.652ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.474ns|     N/A|           0
+  I_1/XLXN_63                               | HOLD        |     1.025ns|            |       0|           0
+                                            | MINPERIOD   |         N/A|     1.596ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.640ns|     N/A|           0
+  I_1/XLXN_71                               | HOLD        |     1.159ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.514ns|     N/A|           0
+  I_1/XLXN_1                                | HOLD        |     1.057ns|            |       0|           0
+                                            | MINPERIOD   |         N/A|     1.596ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 20 secs 
+Total CPU time to PAR completion: 18 secs 
+
+Peak Memory Usage:  158 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 27
+Number of info messages: 2
+
+Writing design to file toplevel.ncd
+
+
+
+PAR done!

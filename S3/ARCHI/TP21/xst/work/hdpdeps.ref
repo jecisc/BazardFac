@@ -1,0 +1,34 @@
+V3 19
+FL /home/l2/ferlicotdelbe/tp/ARCHI/circuit1.vhf 2013/09/30.11:14:18 M.81d
+EN work/circuit1 1380532714 FL /home/l2/ferlicotdelbe/tp/ARCHI/circuit1.vhf \
+      PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
+      PH unisim/VCOMPONENTS 1290154108
+AR work/circuit1/BEHAVIORAL 1380532715 \
+      FL /home/l2/ferlicotdelbe/tp/ARCHI/circuit1.vhf EN work/circuit1 1380532714 \
+      CP INV CP NAND2
+FL /home/l2/ferlicotdelbe/tp/ARCHI/circuit2.vhf 2013/09/30.11:14:18 M.81d
+EN work/circuit2 1380532716 FL /home/l2/ferlicotdelbe/tp/ARCHI/circuit2.vhf \
+      PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
+      PH unisim/VCOMPONENTS 1290154108
+AR work/circuit2/BEHAVIORAL 1380532717 \
+      FL /home/l2/ferlicotdelbe/tp/ARCHI/circuit2.vhf EN work/circuit2 1380532716 \
+      CP INV CP NOR2
+FL /home/l2/ferlicotdelbe/tp/ARCHI/toplevel.vhf 2013/09/30.11:14:18 M.81d
+EN work/circuit2_MUSER_toplevel 1380532708 \
+      FL /home/l2/ferlicotdelbe/tp/ARCHI/toplevel.vhf PB ieee/std_logic_1164 1290154108 \
+      PB ieee/NUMERIC_STD 1290154109 LB UNISIM PH unisim/VCOMPONENTS 1290154108
+AR work/circuit2_MUSER_toplevel/BEHAVIORAL 1380532709 \
+      FL /home/l2/ferlicotdelbe/tp/ARCHI/toplevel.vhf \
+      EN work/circuit2_MUSER_toplevel 1380532708 CP INV CP NOR2
+EN work/circuit1_MUSER_toplevel 1380532710 \
+      FL /home/l2/ferlicotdelbe/tp/ARCHI/toplevel.vhf PB ieee/std_logic_1164 1290154108 \
+      PB ieee/NUMERIC_STD 1290154109 LB UNISIM PH unisim/VCOMPONENTS 1290154108
+AR work/circuit1_MUSER_toplevel/BEHAVIORAL 1380532711 \
+      FL /home/l2/ferlicotdelbe/tp/ARCHI/toplevel.vhf \
+      EN work/circuit1_MUSER_toplevel 1380532710 CP INV CP NAND2
+EN work/toplevel 1380532712 \
+      FL /home/l2/ferlicotdelbe/tp/ARCHI/toplevel.vhf PB ieee/std_logic_1164 1290154108 \
+      PB ieee/NUMERIC_STD 1290154109 LB UNISIM PH unisim/VCOMPONENTS 1290154108
+AR work/toplevel/BEHAVIORAL 1380532713 \
+      FL /home/l2/ferlicotdelbe/tp/ARCHI/toplevel.vhf EN work/toplevel 1380532712 \
+      CP circuit1_MUSER_toplevel CP circuit2_MUSER_toplevel

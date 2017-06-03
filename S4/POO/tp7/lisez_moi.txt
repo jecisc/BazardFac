@@ -1,0 +1,6 @@
+Ferlicot-Delbecque
+
+Le Tp est fini.
+Le make compile, crée la doc, compile et lance les test et lance MainImage.
+Il y a également une commande "runExempleImage" pour tester ExempleImage.
+Il y a une commande "jar" cependant l'archive créée ne marche pas.

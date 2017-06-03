@@ -1,0 +1,59 @@
+Running: /usr/local/Xilinx/12.4/ISE_DS/ISE/bin/lin/unwrapped/fuse -intstyle ise -incremental -o /home/l2/ferlicotdelbe/tp/ARCHI/tp6/toplevel_toplevel_sch_tb_isim_beh.exe -prj /home/l2/ferlicotdelbe/tp/ARCHI/tp6/toplevel_toplevel_sch_tb_beh.prj work.toplevel_toplevel_sch_tb 
+ISim M.81d (signature 0x141a37e9)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/l2/ferlicotdelbe/tp/ARCHI/tp6/x7seg.vhd" into library work
+Parsing VHDL file "/home/l2/ferlicotdelbe/tp/ARCHI/tp6/mux4x4.vhf" into library work
+Parsing VHDL file "/home/l2/ferlicotdelbe/tp/ARCHI/tp6/connecteur.vhf" into library work
+Parsing VHDL file "/home/l2/ferlicotdelbe/tp/ARCHI/tp6/compteur4.vhf" into library work
+Parsing VHDL file "/home/l2/ferlicotdelbe/tp/ARCHI/tp6/connect16.vhf" into library work
+Parsing VHDL file "/home/l2/ferlicotdelbe/tp/ARCHI/tp6/clkdiv.vhf" into library work
+Parsing VHDL file "/home/l2/ferlicotdelbe/tp/ARCHI/tp6/afficheur16.vhf" into library work
+Parsing VHDL file "/home/l2/ferlicotdelbe/tp/ARCHI/tp6/S3.vhf" into library work
+Parsing VHDL file "/home/l2/ferlicotdelbe/tp/ARCHI/tp6/toplevel.vhf" into library work
+Parsing VHDL file "/home/l2/ferlicotdelbe/tp/ARCHI/tp6/toplevel_tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 37832 KB
+Fuse CPU Usage: 350 ms
+Using precompiled package standard from library std
+Using precompiled package std_logic_1164 from library ieee
+Using precompiled package numeric_std from library ieee
+Using precompiled package textio from library std
+Using precompiled package vital_timing from library ieee
+Compiling package vcomponents
+Compiling architecture fdce_v of entity fdce [\FDCE('0')\]
+Compiling architecture behavioral of entity fd16ce_mxilinx_toplevel [fd16ce_mxilinx_toplevel_default]
+Compiling architecture and2_v of entity and2 [and2_default]
+Compiling architecture or2_v of entity or2 [or2_default]
+Compiling architecture behavioral of entity connecteur_muser_toplevel [connecteur_muser_toplevel_defaul...]
+Compiling architecture behavioral of entity connect16_muser_toplevel [connect16_muser_toplevel_default]
+Compiling architecture gnd_v of entity gnd [gnd_default]
+Compiling architecture fd_v of entity fd [\FD('0')\]
+Compiling architecture inv_v of entity inv [inv_default]
+Compiling architecture behavioral of entity clkdiv_muser_toplevel [clkdiv_muser_toplevel_default]
+Compiling architecture and3_v of entity and3 [and3_default]
+Compiling architecture and3b1_v of entity and3b1 [and3b1_default]
+Compiling architecture behavioral of entity m2_1e_mxilinx_afficheur16 [m2_1e_mxilinx_afficheur16_defaul...]
+Compiling architecture muxf5_v of entity muxf5 [muxf5_default]
+Compiling architecture behavioral of entity m4_1e_mxilinx_afficheur16 [m4_1e_mxilinx_afficheur16_defaul...]
+Compiling architecture vcc_v of entity vcc [vcc_default]
+Compiling architecture behavioral of entity mux4x4_muser_afficheur16 [mux4x4_muser_afficheur16_default]
+Compiling architecture behavioral of entity compteur4_muser_afficheur16 [compteur4_muser_afficheur16_defa...]
+Compiling architecture behavioral of entity x7seg [x7seg_default]
+Compiling architecture behavioral of entity afficheur16 [afficheur16_default]
+Compiling architecture behavioral of entity s3_muser_toplevel [s3_muser_toplevel_default]
+Compiling architecture obuf_v of entity obuf [\OBUF("DONT_CARE",12,"DEFAULT","...]
+Compiling architecture behavioral of entity obuf8_mxilinx_toplevel [obuf8_mxilinx_toplevel_default]
+Compiling architecture ibuf_v of entity ibuf [\IBUF("DONT_CARE","0",true,"AUTO...]
+Compiling architecture behavioral of entity ibuf8_mxilinx_toplevel [ibuf8_mxilinx_toplevel_default]
+Compiling architecture behavioral of entity toplevel [toplevel_default]
+Compiling architecture behavioral of entity toplevel_toplevel_sch_tb
+Time Resolution for simulation is 1ps.
+Waiting for 8 sub-compilation(s) to finish...
+Compiled 59 VHDL Units
+Built simulation executable /home/l2/ferlicotdelbe/tp/ARCHI/tp6/toplevel_toplevel_sch_tb_isim_beh.exe
+Fuse Memory Usage: 78836 KB
+Fuse CPU Usage: 420 ms
+GCC CPU Usage: 880 ms

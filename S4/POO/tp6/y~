@@ -1,0 +1,2469 @@
+ferlicotdelbe@a10p26:~/tp/POO/tp5$ cd ../tp6
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make clean
+rm -rf classes/* docs/* test/*.class 
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make clean
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make all
+javadoc -classpath src naval naval.direction -d docs
+Loading source files for package naval...
+src/naval/Case.java:54: error: illegal start of expression
+		    return case.TOUCHE;
+		           ^
+src/naval/Case.java:54: error: illegal start of expression
+		    return case.TOUCHE;
+		               ^
+src/naval/Case.java:55: error: 'else' without 'if'
+		else
+		^
+src/naval/Case.java:56: error: illegal start of expression
+		    return case.BATEAU;
+		           ^
+src/naval/Case.java:56: error: illegal start of expression
+		    return case.BATEAU;
+		               ^
+src/naval/Case.java:59: error: illegal start of expression
+		return case.VIDE;
+		       ^
+src/naval/Case.java:59: error: illegal start of expression
+		return case.VIDE;
+		           ^
+src/naval/Case.java:65: error: illegal start of expression
+		    return case.VIDE;
+		           ^
+src/naval/Case.java:65: error: illegal start of expression
+		    return case.VIDE;
+		               ^
+src/naval/Case.java:66: error: 'else' without 'if'
+		else
+		^
+src/naval/Case.java:67: error: illegal start of expression
+		    return case.TOUCHE;
+		           ^
+src/naval/Case.java:67: error: illegal start of expression
+		    return case.TOUCHE;
+		               ^
+src/naval/Case.java:70: error: illegal start of expression
+		return case.INCONNU;
+		       ^
+src/naval/Case.java:70: error: illegal start of expression
+		return case.INCONNU;
+		           ^
+Loading source files for package naval.direction...
+14 errors
+make: *** [doc] Erreur 1
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make clean
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make all
+javadoc -classpath src naval naval.direction -d docs
+Loading source files for package naval...
+Loading source files for package naval.direction...
+Constructing Javadoc information...
+src/naval/Mer.java:36: error: cannot access Reponse
+    public Reponse vise(Position p)throws ArrayIndexOutOfBoundsException{
+           ^
+  bad source file: src/naval/Reponse.java
+    file does not contain class naval.Reponse
+    Please remove or make sure it appears in the correct subdirectory of the sourcepath.
+1 error
+make: *** [doc] Erreur 1
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make clean
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make all
+javadoc -classpath src naval naval.direction -d docs
+Loading source files for package naval...
+Loading source files for package naval.direction...
+Constructing Javadoc information...
+src/naval/Mer.java:37: error: cannot access Reponse
+    public Reponse vise(Position p){
+           ^
+  bad source file: src/naval/Reponse.java
+    file does not contain class naval.Reponse
+    Please remove or make sure it appears in the correct subdirectory of the sourcepath.
+1 error
+make: *** [doc] Erreur 1
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make clean
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make all
+javadoc -classpath src naval naval.direction -d docs
+Loading source files for package naval...
+Loading source files for package naval.direction...
+Constructing Javadoc information...
+src/naval/Mer.java:37: error: cannot access Reponse
+    public Reponse vise(Position p)throws ArrayIndexOutOfBoundsException{
+           ^
+  bad source file: src/naval/Reponse.java
+    file does not contain class naval.Reponse
+    Please remove or make sure it appears in the correct subdirectory of the sourcepath.
+1 error
+make: *** [doc] Erreur 1
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make clean
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make all
+javadoc -classpath src naval naval.direction -d docs
+Loading source files for package naval...
+Loading source files for package naval.direction...
+Constructing Javadoc information...
+src/naval/Mer.java:37: error: cannot access Reponse
+    public Reponse vise(Position p)throws ArrayIndexOutOfBoundsException{
+           ^
+  bad source file: src/naval/Reponse.java
+    file does not contain class naval.Reponse
+    Please remove or make sure it appears in the correct subdirectory of the sourcepath.
+1 error
+make: *** [doc] Erreur 1
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make clean
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make all
+javadoc -classpath src naval naval.direction -d docs
+Loading source files for package naval...
+Loading source files for package naval.direction...
+Constructing Javadoc information...
+src/naval/Mer.java:37: error: cannot access Reponse
+    public Reponse vise(Position p)throws ArrayIndexOutOfBoundsException{
+           ^
+  bad source file: src/naval/Reponse.java
+    file does not contain class naval.Reponse
+    Please remove or make sure it appears in the correct subdirectory of the sourcepath.
+1 error
+make: *** [doc] Erreur 1
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make clean
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ 
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make all
+javadoc -classpath src naval naval.direction -d docs
+Loading source files for package naval...
+Loading source files for package naval.direction...
+Constructing Javadoc information...
+src/naval/Mer.java:37: error: cannot access Reponse
+    public Reponse vise(Position p)throws ArrayIndexOutOfBoundsException{
+           ^
+  bad source file: src/naval/Reponse.java
+    file does not contain class naval.Reponse
+    Please remove or make sure it appears in the correct subdirectory of the sourcepath.
+1 error
+make: *** [doc] Erreur 1
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make clean
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make all
+javac -classpath classes src/naval/Position.java -d classes
+javac -classpath classes src/naval/Bateau.java -d classes
+javac -classpath classes src/naval/Case.java -d classes
+src/naval/Case.java:52: error: bad operand type Bateau for unary operator '!'
+	    if (!this.bateau == null){ // Il y a un bateau
+	        ^
+1 error
+make: *** [compNaval] Erreur 1
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make clean
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make all
+javadoc -classpath src naval naval.direction -d docs
+Loading source files for package naval...
+Loading source files for package naval.direction...
+Constructing Javadoc information...
+src/naval/Mer.java:37: error: cannot access Reponse
+    public Reponse vise(Position p)throws ArrayIndexOutOfBoundsException{
+           ^
+  bad source file: src/naval/Reponse.java
+    file does not contain class naval.Reponse
+    Please remove or make sure it appears in the correct subdirectory of the sourcepath.
+1 error
+make: *** [doc] Erreur 1
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make clean
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make all
+javadoc -classpath src naval naval.direction -d docs
+Loading source files for package naval...
+Loading source files for package naval.direction...
+Constructing Javadoc information...
+src/naval/Mer.java:38: error: cannot access Reponse
+    public Reponse vise(Position p)throws ArrayIndexOutOfBoundsException{
+           ^
+  bad source file: src/naval/Reponse.java
+    file does not contain class naval.Reponse
+    Please remove or make sure it appears in the correct subdirectory of the sourcepath.
+1 error
+make: *** [doc] Erreur 1
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make clean
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make all
+javac -classpath classes src/naval/Position.java -d classes
+javac -classpath classes src/naval/Bateau.java -d classes
+javac -classpath classes src/naval/Case.java -d classes
+src/naval/Case.java:52: error: bad operand type Bateau for unary operator '!'
+	    if (!this.bateau == null){ // Il y a un bateau
+	        ^
+1 error
+make: *** [compNaval] Erreur 1
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make clean
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make all
+javac -classpath classes src/naval/Position.java -d classes
+javac -classpath classes src/naval/Bateau.java -d classes
+javac -classpath classes src/naval/Case.java -d classes
+javac -classpath classes src/naval/Direction.java -d classes
+javac -classpath classes src/naval/Reponse.java -d classes
+javac -classpath classes src/naval/direction/*.java -d classes
+javac -classpath test.jar test/*.java
+test/MerTest.java:16: error: ')' expected
+	Position unePosition = new Position (2; 2);
+	                                      ^
+test/MerTest.java:16: error: not a statement
+	Position unePosition = new Position (2; 2);
+	                                        ^
+test/MerTest.java:16: error: ';' expected
+	Position unePosition = new Position (2; 2);
+	                                         ^
+3 errors
+make: *** [tst] Erreur 1
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make clean
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make all
+javac -classpath classes src/naval/Position.java -d classes
+javac -classpath classes src/naval/Bateau.java -d classes
+javac -classpath classes src/naval/Case.java -d classes
+javac -classpath classes src/naval/Direction.java -d classes
+javac -classpath classes src/naval/Reponse.java -d classes
+javac -classpath classes src/naval/Mer.java -d classes
+src/naval/Mer.java:3: error: package naval.direction does not exist
+import naval.direction.*;
+^
+src/naval/Mer.java:38: error: cannot find symbol
+    public Reponse vise(Position p)throws ArrayIndexOutOfBoundsException{
+           ^
+  symbol:   class Reponse
+  location: class Mer
+src/naval/Mer.java:25: error: cannot find symbol
+	    for (j = 0 ; j < nc ; j++){
+	         ^
+  symbol:   variable j
+  location: class Mer
+src/naval/Mer.java:25: error: cannot find symbol
+	    for (j = 0 ; j < nc ; j++){
+	                 ^
+  symbol:   variable j
+  location: class Mer
+src/naval/Mer.java:25: error: cannot find symbol
+	    for (j = 0 ; j < nc ; j++){
+	                          ^
+  symbol:   variable j
+  location: class Mer
+src/naval/Mer.java:26: error: cannot find symbol
+		this.plateau[i][j] = new Case(); //Completion du plateau avec de nouvelles cases.
+		                ^
+  symbol:   variable j
+  location: class Mer
+src/naval/Mer.java:44: error: cannot find symbol
+	    return Reponse.DANS_LEAU; }
+	           ^
+  symbol:   variable Reponse
+  location: class Mer
+src/naval/Mer.java:47: error: cannot find symbol
+	    bateau.degat();
+	          ^
+  symbol:   method degat()
+  location: variable bateau of type Bateau
+src/naval/Mer.java:49: error: cannot find symbol
+		return Reponse.COULE;
+		       ^
+  symbol:   variable Reponse
+  location: class Mer
+src/naval/Mer.java:51: error: cannot find symbol
+		return Reponse.TOUCHE;
+		       ^
+  symbol:   variable Reponse
+  location: class Mer
+src/naval/Mer.java:54: error: cannot find symbol
+	    return Reponse.DANS_LEAU;
+	           ^
+  symbol:   variable Reponse
+  location: class Mer
+11 errors
+make: *** [compNaval] Erreur 1
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make clean
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make all
+javac -classpath classes src/naval/Position.java -d classes
+javac -classpath classes src/naval/Bateau.java -d classes
+javac -classpath classes src/naval/Case.java -d classes
+javac -classpath classes src/naval/Direction.java -d classes
+javac -classpath classes src/naval/direction/*.java -d classes
+javac -classpath classes src/naval/Reponse.java -d classes
+javac -classpath classes src/naval/Mer.java -d classes
+src/naval/Mer.java:38: error: cannot find symbol
+    public Reponse vise(Position p)throws ArrayIndexOutOfBoundsException{
+           ^
+  symbol:   class Reponse
+  location: class Mer
+src/naval/Mer.java:25: error: cannot find symbol
+	    for (j = 0 ; j < nc ; j++){
+	         ^
+  symbol:   variable j
+  location: class Mer
+src/naval/Mer.java:25: error: cannot find symbol
+	    for (j = 0 ; j < nc ; j++){
+	                 ^
+  symbol:   variable j
+  location: class Mer
+src/naval/Mer.java:25: error: cannot find symbol
+	    for (j = 0 ; j < nc ; j++){
+	                          ^
+  symbol:   variable j
+  location: class Mer
+src/naval/Mer.java:26: error: cannot find symbol
+		this.plateau[i][j] = new Case(); //Completion du plateau avec de nouvelles cases.
+		                ^
+  symbol:   variable j
+  location: class Mer
+src/naval/Mer.java:44: error: cannot find symbol
+	    return Reponse.DANS_LEAU; }
+	           ^
+  symbol:   variable Reponse
+  location: class Mer
+src/naval/Mer.java:47: error: cannot find symbol
+	    bateau.degat();
+	          ^
+  symbol:   method degat()
+  location: variable bateau of type Bateau
+src/naval/Mer.java:49: error: cannot find symbol
+		return Reponse.COULE;
+		       ^
+  symbol:   variable Reponse
+  location: class Mer
+src/naval/Mer.java:51: error: cannot find symbol
+		return Reponse.TOUCHE;
+		       ^
+  symbol:   variable Reponse
+  location: class Mer
+src/naval/Mer.java:54: error: cannot find symbol
+	    return Reponse.DANS_LEAU;
+	           ^
+  symbol:   variable Reponse
+  location: class Mer
+10 errors
+make: *** [compNaval] Erreur 1
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make all
+javac -classpath classes src/naval/Position.java -d classes
+javac -classpath classes src/naval/Bateau.java -d classes
+javac -classpath classes src/naval/Case.java -d classes
+javac -classpath classes src/naval/Direction.java -d classes
+javac -classpath classes src/naval/direction/*.java -d classes
+javac -classpath classes src/naval/Reponse.java -d classes
+javac -classpath classes src/naval/Mer.java -d classes
+src/naval/Mer.java:38: error: illegal start of type
+    public Reponse<> vise(Position p)throws ArrayIndexOutOfBoundsException{
+                   ^
+1 error
+make: *** [compNaval] Erreur 1
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make all
+javac -classpath classes src/naval/Position.java -d classes
+javac -classpath classes src/naval/Bateau.java -d classes
+javac -classpath classes src/naval/Case.java -d classes
+javac -classpath classes src/naval/Direction.java -d classes
+javac -classpath classes src/naval/direction/*.java -d classes
+javac -classpath classes src/naval/Reponse.java -d classes
+javac -classpath classes src/naval/Mer.java -d classes
+src/naval/Mer.java:38: error: cannot find symbol
+    public Reponse<?>[] vise(Position p)throws ArrayIndexOutOfBoundsException{
+           ^
+  symbol:   class Reponse
+  location: class Mer
+src/naval/Mer.java:25: error: cannot find symbol
+	    for (j = 0 ; j < nc ; j++){
+	         ^
+  symbol:   variable j
+  location: class Mer
+src/naval/Mer.java:25: error: cannot find symbol
+	    for (j = 0 ; j < nc ; j++){
+	                 ^
+  symbol:   variable j
+  location: class Mer
+src/naval/Mer.java:25: error: cannot find symbol
+	    for (j = 0 ; j < nc ; j++){
+	                          ^
+  symbol:   variable j
+  location: class Mer
+src/naval/Mer.java:26: error: cannot find symbol
+		this.plateau[i][j] = new Case(); //Completion du plateau avec de nouvelles cases.
+		                ^
+  symbol:   variable j
+  location: class Mer
+src/naval/Mer.java:44: error: cannot find symbol
+	    return Reponse.DANS_LEAU; }
+	           ^
+  symbol:   variable Reponse
+  location: class Mer
+src/naval/Mer.java:47: error: cannot find symbol
+	    bateau.degat();
+	          ^
+  symbol:   method degat()
+  location: variable bateau of type Bateau
+src/naval/Mer.java:49: error: cannot find symbol
+		return Reponse.COULE;
+		       ^
+  symbol:   variable Reponse
+  location: class Mer
+src/naval/Mer.java:51: error: cannot find symbol
+		return Reponse.TOUCHE;
+		       ^
+  symbol:   variable Reponse
+  location: class Mer
+src/naval/Mer.java:54: error: cannot find symbol
+	    return Reponse.DANS_LEAU;
+	           ^
+  symbol:   variable Reponse
+  location: class Mer
+10 errors
+make: *** [compNaval] Erreur 1
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make all
+javac -classpath classes src/naval/Position.java -d classes
+javac -classpath classes src/naval/Bateau.java -d classes
+javac -classpath classes src/naval/Case.java -d classes
+javac -classpath classes src/naval/Direction.java -d classes
+javac -classpath classes src/naval/direction/*.java -d classes
+javac -classpath classes src/naval/Reponse.java -d classes
+javac -classpath classes src/naval/Mer.java -d classes
+src/naval/Mer.java:38: error: cannot find symbol
+    public Reponse[] vise(Position p)throws ArrayIndexOutOfBoundsException{
+           ^
+  symbol:   class Reponse
+  location: class Mer
+src/naval/Mer.java:25: error: cannot find symbol
+	    for (j = 0 ; j < nc ; j++){
+	         ^
+  symbol:   variable j
+  location: class Mer
+src/naval/Mer.java:25: error: cannot find symbol
+	    for (j = 0 ; j < nc ; j++){
+	                 ^
+  symbol:   variable j
+  location: class Mer
+src/naval/Mer.java:25: error: cannot find symbol
+	    for (j = 0 ; j < nc ; j++){
+	                          ^
+  symbol:   variable j
+  location: class Mer
+src/naval/Mer.java:26: error: cannot find symbol
+		this.plateau[i][j] = new Case(); //Completion du plateau avec de nouvelles cases.
+		                ^
+  symbol:   variable j
+  location: class Mer
+src/naval/Mer.java:44: error: cannot find symbol
+	    return Reponse.DANS_LEAU; }
+	           ^
+  symbol:   variable Reponse
+  location: class Mer
+src/naval/Mer.java:47: error: cannot find symbol
+	    bateau.degat();
+	          ^
+  symbol:   method degat()
+  location: variable bateau of type Bateau
+src/naval/Mer.java:49: error: cannot find symbol
+		return Reponse.COULE;
+		       ^
+  symbol:   variable Reponse
+  location: class Mer
+src/naval/Mer.java:51: error: cannot find symbol
+		return Reponse.TOUCHE;
+		       ^
+  symbol:   variable Reponse
+  location: class Mer
+src/naval/Mer.java:54: error: cannot find symbol
+	    return Reponse.DANS_LEAU;
+	           ^
+  symbol:   variable Reponse
+  location: class Mer
+10 errors
+make: *** [compNaval] Erreur 1
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make all
+javac -classpath classes src/naval/Position.java -d classes
+javac -classpath classes src/naval/Bateau.java -d classes
+javac -classpath classes src/naval/Case.java -d classes
+javac -classpath classes src/naval/Direction.java -d classes
+javac -classpath classes src/naval/direction/*.java -d classes
+javac -classpath classes src/naval/Mer.java -d classes
+src/naval/Mer.java:38: error: cannot find symbol
+    public Reponse[] vise(Position p)throws ArrayIndexOutOfBoundsException{
+           ^
+  symbol:   class Reponse
+  location: class Mer
+src/naval/Mer.java:25: error: cannot find symbol
+	    for (j = 0 ; j < nc ; j++){
+	         ^
+  symbol:   variable j
+  location: class Mer
+src/naval/Mer.java:25: error: cannot find symbol
+	    for (j = 0 ; j < nc ; j++){
+	                 ^
+  symbol:   variable j
+  location: class Mer
+src/naval/Mer.java:25: error: cannot find symbol
+	    for (j = 0 ; j < nc ; j++){
+	                          ^
+  symbol:   variable j
+  location: class Mer
+src/naval/Mer.java:26: error: cannot find symbol
+		this.plateau[i][j] = new Case(); //Completion du plateau avec de nouvelles cases.
+		                ^
+  symbol:   variable j
+  location: class Mer
+src/naval/Mer.java:44: error: cannot find symbol
+	    return Reponse.DANS_LEAU; }
+	           ^
+  symbol:   variable Reponse
+  location: class Mer
+src/naval/Mer.java:47: error: cannot find symbol
+	    bateau.degat();
+	          ^
+  symbol:   method degat()
+  location: variable bateau of type Bateau
+src/naval/Mer.java:49: error: cannot find symbol
+		return Reponse.COULE;
+		       ^
+  symbol:   variable Reponse
+  location: class Mer
+src/naval/Mer.java:51: error: cannot find symbol
+		return Reponse.TOUCHE;
+		       ^
+  symbol:   variable Reponse
+  location: class Mer
+src/naval/Mer.java:54: error: cannot find symbol
+	    return Reponse.DANS_LEAU;
+	           ^
+  symbol:   variable Reponse
+  location: class Mer
+10 errors
+make: *** [compNaval] Erreur 1
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make all
+javac -classpath classes src/naval/Position.java -d classes
+javac -classpath classes src/naval/Bateau.java -d classes
+javac -classpath classes src/naval/Case.java -d classes
+javac -classpath classes src/naval/Direction.java -d classes
+javac -classpath classes src/naval/direction/*.java -d classes
+javac -classpath classes src/naval/Mer.java -d classes
+src/naval/Mer.java:25: error: cannot find symbol
+	    for (j = 0 ; j < nc ; j++){
+	         ^
+  symbol:   variable j
+  location: class Mer
+src/naval/Mer.java:25: error: cannot find symbol
+	    for (j = 0 ; j < nc ; j++){
+	                 ^
+  symbol:   variable j
+  location: class Mer
+src/naval/Mer.java:25: error: cannot find symbol
+	    for (j = 0 ; j < nc ; j++){
+	                          ^
+  symbol:   variable j
+  location: class Mer
+src/naval/Mer.java:26: error: cannot find symbol
+		this.plateau[i][j] = new Case(); //Completion du plateau avec de nouvelles cases.
+		                ^
+  symbol:   variable j
+  location: class Mer
+src/naval/Mer.java:50: error: cannot find symbol
+	    bateau.degat();
+	          ^
+  symbol:   method degat()
+  location: variable bateau of type Bateau
+5 errors
+make: *** [compNaval] Erreur 1
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make clean
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make all
+javac -classpath classes src/naval/Position.java -d classes
+javac -classpath classes src/naval/Bateau.java -d classes
+javac -classpath classes src/naval/Case.java -d classes
+javac -classpath classes src/naval/Direction.java -d classes
+javac -classpath classes src/naval/direction/*.java -d classes
+javac -classpath classes src/naval/Mer.java -d classes
+src/naval/Mer.java:50: error: cannot find symbol
+	    bateau.degat();
+	          ^
+  symbol:   method degat()
+  location: variable bateau of type Bateau
+1 error
+make: *** [compNaval] Erreur 1
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make clean
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make all
+javac -classpath classes src/naval/Position.java -d classes
+javac -classpath classes src/naval/Bateau.java -d classes
+javac -classpath classes src/naval/Case.java -d classes
+javac -classpath classes src/naval/Direction.java -d classes
+javac -classpath classes src/naval/direction/*.java -d classes
+javac -classpath classes src/naval/Mer.java -d classes
+javac -classpath test.jar test/*.java
+test/MerTest.java:17: error: ')' expected
+	Position unePosition = new Position (2; 2);
+	                                      ^
+test/MerTest.java:17: error: not a statement
+	Position unePosition = new Position (2; 2);
+	                                        ^
+test/MerTest.java:17: error: ';' expected
+	Position unePosition = new Position (2; 2);
+	                                         ^
+3 errors
+make: *** [tst] Erreur 1
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make clean
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make all
+javac -classpath classes src/naval/Position.java -d classes
+javac -classpath classes src/naval/Bateau.java -d classes
+javac -classpath classes src/naval/Case.java -d classes
+javac -classpath classes src/naval/Direction.java -d classes
+javac -classpath classes src/naval/direction/*.java -d classes
+javac -classpath classes src/naval/Mer.java -d classes
+javac -classpath test.jar test/*.java
+test/MerTest.java:19: error: method poseBateau in class Mer cannot be applied to given types;
+	Mer.poseBateau (unBateau, unePosition,  uneDirection);
+	   ^
+  required: Bateau,Position,Direction
+  found: Bateau,Position,DirectionNord
+  reason: actual argument DirectionNord cannot be converted to Direction by method invocation conversion
+test/MerTest.java:20: error: array required, but Mer found
+	asserTrue("Pas de bateau ?", uneMer[2][2].getCaractere == 'B'); 
+	                                   ^
+test/MerTest.java:21: error: array required, but Mer found
+	assertFalse("Pas de bateau ?", uneMer[2][1].getCaractere == 'B'); 
+	                                     ^
+test/MerTest.java:33: error: cannot find symbol
+	assertTrue("Pas dans l'eau ?", uneMer.vise(unePosition) == DANS_LEAU);
+	                                                           ^
+  symbol:   variable DANS_LEAU
+  location: class MerTest
+test/MerTest.java:34: error: cannot find symbol
+	assertFalse("Pas dans l'eau ?", uneMer.vise(unePosition) == TOUCHE);
+	                                                            ^
+  symbol:   variable TOUCHE
+  location: class MerTest
+test/MerTest.java:35: error: method poseBateau in class Mer cannot be applied to given types;
+	Mer.poseBateau(unBateau, unePosition,  uneDirection);
+	   ^
+  required: Bateau,Position,Direction
+  found: Bateau,Position,DirectionNord
+  reason: actual argument DirectionNord cannot be converted to Direction by method invocation conversion
+test/MerTest.java:36: error: cannot find symbol
+	assertTrue("Pas dans l'eau ?", uneMer.vise(unePosition) == TOUCHE);
+	                                                           ^
+  symbol:   variable TOUCHE
+  location: class MerTest
+test/MerTest.java:37: error: method poseBateau in class Mer cannot be applied to given types;
+	Mer.poseBateau(deuxBateau, deuxPosition,  uneDirection);
+	   ^
+  required: Bateau,Position,Direction
+  found: Bateau,Position,DirectionNord
+  reason: actual argument DirectionNord cannot be converted to Direction by method invocation conversion
+test/MerTest.java:38: error: cannot find symbol
+	assertTrue("Pas dans l'eau ?", uneMer.vise(deuxPosition) == COULE);
+	                                                            ^
+  symbol:   variable COULE
+  location: class MerTest
+9 errors
+make: *** [tst] Erreur 1
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make all
+javac -classpath classes src/naval/Position.java -d classes
+javac -classpath classes src/naval/Bateau.java -d classes
+javac -classpath classes src/naval/Case.java -d classes
+javac -classpath classes src/naval/Direction.java -d classes
+javac -classpath classes src/naval/direction/*.java -d classes
+javac -classpath classes src/naval/Mer.java -d classes
+javac -classpath test.jar test/*.java
+test/MerTest.java:18: error: incompatible types
+	Direction uneDirection = new DirectionNord();  
+	                         ^
+  required: Direction
+  found:    DirectionNord
+test/MerTest.java:19: error: non-static method poseBateau(Bateau,Position,Direction) cannot be referenced from a static context
+	Mer.poseBateau (unBateau, unePosition,  uneDirection);
+	   ^
+test/MerTest.java:20: error: array required, but Mer found
+	asserTrue("Pas de bateau ?", uneMer[2][2].getCaractere == 'B'); 
+	                                   ^
+test/MerTest.java:21: error: array required, but Mer found
+	assertFalse("Pas de bateau ?", uneMer[2][1].getCaractere == 'B'); 
+	                                     ^
+test/MerTest.java:33: error: cannot find symbol
+	assertTrue("Pas dans l'eau ?", uneMer.vise(unePosition) == DANS_LEAU);
+	                                                           ^
+  symbol:   variable DANS_LEAU
+  location: class MerTest
+test/MerTest.java:34: error: cannot find symbol
+	assertFalse("Pas dans l'eau ?", uneMer.vise(unePosition) == TOUCHE);
+	                                                            ^
+  symbol:   variable TOUCHE
+  location: class MerTest
+test/MerTest.java:35: error: method poseBateau in class Mer cannot be applied to given types;
+	Mer.poseBateau(unBateau, unePosition,  uneDirection);
+	   ^
+  required: Bateau,Position,Direction
+  found: Bateau,Position,DirectionNord
+  reason: actual argument DirectionNord cannot be converted to Direction by method invocation conversion
+test/MerTest.java:36: error: cannot find symbol
+	assertTrue("Pas dans l'eau ?", uneMer.vise(unePosition) == TOUCHE);
+	                                                           ^
+  symbol:   variable TOUCHE
+  location: class MerTest
+test/MerTest.java:37: error: method poseBateau in class Mer cannot be applied to given types;
+	Mer.poseBateau(deuxBateau, deuxPosition,  uneDirection);
+	   ^
+  required: Bateau,Position,Direction
+  found: Bateau,Position,DirectionNord
+  reason: actual argument DirectionNord cannot be converted to Direction by method invocation conversion
+test/MerTest.java:38: error: cannot find symbol
+	assertTrue("Pas dans l'eau ?", uneMer.vise(deuxPosition) == COULE);
+	                                                            ^
+  symbol:   variable COULE
+  location: class MerTest
+10 errors
+make: *** [tst] Erreur 1
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make clean
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make all
+javac -classpath classes src/naval/Position.java -d classes
+javac -classpath classes src/naval/Bateau.java -d classes
+javac -classpath classes src/naval/Case.java -d classes
+javac -classpath classes src/naval/Direction.java -d classes
+javac -classpath classes src/naval/direction/*.java -d classes
+javac -classpath classes src/naval/Mer.java -d classes
+javac -classpath test.jar test/*.java
+test/MerTest.java:18: error: incompatible types
+	Direction uneDirection = new DirectionNord();  
+	                         ^
+  required: Direction
+  found:    DirectionNord
+test/MerTest.java:19: error: non-static method poseBateau(Bateau,Position,Direction) cannot be referenced from a static context
+	Mer.poseBateau (unBateau, unePosition,  uneDirection);
+	   ^
+test/MerTest.java:20: error: array required, but Mer found
+	asserTrue("Pas de bateau ?", uneMer[2][2].getCaractere == 'B'); 
+	                                   ^
+test/MerTest.java:21: error: array required, but Mer found
+	assertFalse("Pas de bateau ?", uneMer[2][1].getCaractere == 'B'); 
+	                                     ^
+test/MerTest.java:32: error: incompatible types
+	Direction uneDirection = new DirectionNord(); 
+	                         ^
+  required: Direction
+  found:    DirectionNord
+test/MerTest.java:33: error: cannot find symbol
+	assertTrue("Pas dans l'eau ?", uneMer.vise(unePosition) == DANS_LEAU);
+	                                                           ^
+  symbol:   variable DANS_LEAU
+  location: class MerTest
+test/MerTest.java:34: error: cannot find symbol
+	assertFalse("Pas dans l'eau ?", uneMer.vise(unePosition) == TOUCHE);
+	                                                            ^
+  symbol:   variable TOUCHE
+  location: class MerTest
+test/MerTest.java:35: error: non-static method poseBateau(Bateau,Position,Direction) cannot be referenced from a static context
+	Mer.poseBateau(unBateau, unePosition,  uneDirection);
+	   ^
+test/MerTest.java:36: error: cannot find symbol
+	assertTrue("Pas dans l'eau ?", uneMer.vise(unePosition) == TOUCHE);
+	                                                           ^
+  symbol:   variable TOUCHE
+  location: class MerTest
+test/MerTest.java:37: error: non-static method poseBateau(Bateau,Position,Direction) cannot be referenced from a static context
+	Mer.poseBateau(deuxBateau, deuxPosition,  uneDirection);
+	   ^
+test/MerTest.java:38: error: cannot find symbol
+	assertTrue("Pas dans l'eau ?", uneMer.vise(deuxPosition) == COULE);
+	                                                            ^
+  symbol:   variable COULE
+  location: class MerTest
+11 errors
+make: *** [tst] Erreur 1
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make clean
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make all
+javac -classpath classes src/naval/Position.java -d classes
+javac -classpath classes src/naval/Bateau.java -d classes
+javac -classpath classes src/naval/Case.java -d classes
+javac -classpath classes src/naval/Direction.java -d classes
+javac -classpath classes src/naval/direction/*.java -d classes
+javac -classpath classes src/naval/Mer.java -d classes
+javac -classpath test.jar test/*.java
+test/MerTest.java:19: error: non-static method poseBateau(Bateau,Position,Direction) cannot be referenced from a static context
+	Mer.poseBateau (unBateau, unePosition,  uneDirection);
+	   ^
+test/MerTest.java:20: error: array required, but Mer found
+	asserTrue("Pas de bateau ?", uneMer[2][2].getCaractere == 'B'); 
+	                                   ^
+test/MerTest.java:21: error: array required, but Mer found
+	assertFalse("Pas de bateau ?", uneMer[2][1].getCaractere == 'B'); 
+	                                     ^
+test/MerTest.java:33: error: cannot find symbol
+	assertTrue("Pas dans l'eau ?", uneMer.vise(unePosition) == DANS_LEAU);
+	                                                           ^
+  symbol:   variable DANS_LEAU
+  location: class MerTest
+test/MerTest.java:34: error: cannot find symbol
+	assertFalse("Pas dans l'eau ?", uneMer.vise(unePosition) == TOUCHE);
+	                                                            ^
+  symbol:   variable TOUCHE
+  location: class MerTest
+test/MerTest.java:35: error: non-static method poseBateau(Bateau,Position,Direction) cannot be referenced from a static context
+	Mer.poseBateau(unBateau, unePosition,  uneDirection);
+	   ^
+test/MerTest.java:36: error: cannot find symbol
+	assertTrue("Pas dans l'eau ?", uneMer.vise(unePosition) == TOUCHE);
+	                                                           ^
+  symbol:   variable TOUCHE
+  location: class MerTest
+test/MerTest.java:37: error: non-static method poseBateau(Bateau,Position,Direction) cannot be referenced from a static context
+	Mer.poseBateau(deuxBateau, deuxPosition,  uneDirection);
+	   ^
+test/MerTest.java:38: error: cannot find symbol
+	assertTrue("Pas dans l'eau ?", uneMer.vise(deuxPosition) == COULE);
+	                                                            ^
+  symbol:   variable COULE
+  location: class MerTest
+9 errors
+make: *** [tst] Erreur 1
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make clean
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make all
+javac -classpath classes src/naval/Position.java -d classes
+javac -classpath classes src/naval/Bateau.java -d classes
+javac -classpath classes src/naval/Case.java -d classes
+javac -classpath classes src/naval/Direction.java -d classes
+javac -classpath classes src/naval/direction/*.java -d classes
+javac -classpath classes src/naval/Mer.java -d classes
+javac -classpath test.jar test/*.java
+test/MerTest.java:19: error: cannot find symbol
+	poseBateau (unBateau, unePosition,  uneDirection);
+	^
+  symbol:   method poseBateau(Bateau,Position,Direction)
+  location: class MerTest
+test/MerTest.java:20: error: array required, but Mer found
+	asserTrue("Pas de bateau ?", uneMer[2][2].getCaractere == 'B'); 
+	                                   ^
+test/MerTest.java:21: error: array required, but Mer found
+	assertFalse("Pas de bateau ?", uneMer[2][1].getCaractere == 'B'); 
+	                                     ^
+test/MerTest.java:33: error: cannot find symbol
+	assertTrue("Pas dans l'eau ?", uneMer.vise(unePosition) == DANS_LEAU);
+	                                                           ^
+  symbol:   variable DANS_LEAU
+  location: class MerTest
+test/MerTest.java:34: error: cannot find symbol
+	assertFalse("Pas dans l'eau ?", uneMer.vise(unePosition) == TOUCHE);
+	                                                            ^
+  symbol:   variable TOUCHE
+  location: class MerTest
+test/MerTest.java:35: error: cannot find symbol
+	poseBateau(unBateau, unePosition,  uneDirection);
+	^
+  symbol:   method poseBateau(Bateau,Position,Direction)
+  location: class MerTest
+test/MerTest.java:36: error: cannot find symbol
+	assertTrue("Pas dans l'eau ?", uneMer.vise(unePosition) == TOUCHE);
+	                                                           ^
+  symbol:   variable TOUCHE
+  location: class MerTest
+test/MerTest.java:37: error: non-static method poseBateau(Bateau,Position,Direction) cannot be referenced from a static context
+	Mer.poseBateau(deuxBateau, deuxPosition,  uneDirection);
+	   ^
+test/MerTest.java:38: error: cannot find symbol
+	assertTrue("Pas dans l'eau ?", uneMer.vise(deuxPosition) == COULE);
+	                                                            ^
+  symbol:   variable COULE
+  location: class MerTest
+9 errors
+make: *** [tst] Erreur 1
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make clean
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make all
+javac -classpath classes src/naval/Position.java -d classes
+javac -classpath classes src/naval/Bateau.java -d classes
+javac -classpath classes src/naval/Case.java -d classes
+javac -classpath classes src/naval/Direction.java -d classes
+javac -classpath classes src/naval/direction/*.java -d classes
+javac -classpath classes src/naval/Mer.java -d classes
+javac -classpath test.jar test/*.java
+test/MerTest.java:20: error: array required, but Mer found
+	asserTrue("Pas de bateau ?", uneMer[2][2].getCaractere == 'B'); 
+	                                   ^
+test/MerTest.java:21: error: array required, but Mer found
+	assertFalse("Pas de bateau ?", uneMer[2][1].getCaractere == 'B'); 
+	                                     ^
+test/MerTest.java:33: error: cannot find symbol
+	assertTrue("Pas dans l'eau ?", uneMer.vise(unePosition) == DANS_LEAU);
+	                                                           ^
+  symbol:   variable DANS_LEAU
+  location: class MerTest
+test/MerTest.java:34: error: cannot find symbol
+	assertFalse("Pas dans l'eau ?", uneMer.vise(unePosition) == TOUCHE);
+	                                                            ^
+  symbol:   variable TOUCHE
+  location: class MerTest
+test/MerTest.java:36: error: cannot find symbol
+	assertTrue("Pas dans l'eau ?", uneMer.vise(unePosition) == TOUCHE);
+	                                                           ^
+  symbol:   variable TOUCHE
+  location: class MerTest
+test/MerTest.java:38: error: cannot find symbol
+	assertTrue("Pas dans l'eau ?", uneMer.vise(deuxPosition) == COULE);
+	                                                            ^
+  symbol:   variable COULE
+  location: class MerTest
+6 errors
+make: *** [tst] Erreur 1
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make clean
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make all
+javac -classpath classes src/naval/Position.java -d classes
+javac -classpath classes src/naval/Bateau.java -d classes
+javac -classpath classes src/naval/Case.java -d classes
+javac -classpath classes src/naval/Direction.java -d classes
+javac -classpath classes src/naval/direction/*.java -d classes
+javac -classpath classes src/naval/Mer.java -d classes
+javac -classpath test.jar test/*.java
+test/MerTest.java:21: error: cannot find symbol
+	asserTrue("Pas de bateau ?", uneMer.vise(unePosition) == COULE); 
+	                                                         ^
+  symbol:   variable COULE
+  location: class MerTest
+test/MerTest.java:22: error: cannot find symbol
+	assertFalse("Pas de bateau ?",uneMer.vise(deuxPosition) == COULE); 
+	                                                           ^
+  symbol:   variable COULE
+  location: class MerTest
+test/MerTest.java:34: error: cannot find symbol
+	assertTrue("Pas dans l'eau ?", uneMer.vise(unePosition) == DANS_LEAU);
+	                                                           ^
+  symbol:   variable DANS_LEAU
+  location: class MerTest
+test/MerTest.java:35: error: cannot find symbol
+	assertFalse("Pas dans l'eau ?", uneMer.vise(unePosition) == TOUCHE);
+	                                                            ^
+  symbol:   variable TOUCHE
+  location: class MerTest
+test/MerTest.java:37: error: cannot find symbol
+	assertTrue("Pas dans l'eau ?", uneMer.vise(unePosition) == TOUCHE);
+	                                                           ^
+  symbol:   variable TOUCHE
+  location: class MerTest
+test/MerTest.java:39: error: cannot find symbol
+	assertTrue("Pas dans l'eau ?", uneMer.vise(deuxPosition) == COULE);
+	                                                            ^
+  symbol:   variable COULE
+  location: class MerTest
+6 errors
+make: *** [tst] Erreur 1
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make clean
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make all
+javac -classpath classes src/naval/Position.java -d classes
+javac -classpath classes src/naval/Bateau.java -d classes
+javac -classpath classes src/naval/Case.java -d classes
+javac -classpath classes src/naval/Direction.java -d classes
+javac -classpath classes src/naval/direction/*.java -d classes
+javac -classpath classes src/naval/Mer.java -d classes
+javac -classpath test.jar test/*.java
+test/MerTest.java:21: error: cannot find symbol
+	asserTrue("Pas de bateau ?", uneMer.vise(unePosition) == Reponse.COULE); 
+	                                                         ^
+  symbol:   variable Reponse
+  location: class MerTest
+test/MerTest.java:22: error: cannot find symbol
+	assertFalse("Pas de bateau ?",uneMer.vise(deuxPosition) == Reponse.COULE); 
+	                                                           ^
+  symbol:   variable Reponse
+  location: class MerTest
+test/MerTest.java:34: error: cannot find symbol
+	assertTrue("Pas dans l'eau ?", uneMer.vise(unePosition) == Reponse.DANS_LEAU);
+	                                                           ^
+  symbol:   variable Reponse
+  location: class MerTest
+test/MerTest.java:35: error: cannot find symbol
+	assertFalse("Pas dans l'eau ?", uneMer.vise(unePosition) == Reponse.TOUCHE);
+	                                                            ^
+  symbol:   variable Reponse
+  location: class MerTest
+test/MerTest.java:37: error: cannot find symbol
+	assertTrue("Pas dans l'eau ?", uneMer.vise(unePosition) == Reponse.TOUCHE);
+	                                                           ^
+  symbol:   variable Reponse
+  location: class MerTest
+test/MerTest.java:39: error: cannot find symbol
+	assertTrue("Pas dans l'eau ?", uneMer.vise(deuxPosition) == Reponse.COULE);
+	                                                            ^
+  symbol:   variable Reponse
+  location: class MerTest
+6 errors
+make: *** [tst] Erreur 1
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make clean
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make all
+javac -classpath classes src/naval/Position.java -d classes
+javac -classpath classes src/naval/Bateau.java -d classes
+javac -classpath classes src/naval/Case.java -d classes
+javac -classpath classes src/naval/Direction.java -d classes
+javac -classpath classes src/naval/direction/*.java -d classes
+javac -classpath classes src/naval/Mer.java -d classes
+javac -classpath test.jar test/*.java
+test/MerTest.java:21: error: unexpected type
+	asserTrue("Pas de bateau ?", uneMer.vise(unePosition) == uneMer.Reponse.COULE); 
+	                                                         ^
+  required: class,package
+  found:    variable
+test/MerTest.java:21: error: cannot find symbol
+	asserTrue("Pas de bateau ?", uneMer.vise(unePosition) == uneMer.Reponse.COULE); 
+	^
+  symbol:   method asserTrue(String,boolean)
+  location: class MerTest
+test/MerTest.java:22: error: unexpected type
+	assertFalse("Pas de bateau ?",uneMer.vise(deuxPosition) == uneMer.Reponse.COULE); 
+	                                                           ^
+  required: class,package
+  found:    variable
+test/MerTest.java:34: error: unexpected type
+	assertTrue("Pas dans l'eau ?", uneMer.vise(unePosition) == uneMer.Reponse.DANS_LEAU);
+	                                                           ^
+  required: class,package
+  found:    variable
+test/MerTest.java:35: error: unexpected type
+	assertFalse("Pas dans l'eau ?", uneMer.vise(unePosition) == uneMer.Reponse.TOUCHE);
+	                                                            ^
+  required: class,package
+  found:    variable
+test/MerTest.java:37: error: unexpected type
+	assertTrue("Pas dans l'eau ?", uneMer.vise(unePosition) == uneMer.Reponse.TOUCHE);
+	                                                           ^
+  required: class,package
+  found:    variable
+test/MerTest.java:39: error: unexpected type
+	assertTrue("Pas dans l'eau ?", uneMer.vise(deuxPosition) == uneMer.Reponse.COULE);
+	                                                            ^
+  required: class,package
+  found:    variable
+7 errors
+make: *** [tst] Erreur 1
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make clean
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make all
+javac -classpath classes src/naval/Position.java -d classes
+javac -classpath classes src/naval/Bateau.java -d classes
+javac -classpath classes src/naval/Case.java -d classes
+javac -classpath classes src/naval/Direction.java -d classes
+javac -classpath classes src/naval/direction/*.java -d classes
+javac -classpath classes src/naval/Mer.java -d classes
+javac -classpath test.jar test/*.java
+test/MerTest.java:21: error: cannot find symbol
+	asserTrue("Pas de bateau ?", uneMer.vise(unePosition) == uneMer.COULE); 
+	                                                               ^
+  symbol:   variable COULE
+  location: variable uneMer of type Mer
+test/MerTest.java:22: error: cannot find symbol
+	assertFalse("Pas de bateau ?",uneMer.vise(deuxPosition) == uneMer.COULE); 
+	                                                                 ^
+  symbol:   variable COULE
+  location: variable uneMer of type Mer
+test/MerTest.java:34: error: cannot find symbol
+	assertTrue("Pas dans l'eau ?", uneMer.vise(unePosition) == uneMer.DANS_LEAU);
+	                                                                 ^
+  symbol:   variable DANS_LEAU
+  location: variable uneMer of type Mer
+test/MerTest.java:35: error: cannot find symbol
+	assertFalse("Pas dans l'eau ?", uneMer.vise(unePosition) == uneMer.TOUCHE);
+	                                                                  ^
+  symbol:   variable TOUCHE
+  location: variable uneMer of type Mer
+test/MerTest.java:37: error: cannot find symbol
+	assertTrue("Pas dans l'eau ?", uneMer.vise(unePosition) == uneMer.TOUCHE);
+	                                                                 ^
+  symbol:   variable TOUCHE
+  location: variable uneMer of type Mer
+test/MerTest.java:39: error: cannot find symbol
+	assertTrue("Pas dans l'eau ?", uneMer.vise(deuxPosition) == uneMer.COULE);
+	                                                                  ^
+  symbol:   variable COULE
+  location: variable uneMer of type Mer
+6 errors
+make: *** [tst] Erreur 1
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make all
+javac -classpath classes src/naval/Position.java -d classes
+javac -classpath classes src/naval/Bateau.java -d classes
+javac -classpath classes src/naval/Case.java -d classes
+javac -classpath classes src/naval/Direction.java -d classes
+javac -classpath classes src/naval/direction/*.java -d classes
+javac -classpath classes src/naval/Mer.java -d classes
+javac -classpath test.jar test/*.java
+test/MerTest.java:21: error: cannot find symbol
+	asserTrue("Pas de bateau ?", uneMer.vise(unePosition) == uneMer.COULE); 
+	                                                               ^
+  symbol:   variable COULE
+  location: variable uneMer of type Mer
+test/MerTest.java:22: error: cannot find symbol
+	assertFalse("Pas de bateau ?",uneMer.vise(deuxPosition) == uneMer.COULE); 
+	                                                                 ^
+  symbol:   variable COULE
+  location: variable uneMer of type Mer
+test/MerTest.java:34: error: cannot find symbol
+	assertTrue("Pas dans l'eau ?", uneMer.vise(unePosition) == uneMer.DANS_LEAU);
+	                                                                 ^
+  symbol:   variable DANS_LEAU
+  location: variable uneMer of type Mer
+test/MerTest.java:35: error: cannot find symbol
+	assertFalse("Pas dans l'eau ?", uneMer.vise(unePosition) == uneMer.TOUCHE);
+	                                                                  ^
+  symbol:   variable TOUCHE
+  location: variable uneMer of type Mer
+test/MerTest.java:37: error: cannot find symbol
+	assertTrue("Pas dans l'eau ?", uneMer.vise(unePosition) == uneMer.TOUCHE);
+	                                                                 ^
+  symbol:   variable TOUCHE
+  location: variable uneMer of type Mer
+test/MerTest.java:39: error: cannot find symbol
+	assertTrue("Pas dans l'eau ?", uneMer.vise(deuxPosition) == uneMer.COULE);
+	                                                                  ^
+  symbol:   variable COULE
+  location: variable uneMer of type Mer
+6 errors
+make: *** [tst] Erreur 1
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make all
+javac -classpath classes src/naval/Position.java -d classes
+javac -classpath classes src/naval/Bateau.java -d classes
+javac -classpath classes src/naval/Case.java -d classes
+javac -classpath classes src/naval/Direction.java -d classes
+javac -classpath classes src/naval/direction/*.java -d classes
+javac -classpath classes src/naval/Mer.java -d classes
+javac -classpath test.jar test/*.java
+test/MerTest.java:21: error: cannot find symbol
+	asserTrue("Pas de bateau ?", uneMer.vise(unePosition) == Mer.Reponse.COULE); 
+	^
+  symbol:   method asserTrue(String,boolean)
+  location: class MerTest
+1 error
+make: *** [tst] Erreur 1
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make all
+javac -classpath classes src/naval/Position.java -d classes
+javac -classpath classes src/naval/Bateau.java -d classes
+javac -classpath classes src/naval/Case.java -d classes
+javac -classpath classes src/naval/Direction.java -d classes
+javac -classpath classes src/naval/direction/*.java -d classes
+javac -classpath classes src/naval/Mer.java -d classes
+javac -classpath test.jar test/*.java
+java -jar test.jar BateauTest
+java -jar test.jar PositionTest
+java -jar test.jar DirectionTest
+java -jar test.jar MerTest
+javadoc -classpath src naval naval.direction -d docs
+Loading source files for package naval...
+Loading source files for package naval.direction...
+Constructing Javadoc information...
+Standard Doclet version 1.7.0_21
+Building tree for all the packages and classes...
+Generating docs/naval/Bateau.html...
+Generating docs/naval/Case.html...
+Generating docs/naval/Direction.html...
+Generating docs/naval/Jeu.html...
+Generating docs/naval/Mer.html...
+Generating docs/naval/Mer.Reponse.html...
+Generating docs/naval/Position.html...
+Generating docs/naval/direction/DirectionEst.html...
+Generating docs/naval/direction/DirectionNord.html...
+Generating docs/naval/direction/DirectionOuest.html...
+Generating docs/naval/direction/DirectionSud.html...
+Generating docs/overview-frame.html...
+Generating docs/naval/package-frame.html...
+Generating docs/naval/package-summary.html...
+Generating docs/naval/package-tree.html...
+Generating docs/naval/direction/package-frame.html...
+Generating docs/naval/direction/package-summary.html...
+Generating docs/naval/direction/package-tree.html...
+Generating docs/constant-values.html...
+Building index for all the packages and classes...
+Generating docs/overview-tree.html...
+Generating docs/index-all.html...
+Generating docs/deprecated-list.html...
+Building index for all classes...
+Generating docs/allclasses-frame.html...
+Generating docs/allclasses-noframe.html...
+Generating docs/index.html...
+Generating docs/overview-summary.html...
+Generating docs/help-doc.html...
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make clean
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make all
+javac -classpath classes src/naval/Position.java -d classes
+javac -classpath classes src/naval/Bateau.java -d classes
+javac -classpath classes src/naval/Case.java -d classes
+javac -classpath classes src/naval/Direction.java -d classes
+javac -classpath classes src/naval/direction/*.java -d classes
+javac -classpath classes src/naval/Mer.java -d classes
+javac -classpath test.jar test/*.java
+java -jar test.jar BateauTest
+java -jar test.jar PositionTest
+java -jar test.jar DirectionTest
+java -jar test.jar MerTest
+javadoc -classpath src naval naval.direction -d docs
+Loading source files for package naval...
+Loading source files for package naval.direction...
+Constructing Javadoc information...
+Standard Doclet version 1.7.0_21
+Building tree for all the packages and classes...
+Generating docs/naval/Bateau.html...
+Generating docs/naval/Case.html...
+Generating docs/naval/Direction.html...
+Generating docs/naval/Jeu.html...
+Generating docs/naval/Mer.html...
+Generating docs/naval/Mer.Reponse.html...
+Generating docs/naval/Position.html...
+Generating docs/naval/direction/DirectionEst.html...
+Generating docs/naval/direction/DirectionNord.html...
+Generating docs/naval/direction/DirectionOuest.html...
+Generating docs/naval/direction/DirectionSud.html...
+Generating docs/overview-frame.html...
+Generating docs/naval/package-frame.html...
+Generating docs/naval/package-summary.html...
+Generating docs/naval/package-tree.html...
+Generating docs/naval/direction/package-frame.html...
+Generating docs/naval/direction/package-summary.html...
+Generating docs/naval/direction/package-tree.html...
+Generating docs/constant-values.html...
+Building index for all the packages and classes...
+Generating docs/overview-tree.html...
+Generating docs/index-all.html...
+Generating docs/deprecated-list.html...
+Building index for all classes...
+Generating docs/allclasses-frame.html...
+Generating docs/allclasses-noframe.html...
+Generating docs/index.html...
+Generating docs/overview-summary.html...
+Generating docs/help-doc.html...
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make tst
+javac -classpath test.jar test/*.java
+java -jar test.jar BateauTest
+java -jar test.jar PositionTest
+java -jar test.jar DirectionTest
+java -jar test.jar MerTest
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make all
+javac -classpath classes src/naval/Position.java -d classes
+javac -classpath classes src/naval/Bateau.java -d classes
+javac -classpath classes src/naval/Case.java -d classes
+javac -classpath classes src/naval/Direction.java -d classes
+javac -classpath classes src/naval/direction/*.java -d classes
+javac -classpath classes src/naval/Mer.java -d classes
+javac -classpath test.jar test/*.java
+java -jar test.jar BateauTest
+java -jar test.jar PositionTest
+java -jar test.jar DirectionTest
+java -jar test.jar MerTest
+javadoc -classpath src naval naval.direction -d docs
+Loading source files for package naval...
+Loading source files for package naval.direction...
+Constructing Javadoc information...
+Standard Doclet version 1.7.0_21
+Building tree for all the packages and classes...
+Generating docs/naval/Bateau.html...
+Generating docs/naval/Case.html...
+Generating docs/naval/Direction.html...
+Generating docs/naval/Jeu.html...
+Generating docs/naval/Mer.html...
+Generating docs/naval/Mer.Reponse.html...
+Generating docs/naval/Position.html...
+Generating docs/naval/direction/DirectionEst.html...
+Generating docs/naval/direction/DirectionNord.html...
+Generating docs/naval/direction/DirectionOuest.html...
+Generating docs/naval/direction/DirectionSud.html...
+Generating docs/overview-frame.html...
+Generating docs/naval/package-frame.html...
+Generating docs/naval/package-summary.html...
+Generating docs/naval/package-tree.html...
+Generating docs/naval/direction/package-frame.html...
+Generating docs/naval/direction/package-summary.html...
+Generating docs/naval/direction/package-tree.html...
+Generating docs/constant-values.html...
+Building index for all the packages and classes...
+Generating docs/overview-tree.html...
+Generating docs/index-all.html...
+Generating docs/deprecated-list.html...
+Building index for all classes...
+Generating docs/allclasses-frame.html...
+Generating docs/allclasses-noframe.html...
+Generating docs/index.html...
+Generating docs/overview-summary.html...
+Generating docs/help-doc.html...
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make tst
+javac -classpath test.jar test/*.java
+java -jar test.jar BateauTest
+java -jar test.jar PositionTest
+java -jar test.jar DirectionTest
+java -jar test.jar MerTest
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make tst
+javac -classpath test.jar test/*.java
+java -jar test.jar BateauTest
+java -jar test.jar PositionTest
+java -jar test.jar DirectionTest
+java -jar test.jar MerTest
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make all
+javac -classpath classes src/naval/Position.java -d classes
+javac -classpath classes src/naval/Bateau.java -d classes
+javac -classpath classes src/naval/Case.java -d classes
+javac -classpath classes src/naval/Direction.java -d classes
+javac -classpath classes src/naval/direction/*.java -d classes
+javac -classpath classes src/naval/Mer.java -d classes
+javac -classpath test.jar test/*.java
+java -jar test.jar BateauTest
+java -jar test.jar PositionTest
+java -jar test.jar DirectionTest
+java -jar test.jar MerTest
+javadoc -classpath src naval naval.direction -d docs
+Loading source files for package naval...
+Loading source files for package naval.direction...
+Constructing Javadoc information...
+Standard Doclet version 1.7.0_21
+Building tree for all the packages and classes...
+Generating docs/naval/Bateau.html...
+Generating docs/naval/Case.html...
+Generating docs/naval/Direction.html...
+Generating docs/naval/Jeu.html...
+Generating docs/naval/Mer.html...
+Generating docs/naval/Mer.Reponse.html...
+Generating docs/naval/Position.html...
+Generating docs/naval/direction/DirectionEst.html...
+Generating docs/naval/direction/DirectionNord.html...
+Generating docs/naval/direction/DirectionOuest.html...
+Generating docs/naval/direction/DirectionSud.html...
+Generating docs/overview-frame.html...
+Generating docs/naval/package-frame.html...
+Generating docs/naval/package-summary.html...
+Generating docs/naval/package-tree.html...
+Generating docs/naval/direction/package-frame.html...
+Generating docs/naval/direction/package-summary.html...
+Generating docs/naval/direction/package-tree.html...
+Generating docs/constant-values.html...
+Building index for all the packages and classes...
+Generating docs/overview-tree.html...
+Generating docs/index-all.html...
+Generating docs/deprecated-list.html...
+Building index for all classes...
+Generating docs/allclasses-frame.html...
+Generating docs/allclasses-noframe.html...
+Generating docs/index.html...
+Generating docs/overview-summary.html...
+Generating docs/help-doc.html...
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make all
+javac -classpath classes src/naval/Position.java -d classes
+javac -classpath classes src/naval/Bateau.java -d classes
+javac -classpath classes src/naval/Case.java -d classes
+javac -classpath classes src/naval/Direction.java -d classes
+javac -classpath classes src/naval/direction/*.java -d classes
+javac -classpath classes src/naval/Mer.java -d classes
+javac -classpath test.jar test/*.java
+java -jar test.jar BateauTest
+java -jar test.jar PositionTest
+java -jar test.jar DirectionTest
+java -jar test.jar MerTest
+javadoc -classpath src naval naval.direction -d docs
+Loading source files for package naval...
+Loading source files for package naval.direction...
+Constructing Javadoc information...
+Standard Doclet version 1.7.0_21
+Building tree for all the packages and classes...
+Generating docs/naval/Bateau.html...
+Generating docs/naval/Case.html...
+Generating docs/naval/Direction.html...
+Generating docs/naval/Jeu.html...
+Generating docs/naval/Mer.html...
+Generating docs/naval/Mer.Reponse.html...
+Generating docs/naval/Position.html...
+Generating docs/naval/direction/DirectionEst.html...
+Generating docs/naval/direction/DirectionNord.html...
+Generating docs/naval/direction/DirectionOuest.html...
+Generating docs/naval/direction/DirectionSud.html...
+Generating docs/overview-frame.html...
+Generating docs/naval/package-frame.html...
+Generating docs/naval/package-summary.html...
+Generating docs/naval/package-tree.html...
+Generating docs/naval/direction/package-frame.html...
+Generating docs/naval/direction/package-summary.html...
+Generating docs/naval/direction/package-tree.html...
+Generating docs/constant-values.html...
+Building index for all the packages and classes...
+Generating docs/overview-tree.html...
+Generating docs/index-all.html...
+Generating docs/deprecated-list.html...
+Building index for all classes...
+Generating docs/allclasses-frame.html...
+Generating docs/allclasses-noframe.html...
+Generating docs/index.html...
+Generating docs/overview-summary.html...
+Generating docs/help-doc.html...
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make clean
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make all
+javac -classpath classes src/naval/Position.java -d classes
+javac -classpath classes src/naval/Bateau.java -d classes
+javac -classpath classes src/naval/Case.java -d classes
+javac -classpath classes src/naval/Direction.java -d classes
+javac -classpath classes src/naval/direction/*.java -d classes
+javac -classpath classes src/naval/Mer.java -d classes
+javac -classpath test.jar test/*.java
+java -jar test.jar BateauTest
+java -jar test.jar PositionTest
+java -jar test.jar DirectionTest
+javadoc -classpath src naval naval.direction -d docs
+Loading source files for package naval...
+Loading source files for package naval.direction...
+Constructing Javadoc information...
+Standard Doclet version 1.7.0_21
+Building tree for all the packages and classes...
+Generating docs/naval/Bateau.html...
+Generating docs/naval/Case.html...
+Generating docs/naval/Direction.html...
+Generating docs/naval/Jeu.html...
+Generating docs/naval/Mer.html...
+Generating docs/naval/Mer.Reponse.html...
+Generating docs/naval/Position.html...
+Generating docs/naval/direction/DirectionEst.html...
+Generating docs/naval/direction/DirectionNord.html...
+Generating docs/naval/direction/DirectionOuest.html...
+Generating docs/naval/direction/DirectionSud.html...
+Generating docs/overview-frame.html...
+Generating docs/naval/package-frame.html...
+Generating docs/naval/package-summary.html...
+Generating docs/naval/package-tree.html...
+Generating docs/naval/direction/package-frame.html...
+Generating docs/naval/direction/package-summary.html...
+Generating docs/naval/direction/package-tree.html...
+Generating docs/constant-values.html...
+Building index for all the packages and classes...
+Generating docs/overview-tree.html...
+Generating docs/index-all.html...
+Generating docs/deprecated-list.html...
+Building index for all classes...
+Generating docs/allclasses-frame.html...
+Generating docs/allclasses-noframe.html...
+Generating docs/index.html...
+Generating docs/overview-summary.html...
+Generating docs/help-doc.html...
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make clean
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make all
+javac -classpath classes src/naval/Position.java -d classes
+javac -classpath classes src/naval/Bateau.java -d classes
+javac -classpath classes src/naval/Case.java -d classes
+javac -classpath classes src/naval/Direction.java -d classes
+javac -classpath classes src/naval/direction/*.java -d classes
+javac -classpath classes src/naval/Mer.java -d classes
+javac -classpath test.jar test/*.java
+java -jar test.jar BateauTest
+java -jar test.jar PositionTest
+java -jar test.jar DirectionTest
+javadoc -classpath src naval naval.direction -d docs
+Loading source files for package naval...
+Loading source files for package naval.direction...
+Constructing Javadoc information...
+Standard Doclet version 1.7.0_21
+Building tree for all the packages and classes...
+Generating docs/naval/Bateau.html...
+Generating docs/naval/Case.html...
+Generating docs/naval/Direction.html...
+Generating docs/naval/Jeu.html...
+Generating docs/naval/Mer.html...
+Generating docs/naval/Mer.Reponse.html...
+Generating docs/naval/Position.html...
+Generating docs/naval/direction/DirectionEst.html...
+Generating docs/naval/direction/DirectionNord.html...
+Generating docs/naval/direction/DirectionOuest.html...
+Generating docs/naval/direction/DirectionSud.html...
+Generating docs/overview-frame.html...
+Generating docs/naval/package-frame.html...
+Generating docs/naval/package-summary.html...
+Generating docs/naval/package-tree.html...
+Generating docs/naval/direction/package-frame.html...
+Generating docs/naval/direction/package-summary.html...
+Generating docs/naval/direction/package-tree.html...
+Generating docs/constant-values.html...
+Building index for all the packages and classes...
+Generating docs/overview-tree.html...
+Generating docs/index-all.html...
+Generating docs/deprecated-list.html...
+Building index for all classes...
+Generating docs/allclasses-frame.html...
+Generating docs/allclasses-noframe.html...
+Generating docs/index.html...
+Generating docs/overview-summary.html...
+Generating docs/help-doc.html...
+ferlicotdelbe@a10p26:~/tp/POO/tp6$make compNaval
+javac -classpath classes src/naval/Position.java -d classes
+javac -classpath classes src/naval/Bateau.java -d classes
+javac -classpath classes src/naval/Case.java -d classes
+javac -classpath classes src/naval/Direction.java -d classes
+javac -classpath classes src/naval/direction/*.java -d classes
+javac -classpath classes src/naval/Mer.java -d classes
+javac -classpath classes src/naval/Jeu.java -d classes
+src/naval/Jeu.java:51: error: cannot find symbol
+                    fini = this.mer.estVide();
+                                   ^
+  symbol:   method estVide()
+  location: variable mer of type Mer
+1 error
+make: *** [compNaval] Erreur 1
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make clean
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make compNaval
+javac -classpath classes src/naval/Position.java -d classes
+javac -classpath classes src/naval/Bateau.java -d classes
+javac -classpath classes src/naval/Case.java -d classes
+javac -classpath classes src/naval/Direction.java -d classes
+javac -classpath classes src/naval/direction/*.java -d classes
+javac -classpath classes src/naval/Mer.java -d classes
+javac -classpath classes src/naval/Jeu.java -d classes
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make jar
+make compNaval
+make[1]: entrant dans le répertoire « /home/l2/ferlicotdelbe/tp/POO/tp6 »
+javac -classpath classes src/naval/Position.java -d classes
+javac -classpath classes src/naval/Bateau.java -d classes
+javac -classpath classes src/naval/Case.java -d classes
+javac -classpath classes src/naval/Direction.java -d classes
+javac -classpath classes src/naval/direction/*.java -d classes
+javac -classpath classes src/naval/Mer.java -d classes
+javac -classpath classes src/naval/Jeu.java -d classes
+make[1]: quittant le répertoire « /home/l2/ferlicotdelbe/tp/POO/tp6 »
+jar cvfm naval.jar manifest-ex .  -C classes .	
+./.#y : fichier ou répertoire introuvable
+manifeste ajouté
+ajout : Makefile(entrée = 780) (sortie = 304)(compression : 61 %)
+ajout : trouduq/(entrée = 0) (sortie = 0)(stockage : 0 %)
+ajout : trouduq/Makefile(entrée = 622) (sortie = 205)(compression : 67 %)
+ajout : trouduq/classes/(entrée = 0) (sortie = 0)(stockage : 0 %)
+ajout : trouduq/classes/naval/(entrée = 0) (sortie = 0)(stockage : 0 %)
+ajout : trouduq/classes/naval/Direction.class(entrée = 169) (sortie = 127)(compression : 24 %)
+ajout : trouduq/classes/naval/Position.class(entrée = 846) (sortie = 514)(compression : 39 %)
+ajout : trouduq/classes/naval/direction/(entrée = 0) (sortie = 0)(stockage : 0 %)
+ajout : trouduq/classes/naval/direction/DirectionOuest.class(entrée = 408) (sortie = 277)(compression : 32 %)
+ajout : trouduq/classes/naval/direction/DirectionEst.class(entrée = 404) (sortie = 276)(compression : 31 %)
+ajout : trouduq/classes/naval/direction/DirectionSud.class(entrée = 404) (sortie = 275)(compression : 31 %)
+ajout : trouduq/classes/naval/direction/DirectionNord.class(entrée = 406) (sortie = 277)(compression : 31 %)
+ajout : trouduq/classes/naval/Bateau.class(entrée = 469) (sortie = 327)(compression : 30 %)
+ajout : trouduq/docs/(entrée = 0) (sortie = 0)(stockage : 0 %)
+ajout : trouduq/test/(entrée = 0) (sortie = 0)(stockage : 0 %)
+ajout : trouduq/test/PositionTest.class(entrée = 1317) (sortie = 705)(compression : 46 %)
+ajout : trouduq/test/BateauTest.java(entrée = 873) (sortie = 337)(compression : 61 %)
+ajout : trouduq/test/DirectionTest.java~(entrée = 1192) (sortie = 402)(compression : 66 %)
+ajout : trouduq/test/DirectionTest.class(entrée = 1278) (sortie = 633)(compression : 50 %)
+ajout : trouduq/test/BateauTest.java~(entrée = 873) (sortie = 340)(compression : 61 %)
+ajout : trouduq/test/PositionTest.java~(entrée = 1227) (sortie = 403)(compression : 67 %)
+ajout : trouduq/test/PositionTest.java(entrée = 1230) (sortie = 401)(compression : 67 %)
+ajout : trouduq/test/DirectionTest.java(entrée = 1171) (sortie = 393)(compression : 66 %)
+ajout : trouduq/test/BateauTest.class(entrée = 1036) (sortie = 608)(compression : 41 %)
+ajout : trouduq/nom_du_binome(entrée = 0) (sortie = 0)(stockage : 0 %)
+ajout : trouduq/lisezmoi.txt(entrée = 0) (sortie = 0)(stockage : 0 %)
+ajout : trouduq/Makefile~(entrée = 621) (sortie = 205)(compression : 66 %)
+ajout : trouduq/test.jar(entrée = 336479) (sortie = 283308)(compression : 15 %)
+ajout : trouduq/src/(entrée = 0) (sortie = 0)(stockage : 0 %)
+ajout : trouduq/src/naval/(entrée = 0) (sortie = 0)(stockage : 0 %)
+ajout : trouduq/src/naval/Position.java(entrée = 1011) (sortie = 442)(compression : 56 %)
+ajout : trouduq/src/naval/Jeu.java(entrée = 3112) (sortie = 1221)(compression : 60 %)
+ajout : trouduq/src/naval/Direction.java(entrée = 255) (sortie = 133)(compression : 47 %)
+ajout : trouduq/src/naval/Position.java~(entrée = 947) (sortie = 427)(compression : 54 %)
+ajout : trouduq/src/naval/direction/(entrée = 0) (sortie = 0)(stockage : 0 %)
+ajout : trouduq/src/naval/direction/DirectionEst.java~(entrée = 164) (sortie = 119)(compression : 27 %)
+ajout : trouduq/src/naval/direction/DirectionSud.java~(entrée = 209) (sortie = 130)(compression : 37 %)
+ajout : trouduq/src/naval/direction/DirectionNord.java(entrée = 210) (sortie = 130)(compression : 38 %)
+ajout : trouduq/src/naval/direction/DirectionSud.java(entrée = 209) (sortie = 130)(compression : 37 %)
+ajout : trouduq/src/naval/direction/DirectionEst.java(entrée = 210) (sortie = 130)(compression : 38 %)
+ajout : trouduq/src/naval/direction/DirectionNord.java~(entrée = 210) (sortie = 130)(compression : 38 %)
+ajout : trouduq/src/naval/direction/DirectionOuest.java(entrée = 212) (sortie = 131)(compression : 38 %)
+ajout : trouduq/src/naval/direction/DirectionOuest.java~(entrée = 164) (sortie = 119)(compression : 27 %)
+ajout : trouduq/src/naval/Bateau.java~(entrée = 688) (sortie = 312)(compression : 54 %)
+ajout : trouduq/src/naval/Bateau.java(entrée = 687) (sortie = 310)(compression : 54 %)
+ajout : trouduq/src/naval/Case.java(entrée = 1685) (sortie = 570)(compression : 66 %)
+ajout : classes/(entrée = 0) (sortie = 0)(stockage : 0 %)
+ajout : classes/naval/(entrée = 0) (sortie = 0)(stockage : 0 %)
+ajout : classes/naval/Case.class(entrée = 865) (sortie = 531)(compression : 38 %)
+ajout : classes/naval/Mer.class(entrée = 2666) (sortie = 1541)(compression : 42 %)
+ajout : classes/naval/Direction.class(entrée = 169) (sortie = 127)(compression : 24 %)
+ajout : classes/naval/Jeu.class(entrée = 2097) (sortie = 1262)(compression : 39 %)
+ajout : classes/naval/Mer$Reponse.class(entrée = 928) (sortie = 519)(compression : 44 %)
+ajout : classes/naval/Position.class(entrée = 846) (sortie = 514)(compression : 39 %)
+ajout : classes/naval/direction/(entrée = 0) (sortie = 0)(stockage : 0 %)
+ajout : classes/naval/direction/DirectionOuest.class(entrée = 431) (sortie = 288)(compression : 33 %)
+ajout : classes/naval/direction/DirectionEst.class(entrée = 427) (sortie = 287)(compression : 32 %)
+ajout : classes/naval/direction/DirectionSud.class(entrée = 427) (sortie = 285)(compression : 33 %)
+ajout : classes/naval/direction/DirectionNord.class(entrée = 429) (sortie = 288)(compression : 32 %)
+ajout : classes/naval/Bateau.class(entrée = 469) (sortie = 327)(compression : 30 %)
+ajout : docs/(entrée = 0) (sortie = 0)(stockage : 0 %)
+ajout : test/(entrée = 0) (sortie = 0)(stockage : 0 %)
+ajout : test/BateauTest.java(entrée = 873) (sortie = 337)(compression : 61 %)
+ajout : test/MerTest.java(entrée = 1512) (sortie = 503)(compression : 66 %)
+ajout : test/PositionTest.java(entrée = 1230) (sortie = 401)(compression : 67 %)
+ajout : test/DirectionTest.java(entrée = 1171) (sortie = 393)(compression : 66 %)
+ajout : test/MerTest.java~(entrée = 452) (sortie = 261)(compression : 42 %)
+ajout : #y#(entrée = 64085) (sortie = 2801)(compression : 95 %)
+ajout : lib/(entrée = 0) (sortie = 0)(stockage : 0 %)
+ajout : lisez_moi.txt(entrée = 0) (sortie = 0)(stockage : 0 %)
+ajout : lesage(entrée = 0) (sortie = 0)(stockage : 0 %)
+ajout : manifest-ex~(entrée = 66) (sortie = 60)(compression : 9 %)
+ajout : Makefile~(entrée = 686) (sortie = 268)(compression : 60 %)
+ajout : manifest-ex(entrée = 46) (sortie = 42)(compression : 8 %)
+ajout : test.jar(entrée = 336479) (sortie = 283308)(compression : 15 %)
+ajout : src/(entrée = 0) (sortie = 0)(stockage : 0 %)
+ajout : src/naval/(entrée = 0) (sortie = 0)(stockage : 0 %)
+ajout : src/naval/Mer.java~(entrée = 2289) (sortie = 958)(compression : 58 %)
+ajout : src/naval/Position.java(entrée = 1011) (sortie = 442)(compression : 56 %)
+ajout : src/naval/Case.java~(entrée = 2132) (sortie = 705)(compression : 66 %)
+ajout : src/naval/Jeu.java~(entrée = 2982) (sortie = 1156)(compression : 61 %)
+ajout : src/naval/Jeu.java(entrée = 2984) (sortie = 1158)(compression : 61 %)
+ajout : src/naval/Direction.java(entrée = 255) (sortie = 133)(compression : 47 %)
+ajout : src/naval/direction/(entrée = 0) (sortie = 0)(stockage : 0 %)
+ajout : src/naval/direction/DirectionEst.java~(entrée = 210) (sortie = 130)(compression : 38 %)
+ajout : src/naval/direction/DirectionSud.java~(entrée = 231) (sortie = 139)(compression : 39 %)
+ajout : src/naval/direction/DirectionNord.java(entrée = 232) (sortie = 139)(compression : 40 %)
+ajout : src/naval/direction/DirectionSud.java(entrée = 231) (sortie = 139)(compression : 39 %)
+ajout : src/naval/direction/DirectionEst.java(entrée = 232) (sortie = 139)(compression : 40 %)
+ajout : src/naval/direction/DirectionNord.java~(entrée = 232) (sortie = 139)(compression : 40 %)
+ajout : src/naval/direction/DirectionOuest.java(entrée = 234) (sortie = 140)(compression : 40 %)
+ajout : src/naval/direction/DirectionOuest.java~(entrée = 212) (sortie = 131)(compression : 38 %)
+ajout : src/naval/Reponse.java(entrée = 144) (sortie = 129)(compression : 10 %)
+ajout : src/naval/Mer.java(entrée = 4282) (sortie = 1402)(compression : 67 %)
+ajout : src/naval/Bateau.java(entrée = 687) (sortie = 310)(compression : 54 %)
+ajout : src/naval/Case.java(entrée = 2134) (sortie = 707)(compression : 66 %)
+ajout : src/navalYann/(entrée = 0) (sortie = 0)(stockage : 0 %)
+ajout : src/navalYann/Position.java(entrée = 729) (sortie = 337)(compression : 53 %)
+ajout : src/navalYann/Jeu.java(entrée = 3112) (sortie = 1221)(compression : 60 %)
+ajout : src/navalYann/Direction.java(entrée = 255) (sortie = 133)(compression : 47 %)
+ajout : src/navalYann/Bateau.java~(entrée = 608) (sortie = 302)(compression : 50 %)
+ajout : src/navalYann/Bateau.java(entrée = 604) (sortie = 297)(compression : 50 %)
+ajout : src/navalYann/Case.java(entrée = 1685) (sortie = 570)(compression : 66 %)
+ajout : naval/(entrée = 0) (sortie = 0)(stockage : 0 %)
+ajout : naval/Case.class(entrée = 865) (sortie = 531)(compression : 38 %)
+ajout : naval/Mer.class(entrée = 2666) (sortie = 1541)(compression : 42 %)
+ajout : naval/Direction.class(entrée = 169) (sortie = 127)(compression : 24 %)
+ajout : naval/Jeu.class(entrée = 2097) (sortie = 1262)(compression : 39 %)
+ajout : naval/Mer$Reponse.class(entrée = 928) (sortie = 519)(compression : 44 %)
+ajout : naval/Position.class(entrée = 846) (sortie = 514)(compression : 39 %)
+ajout : naval/direction/(entrée = 0) (sortie = 0)(stockage : 0 %)
+ajout : naval/direction/DirectionOuest.class(entrée = 431) (sortie = 288)(compression : 33 %)
+ajout : naval/direction/DirectionEst.class(entrée = 427) (sortie = 287)(compression : 32 %)
+ajout : naval/direction/DirectionSud.class(entrée = 427) (sortie = 285)(compression : 33 %)
+ajout : naval/direction/DirectionNord.class(entrée = 429) (sortie = 288)(compression : 32 %)
+ajout : naval/Bateau.class(entrée = 469) (sortie = 327)(compression : 30 %)
+make: *** [jar] Erreur 1
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make clean
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make clean
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make all
+make compNaval
+make[1]: entrant dans le répertoire « /home/l2/ferlicotdelbe/tp/POO/tp6 »
+javac -classpath classes src/naval/Position.java -d classes
+javac -classpath classes src/naval/Bateau.java -d classes
+javac -classpath classes src/naval/Case.java -d classes
+javac -classpath classes src/naval/Direction.java -d classes
+javac -classpath classes src/naval/direction/*.java -d classes
+javac -classpath classes src/naval/Mer.java -d classes
+javac -classpath classes src/naval/Jeu.java -d classes
+make[1]: quittant le répertoire « /home/l2/ferlicotdelbe/tp/POO/tp6 »
+jar cvfm naval.jar manifest-ex .  -C classes .	
+./.#y : fichier ou répertoire introuvable
+manifeste ajouté
+ajout : Makefile(entrée = 828) (sortie = 327)(compression : 60 %)
+ajout : classes/(entrée = 0) (sortie = 0)(stockage : 0 %)
+ajout : classes/naval/(entrée = 0) (sortie = 0)(stockage : 0 %)
+ajout : classes/naval/Case.class(entrée = 865) (sortie = 531)(compression : 38 %)
+ajout : classes/naval/Mer.class(entrée = 2666) (sortie = 1541)(compression : 42 %)
+ajout : classes/naval/Direction.class(entrée = 169) (sortie = 127)(compression : 24 %)
+ajout : classes/naval/Jeu.class(entrée = 2097) (sortie = 1262)(compression : 39 %)
+ajout : classes/naval/Mer$Reponse.class(entrée = 928) (sortie = 519)(compression : 44 %)
+ajout : classes/naval/Position.class(entrée = 846) (sortie = 514)(compression : 39 %)
+ajout : classes/naval/direction/(entrée = 0) (sortie = 0)(stockage : 0 %)
+ajout : classes/naval/direction/DirectionOuest.class(entrée = 431) (sortie = 288)(compression : 33 %)
+ajout : classes/naval/direction/DirectionEst.class(entrée = 427) (sortie = 287)(compression : 32 %)
+ajout : classes/naval/direction/DirectionSud.class(entrée = 427) (sortie = 285)(compression : 33 %)
+ajout : classes/naval/direction/DirectionNord.class(entrée = 429) (sortie = 288)(compression : 32 %)
+ajout : classes/naval/Bateau.class(entrée = 469) (sortie = 327)(compression : 30 %)
+ajout : docs/(entrée = 0) (sortie = 0)(stockage : 0 %)
+ajout : test/(entrée = 0) (sortie = 0)(stockage : 0 %)
+ajout : test/BateauTest.java(entrée = 873) (sortie = 337)(compression : 61 %)
+ajout : test/MerTest.java(entrée = 1512) (sortie = 503)(compression : 66 %)
+ajout : test/PositionTest.java(entrée = 1230) (sortie = 401)(compression : 67 %)
+ajout : test/DirectionTest.java(entrée = 1171) (sortie = 393)(compression : 66 %)
+ajout : test/MerTest.java~(entrée = 452) (sortie = 261)(compression : 42 %)
+ajout : #y#(entrée = 74518) (sortie = 4065)(compression : 94 %)
+ajout : lib/(entrée = 0) (sortie = 0)(stockage : 0 %)
+ajout : lisez_moi.txt(entrée = 0) (sortie = 0)(stockage : 0 %)
+ajout : lesage(entrée = 0) (sortie = 0)(stockage : 0 %)
+ajout : manifest-ex~(entrée = 66) (sortie = 60)(compression : 9 %)
+ajout : Makefile~(entrée = 686) (sortie = 268)(compression : 60 %)
+ajout : manifest-ex(entrée = 46) (sortie = 42)(compression : 8 %)
+ajout : test.jar(entrée = 336479) (sortie = 283308)(compression : 15 %)
+ajout : src/(entrée = 0) (sortie = 0)(stockage : 0 %)
+ajout : src/naval/(entrée = 0) (sortie = 0)(stockage : 0 %)
+ajout : src/naval/Mer.java~(entrée = 2289) (sortie = 958)(compression : 58 %)
+ajout : src/naval/Position.java(entrée = 1011) (sortie = 442)(compression : 56 %)
+ajout : src/naval/Case.java~(entrée = 2132) (sortie = 705)(compression : 66 %)
+ajout : src/naval/Jeu.java~(entrée = 2982) (sortie = 1156)(compression : 61 %)
+ajout : src/naval/Jeu.java(entrée = 2984) (sortie = 1158)(compression : 61 %)
+ajout : src/naval/Direction.java(entrée = 255) (sortie = 133)(compression : 47 %)
+ajout : src/naval/direction/(entrée = 0) (sortie = 0)(stockage : 0 %)
+ajout : src/naval/direction/DirectionEst.java~(entrée = 210) (sortie = 130)(compression : 38 %)
+ajout : src/naval/direction/DirectionSud.java~(entrée = 231) (sortie = 139)(compression : 39 %)
+ajout : src/naval/direction/DirectionNord.java(entrée = 232) (sortie = 139)(compression : 40 %)
+ajout : src/naval/direction/DirectionSud.java(entrée = 231) (sortie = 139)(compression : 39 %)
+ajout : src/naval/direction/DirectionEst.java(entrée = 232) (sortie = 139)(compression : 40 %)
+ajout : src/naval/direction/DirectionNord.java~(entrée = 232) (sortie = 139)(compression : 40 %)
+ajout : src/naval/direction/DirectionOuest.java(entrée = 234) (sortie = 140)(compression : 40 %)
+ajout : src/naval/direction/DirectionOuest.java~(entrée = 212) (sortie = 131)(compression : 38 %)
+ajout : src/naval/Reponse.java(entrée = 144) (sortie = 129)(compression : 10 %)
+ajout : src/naval/Mer.java(entrée = 4282) (sortie = 1402)(compression : 67 %)
+ajout : src/naval/Bateau.java(entrée = 687) (sortie = 310)(compression : 54 %)
+ajout : src/naval/Case.java(entrée = 2134) (sortie = 707)(compression : 66 %)
+ajout : naval/(entrée = 0) (sortie = 0)(stockage : 0 %)
+ajout : naval/Case.class(entrée = 865) (sortie = 531)(compression : 38 %)
+ajout : naval/Mer.class(entrée = 2666) (sortie = 1541)(compression : 42 %)
+ajout : naval/Direction.class(entrée = 169) (sortie = 127)(compression : 24 %)
+ajout : naval/Jeu.class(entrée = 2097) (sortie = 1262)(compression : 39 %)
+ajout : naval/Mer$Reponse.class(entrée = 928) (sortie = 519)(compression : 44 %)
+ajout : naval/Position.class(entrée = 846) (sortie = 514)(compression : 39 %)
+ajout : naval/direction/(entrée = 0) (sortie = 0)(stockage : 0 %)
+ajout : naval/direction/DirectionOuest.class(entrée = 431) (sortie = 288)(compression : 33 %)
+ajout : naval/direction/DirectionEst.class(entrée = 427) (sortie = 287)(compression : 32 %)
+ajout : naval/direction/DirectionSud.class(entrée = 427) (sortie = 285)(compression : 33 %)
+ajout : naval/direction/DirectionNord.class(entrée = 429) (sortie = 288)(compression : 32 %)
+ajout : naval/Bateau.class(entrée = 469) (sortie = 327)(compression : 30 %)
+make: *** [jar] Erreur 1
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make clean
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make all
+make compNaval
+make[1]: entrant dans le répertoire « /home/l2/ferlicotdelbe/tp/POO/tp6 »
+javac -classpath classes src/naval/Position.java -d classes
+javac -classpath classes src/naval/Bateau.java -d classes
+javac -classpath classes src/naval/Case.java -d classes
+javac -classpath classes src/naval/Direction.java -d classes
+javac -classpath classes src/naval/direction/*.java -d classes
+javac -classpath classes src/naval/Mer.java -d classes
+javac -classpath classes src/naval/Jeu.java -d classes
+make[1]: quittant le répertoire « /home/l2/ferlicotdelbe/tp/POO/tp6 »
+java -classpath classes naval.Jeu
+Saisissez les coordonnees de la case (x,y) visee sous la forme : x y, exemple : 3 2
+Pour arreter la partie, entrer une coordonnee x negative.
+__
+__
+__
+__
+__
+__
+__
+__
+__
+_
+|
+.
+|
+.
+|
+.
+|
+.
+|
+.
+|
+.
+|
+.
+|
+.
+|
+.
+_
+__
+__
+__
+__
+__
+__
+__
+__
+__
+_
+|
+.
+|
+.
+|
+.
+|
+.
+|
+.
+|
+.
+|
+.
+|
+.
+|
+.
+_
+__
+__
+__
+__
+__
+__
+__
+__
+__
+_
+|
+.
+|
+.
+|
+.
+|
+.
+|
+.
+|
+.
+|
+.
+|
+.
+|
+.
+_
+__
+__
+__
+__
+__
+__
+__
+__
+__
+_
+|
+.
+|
+.
+|
+.
+|
+.
+|
+.
+|
+.
+|
+.
+|
+.
+|
+.
+_
+__
+__
+__
+__
+__
+__
+__
+__
+__
+_
+|
+.
+|
+.
+|
+.
+|
+.
+|
+.
+|
+.
+|
+.
+|
+.
+|
+.
+_
+__
+__
+__
+__
+__
+__
+__
+__
+__
+_
+|
+.
+|
+.
+|
+.
+|
+.
+|
+.
+|
+.
+|
+.
+|
+.
+|
+.
+_
+__
+__
+__
+__
+__
+__
+__
+__
+__
+_
+|
+.
+|
+.
+|
+.
+|
+.
+|
+.
+|
+.
+|
+.
+|
+.
+|
+.
+_
+__
+__
+__
+__
+__
+__
+__
+__
+__
+_
+|
+.
+|
+.
+|
+.
+|
+.
+|
+.
+|
+.
+|
+.
+|
+.
+|
+.
+_
+__
+__
+__
+__
+__
+__
+__
+__
+__
+_
+|
+.
+|
+.
+|
+.
+|
+.
+|
+.
+|
+.
+|
+.
+|
+.
+|
+.
+_
+__
+__
+__
+__
+__
+__
+__
+__
+__
+_
+x y ?   C-c C-cmake: *** [run] Erreur 130
+
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make all
+make compNaval
+make[1]: entrant dans le répertoire « /home/l2/ferlicotdelbe/tp/POO/tp6 »
+javac -classpath classes src/naval/Position.java -d classes
+javac -classpath classes src/naval/Bateau.java -d classes
+javac -classpath classes src/naval/Case.java -d classes
+javac -classpath classes src/naval/Direction.java -d classes
+javac -classpath classes src/naval/direction/*.java -d classes
+javac -classpath classes src/naval/Mer.java -d classes
+javac -classpath classes src/naval/Jeu.java -d classes
+make[1]: quittant le répertoire « /home/l2/ferlicotdelbe/tp/POO/tp6 »
+java -classpath classes naval.Jeu
+Saisissez les coordonnees de la case (x,y) visee sous la forme : x y, exemple : 3 2
+Pour arreter la partie, entrer une coordonnee x negative.
+___________________
+|.|.|.|.|.|.|.|.|.____________________
+|.|.|.|.|.|.|.|.|.____________________
+|.|.|.|.|.|.|.|.|.____________________
+|.|.|.|.|.|.|.|.|.____________________
+|.|.|.|.|.|.|.|.|.____________________
+|.|.|.|.|.|.|.|.|.____________________
+|.|.|.|.|.|.|.|.|.____________________
+|.|.|.|.|.|.|.|.|.____________________
+|.|.|.|.|.|.|.|.|.____________________x y ?   C-c C-cmake: *** [run] Erreur 130
+
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make all
+make compNaval
+make[1]: entrant dans le répertoire « /home/l2/ferlicotdelbe/tp/POO/tp6 »
+javac -classpath classes src/naval/Position.java -d classes
+javac -classpath classes src/naval/Bateau.java -d classes
+javac -classpath classes src/naval/Case.java -d classes
+javac -classpath classes src/naval/Direction.java -d classes
+javac -classpath classes src/naval/direction/*.java -d classes
+javac -classpath classes src/naval/Mer.java -d classes
+javac -classpath classes src/naval/Jeu.java -d classes
+make[1]: quittant le répertoire « /home/l2/ferlicotdelbe/tp/POO/tp6 »
+java -classpath classes naval.Jeu
+Saisissez les coordonnees de la case (x,y) visee sous la forme : x y, exemple : 3 2
+Pour arreter la partie, entrer une coordonnee x negative.
+___________________
+|.|.|.|.|.|.|.|.|.____________________
+|.|.|.|.|.|.|.|.|.____________________
+|.|.|.|.|.|.|.|.|.____________________
+|.|.|.|.|.|.|.|.|.____________________
+|.|.|.|.|.|.|.|.|.____________________
+|.|.|.|.|.|.|.|.|.____________________
+|.|.|.|.|.|.|.|.|.____________________
+|.|.|.|.|.|.|.|.|.____________________
+|.|.|.|.|.|.|.|.|.____________________x y ?   C-c C-cmake: *** [run] Erreur 130
+
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make all
+make compNaval
+make[1]: entrant dans le répertoire « /home/l2/ferlicotdelbe/tp/POO/tp6 »
+javac -classpath classes src/naval/Position.java -d classes
+javac -classpath classes src/naval/Bateau.java -d classes
+javac -classpath classes src/naval/Case.java -d classes
+javac -classpath classes src/naval/Direction.java -d classes
+javac -classpath classes src/naval/direction/*.java -d classes
+javac -classpath classes src/naval/Mer.java -d classes
+javac -classpath classes src/naval/Jeu.java -d classes
+make[1]: quittant le répertoire « /home/l2/ferlicotdelbe/tp/POO/tp6 »
+java -classpath classes naval.Jeu
+Saisissez les coordonnees de la case (x,y) visee sous la forme : x y, exemple : 3 2
+Pour arreter la partie, entrer une coordonnee x negative.
+___________________
+|.|.|.|.|.|.|.|.|._
+___________________
+|.|.|.|.|.|.|.|.|._
+___________________
+|.|.|.|.|.|.|.|.|._
+___________________
+|.|.|.|.|.|.|.|.|._
+___________________
+|.|.|.|.|.|.|.|.|._
+___________________
+|.|.|.|.|.|.|.|.|._
+___________________
+|.|.|.|.|.|.|.|.|._
+___________________
+|.|.|.|.|.|.|.|.|._
+___________________
+|.|.|.|.|.|.|.|.|._
+___________________
+x y ? 1 1
+DANS_LEAU
+___________________
+|.|.|.|.|.|.|.|.|._
+___________________
+|.|~|.|.|.|.|.|.|._
+___________________
+|.|.|.|.|.|.|.|.|._
+___________________
+|.|.|.|.|.|.|.|.|._
+___________________
+|.|.|.|.|.|.|.|.|._
+___________________
+|.|.|.|.|.|.|.|.|._
+___________________
+|.|.|.|.|.|.|.|.|._
+___________________
+|.|.|.|.|.|.|.|.|._
+___________________
+|.|.|.|.|.|.|.|.|._
+___________________
+x y ? 59
+6
+___________________
+|.|.|.|.|.|.|.|.|._
+___________________
+|.|~|.|.|.|.|.|.|._
+___________________
+|.|.|.|.|.|.|.|.|._
+___________________
+|.|.|.|.|.|.|.|.|._
+___________________
+|.|.|.|.|.|.|.|.|._
+___________________
+|.|.|.|.|.|.|.|.|._
+___________________
+|.|.|.|.|.|.|.|.|._
+___________________
+|.|.|.|.|.|.|.|.|._
+___________________
+|.|.|.|.|.|.|.|.|._
+___________________
+x y ? 1 1
+DANS_LEAU
+___________________
+|.|.|.|.|.|.|.|.|._
+___________________
+|.|~|.|.|.|.|.|.|._
+___________________
+|.|.|.|.|.|.|.|.|._
+___________________
+|.|.|.|.|.|.|.|.|._
+___________________
+|.|.|.|.|.|.|.|.|._
+___________________
+|.|.|.|.|.|.|.|.|._
+___________________
+|.|.|.|.|.|.|.|.|._
+___________________
+|.|.|.|.|.|.|.|.|._
+___________________
+|.|.|.|.|.|.|.|.|._
+___________________
+x y ?   C-c C-cmake: *** [run] Erreur 130
+
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make all
+make compNaval
+make[1]: entrant dans le répertoire « /home/l2/ferlicotdelbe/tp/POO/tp6 »
+javac -classpath classes src/naval/Position.java -d classes
+javac -classpath classes src/naval/Bateau.java -d classes
+javac -classpath classes src/naval/Case.java -d classes
+javac -classpath classes src/naval/Direction.java -d classes
+javac -classpath classes src/naval/direction/*.java -d classes
+javac -classpath classes src/naval/Mer.java -d classes
+javac -classpath classes src/naval/Jeu.java -d classes
+make[1]: quittant le répertoire « /home/l2/ferlicotdelbe/tp/POO/tp6 »
+java -classpath classes naval.Jeu
+Saisissez les coordonnees de la case (x,y) visee sous la forme : x y, exemple : 3 2
+Pour arreter la partie, entrer une coordonnee x negative.
+__________________|
+|.|.|.|.|.|.|.|.|._
+__________________|
+|.|.|.|.|.|.|.|.|._
+__________________|
+|.|.|.|.|.|.|.|.|._
+__________________|
+|.|.|.|.|.|.|.|.|._
+__________________|
+|.|.|.|.|.|.|.|.|._
+__________________|
+|.|.|.|.|.|.|.|.|._
+__________________|
+|.|.|.|.|.|.|.|.|._
+__________________|
+|.|.|.|.|.|.|.|.|._
+__________________|
+|.|.|.|.|.|.|.|.|._
+___________________
+x y ? make all  C-c C-cmake: *** [run] Erreur 130
+
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make all
+make compNaval
+make[1]: entrant dans le répertoire « /home/l2/ferlicotdelbe/tp/POO/tp6 »
+javac -classpath classes src/naval/Position.java -d classes
+javac -classpath classes src/naval/Bateau.java -d classes
+javac -classpath classes src/naval/Case.java -d classes
+javac -classpath classes src/naval/Direction.java -d classes
+javac -classpath classes src/naval/direction/*.java -d classes
+javac -classpath classes src/naval/Mer.java -d classes
+javac -classpath classes src/naval/Jeu.java -d classes
+make[1]: quittant le répertoire « /home/l2/ferlicotdelbe/tp/POO/tp6 »
+java -classpath classes naval.Jeu
+Saisissez les coordonnees de la case (x,y) visee sous la forme : x y, exemple : 3 2
+Pour arreter la partie, entrer une coordonnee x negative.
+___________________
+|.|.|.|.|.|.|.|.|._
+___________________
+|.|.|.|.|.|.|.|.|._
+___________________
+|.|.|.|.|.|.|.|.|._
+___________________
+|.|.|.|.|.|.|.|.|._
+___________________
+|.|.|.|.|.|.|.|.|._
+___________________
+|.|.|.|.|.|.|.|.|._
+___________________
+|.|.|.|.|.|.|.|.|._
+___________________
+|.|.|.|.|.|.|.|.|._
+___________________
+|.|.|.|.|.|.|.|.|._
+___________________
+x y ?   C-c C-cmake: *** [run] Erreur 130
+
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ make all
+make compNaval
+make[1]: entrant dans le répertoire « /home/l2/ferlicotdelbe/tp/POO/tp6 »
+javac -classpath classes src/naval/Position.java -d classes
+javac -classpath classes src/naval/Bateau.java -d classes
+javac -classpath classes src/naval/Case.java -d classes
+javac -classpath classes src/naval/Direction.java -d classes
+javac -classpath classes src/naval/direction/*.java -d classes
+javac -classpath classes src/naval/Mer.java -d classes
+javac -classpath classes src/naval/Jeu.java -d classes
+make[1]: quittant le répertoire « /home/l2/ferlicotdelbe/tp/POO/tp6 »
+java -classpath classes naval.Jeu
+Saisissez les coordonnees de la case (x,y) visee sous la forme : x y, exemple : 3 2
+Pour arreter la partie, entrer une coordonnee x negative.
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+x y ? 3 2
+DANS_LEAU
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|~|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+x y ? 1 1
+DANS_LEAU
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|~|.|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|~|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+x y ?  1 2
+DANS_LEAU
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|~|~|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|~|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+x y ? 0 0
+DANS_LEAU
+___________________
+|~|.|.|.|.|.|.|.|.|
+___________________
+|.|~|~|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|~|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+x y ? 15 15
+___________________
+|~|.|.|.|.|.|.|.|.|
+___________________
+|.|~|~|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|~|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+x y ? 11 11
+___________________
+|~|.|.|.|.|.|.|.|.|
+___________________
+|.|~|~|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|~|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+x y ? 8 8
+DANS_LEAU
+___________________
+|~|.|.|.|.|.|.|.|.|
+___________________
+|.|~|~|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|~|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|~|
+___________________
+x y ? 4 4
+DANS_LEAU
+___________________
+|~|.|.|.|.|.|.|.|.|
+___________________
+|.|~|~|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|~|.|.|.|.|.|.|
+___________________
+|.|.|.|.|~|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|~|
+___________________
+x y ? 5 5
+DANS_LEAU
+___________________
+|~|.|.|.|.|.|.|.|.|
+___________________
+|.|~|~|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|~|.|.|.|.|.|.|
+___________________
+|.|.|.|.|~|.|.|.|.|
+___________________
+|.|.|.|.|.|~|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|~|
+___________________
+x y ? 1 1
+DANS_LEAU
+___________________
+|~|.|.|.|.|.|.|.|.|
+___________________
+|.|~|~|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|~|.|.|.|.|.|.|
+___________________
+|.|.|.|.|~|.|.|.|.|
+___________________
+|.|.|.|.|.|~|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|~|
+___________________
+x y ? 2 3
+TOUCHE
+___________________
+|~|.|.|.|.|.|.|.|.|
+___________________
+|.|~|~|.|.|.|.|.|.|
+___________________
+|.|.|.|*|.|.|.|.|.|
+___________________
+|.|.|~|.|.|.|.|.|.|
+___________________
+|.|.|.|.|~|.|.|.|.|
+___________________
+|.|.|.|.|.|~|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|.|
+___________________
+|.|.|.|.|.|.|.|.|~|
+___________________
+x y ?   C-c C-cmake: *** [run] Erreur 130
+
+ferlicotdelbe@a10p26:~/tp/POO/tp6$ 

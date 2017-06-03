@@ -1,0 +1,10 @@
+AR toplevel behavioral /home/l2/ferlicotdelbe/tp/ARCHI/toplevel.vhf sub00/vhpl05 1380532713
+AR circuit1 behavioral /home/l2/ferlicotdelbe/tp/ARCHI/circuit1.vhf sub00/vhpl07 1380532715
+EN circuit1 NULL /home/l2/ferlicotdelbe/tp/ARCHI/circuit1.vhf sub00/vhpl06 1380532714
+EN circuit2 NULL /home/l2/ferlicotdelbe/tp/ARCHI/circuit2.vhf sub00/vhpl08 1380532716
+EN circuit1_muser_toplevel NULL /home/l2/ferlicotdelbe/tp/ARCHI/toplevel.vhf sub00/vhpl02 1380532710
+AR circuit1_muser_toplevel behavioral /home/l2/ferlicotdelbe/tp/ARCHI/toplevel.vhf sub00/vhpl03 1380532711
+EN toplevel NULL /home/l2/ferlicotdelbe/tp/ARCHI/toplevel.vhf sub00/vhpl04 1380532712
+AR circuit2_muser_toplevel behavioral /home/l2/ferlicotdelbe/tp/ARCHI/toplevel.vhf sub00/vhpl01 1380532709
+AR circuit2 behavioral /home/l2/ferlicotdelbe/tp/ARCHI/circuit2.vhf sub00/vhpl09 1380532717
+EN circuit2_muser_toplevel NULL /home/l2/ferlicotdelbe/tp/ARCHI/toplevel.vhf sub00/vhpl00 1380532708

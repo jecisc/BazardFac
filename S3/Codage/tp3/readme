@@ -1,0 +1,7 @@
+(* Ferlicot-Delbecque Cyril TP3 Codage *)
+
+-> Ce dossier contient 
+	-cigale-ISO-8859-1.txt et cigale-UTF-8.txt les fichiers de bases 
+	-cigale-ISO-8859-1-conv.txt et cigale-UTF-8-conv.txt les fichiers crées dans la question 1
+	-tp3.ml qui contient les fonction codés en Caml
+	-cigale-test-UTF8.txt qui est le fichier créé à la question 5

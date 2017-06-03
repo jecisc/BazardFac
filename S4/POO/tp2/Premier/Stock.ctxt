@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Stock()
+comment0.text=\n\ Constructor\ who\ create\ a\ new\ Stock\n
+comment1.params=n
+comment1.target=Stock(int)
+comment1.text=\n\ Constructor\ who\ create\ a\ new\ stock\ of\ n\ quantite\n\ @para\ n\:\ quantite\ at\ the\ begening.\n
+comment2.params=
+comment2.target=int\ getQuantite()
+comment2.text=\n\ getQuantite()\:\ return\ an\ int\ who\ correspond\ at\ the\ attriubt\ quantite\ when\ we\ execut\ this\ method.\n\ @return\ the\ "quantite"\ of\ the\ Stock\n
+comment3.params=n
+comment3.target=void\ ajoute(int)
+comment3.text=\n\ ajoute\ (n)\:\ change\ the\ actual\ stock\ and\ add\ n\ to\ the\ Stock\n\ @para\ n\:\ coefficient\ of\ the\ increse\ of\ the\ Stock\n
+comment4.params=n
+comment4.target=int\ retire(int)
+comment4.text=\n\ retire\ (n)\:\ substract\ n\ to\ the\ quatite.\ If\ n\ is\ more\ important\ than\ the\ quantite\ the\ method\ put\ quantite\ to\ 0\ and\ return\ the\ last\ quantite.\n\ @para\ n\:\ coefficient\ of\ the\ decrease\ of\ the\ Stock\n\ @return\ \:\ the\ quantite\ the\ method\ substract\ to\ the\ quantite.\ \n
+comment5.params=
+comment5.target=java.lang.String\ toString()
+comment5.text=\n\ toString()\:\ return\ a\ String\ who\ say\ how\ many\ we've\ on\ the\ Stock\n\ @return\:\ String\n
+numComments=6

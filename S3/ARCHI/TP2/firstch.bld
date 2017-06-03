@@ -1,0 +1,36 @@
+Release 12.4 ngdbuild M.81d (lin)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Command Line: /usr/local/Xilinx/12.4/ISE_DS/ISE/bin/lin/unwrapped/ngdbuild
+-intstyle ise -dd _ngo -nt timestamp -uc TP2.ucf -p xc3s1200e-fg320-4
+firstch.ngc firstch.ngd
+
+Reading NGO file "/home/l2/ferlicotdelbe/tp/ARCHI/TP1/tp2/firstch.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "TP2.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 84740 kilobytes
+
+Writing NGD file "firstch.ngd" ...
+Total REAL time to NGDBUILD completion:  2 sec
+Total CPU time to NGDBUILD completion:   1 sec
+
+Writing NGDBUILD log file "firstch.bld"...

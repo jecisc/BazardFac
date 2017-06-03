@@ -1,0 +1,44 @@
+Class documentation
+<---- javadoc command: ---->
+/usr/lib/jvm/java-6-openjdk-i386/bin/javadoc
+-author
+-version
+-nodeprecated
+-package
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+1.6
+-classpath
+/usr/share/bluej/bluejcore.jar:/usr/share/bluej/junit-4.8.2.jar:/home/l2/ferlicotdelbe/po/tp2/Ampoule
+-d
+/home/l2/ferlicotdelbe/po/tp2/Ampoule/doc
+-encoding
+UTF-8
+-charset
+UTF-8
+-docletpath
+/usr/share/bluej/bjdoclet.jar
+-doclet
+bluej.doclet.doclets.formats.html.HtmlDoclet
+/home/l2/ferlicotdelbe/po/tp2/Ampoule/Ampoule.java
+<---- end of javadoc command ---->
+Loading source file /home/l2/ferlicotdelbe/po/tp2/Ampoule/Ampoule.java...
+Constructing Javadoc information...
+Standard Doclet version 1.6.0_27
+Building tree for all the packages and classes...
+Generating /home/l2/ferlicotdelbe/po/tp2/Ampoule/doc/Ampoule.html...
+/home/l2/ferlicotdelbe/po/tp2/Ampoule/Ampoule.java:41: warning - @para is an unknown tag.
+/home/l2/ferlicotdelbe/po/tp2/Ampoule/Ampoule.java:49: warning - @para is an unknown tag.
+Generating /home/l2/ferlicotdelbe/po/tp2/Ampoule/doc/package-frame.html...
+Generating /home/l2/ferlicotdelbe/po/tp2/Ampoule/doc/package-summary.html...
+Generating /home/l2/ferlicotdelbe/po/tp2/Ampoule/doc/constant-values.html...
+Building index for all the packages and classes...
+Building index for all classes...
+Generating /home/l2/ferlicotdelbe/po/tp2/Ampoule/doc/allclasses-frame.html...
+Generating /home/l2/ferlicotdelbe/po/tp2/Ampoule/doc/allclasses-noframe.html...
+Generating /home/l2/ferlicotdelbe/po/tp2/Ampoule/doc/index.html...
+Generating /home/l2/ferlicotdelbe/po/tp2/Ampoule/doc/stylesheet.css...
+2 warnings

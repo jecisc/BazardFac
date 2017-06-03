@@ -1,0 +1,6 @@
+
+#
+NET "Led<0>" LOC = "J14";
+NET "Led<1>" LOC = "J15";
+
+NET "clk" LOC = "B8";

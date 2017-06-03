@@ -1,0 +1,3 @@
+vhdl isim_temp "connecteur.vhf"
+vhdl isim_temp "connecteur16.vhf"
+vhdl isim_temp "connecteur16_tb.vhd"

@@ -1,0 +1,125 @@
+open Bloomfilter
+
+let nb_hash_functions = 8
+
+let random_tab = Array.make (128 * nb_hash_functions) 0
+
+let init_random_tab () =
+  Random.self_init ();
+  for i = 0 to 127 do
+    for j = 0 to nb_hash_functions - 1 do
+      random_tab.(j*128+i) <- (Random.int 32000)
+    done;
+  done
+
+let code_of_string str n =
+  let l = String.length(str) and valeur = ref 0 in (* l = longueur de notre chaine de caractere et valeur est la valeur de notre chaine de caractere.*)
+  for i = 0 to (l-1) do
+    valeur := !valeur + random_tab.((n *128) + (int_of_char(str.[i])));
+  done;
+  !valeur
+  
+let random_word () =
+  let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+  and length = 4 + Random.int (4)
+  in
+  let str = String.create length
+  in
+  for i = 0 to length - 1 do
+    str.[i] <- letters.[(Random.int 51)]
+  done;
+  str
+
+(* Fonction qui calcule a à la puissance b*)
+let rec puiss a b=
+  if b = 1 then
+    a
+  else
+    a * (puiss (a) (b-1))
+   
+(* Focntion de recherche dicotomique dans un tableau de String pas forcément trié.*)
+let r_dicho t1 x =
+  let t = Array.copy t1 in
+  Array.sort String.compare t;
+  let a = 0 and b = Array.length(t) in
+  if a <= b then
+    (
+      let (d,f) = (ref a,ref b) in
+      while (!d < !f) do
+	let m = (!d + !f)/2 in
+	if t.(m) < x then
+	  d := m + 1
+	else
+	  f := m
+      done;
+      t.(!d) = x
+    )
+  else
+    false
+
+(*    
+    
+  fin pour
+  imprimer deux lignes vides
+fin pour
+*)
+
+let test_principal()=
+  let cpt_pos = ref 0 and cpt_f_pos = ref 0 in
+  (* creer l'ensemble des mots à inserer I*)
+  let motAlea = Array.make (puiss 2 10) "" in
+  for i = 0 to ((puiss 2 10) -1) do
+    motAlea.(i) <- random_word();
+  done;
+  (* pour n = 1 à 8 faire *)
+  for n = 1 to 8 do
+    (* pour t = 10 à 20 faire*)
+    for t = 10 to 20 do
+      (*creer un filtre de bloom BF de taille 2^t à n fonctions de hachage*)
+      let bf = new_bloomfilter t code_of_string n in
+      (*inserer les mots de I dans BF*)
+      for j = 0 to ((puiss 2 10) -1) do
+	add bf motAlea.(j);
+      done;
+      (* pour k = 1 to 2^14 faire *)
+      for k = 1 to (puiss 2 14) do
+	(* tirer un mot au hasard U *)
+	let mot = random_word() in 
+	(* si U n'appartient pas à I alors *)
+	if ( not(r_dicho motAlea mot)) then
+	  (
+	    (*augmenter le compteur de mots testés*)
+	    cpt_pos := !cpt_pos + 1;
+	    (* si U appartient à BF alors*)
+	    if (contains bf mot) then
+	      (*  augmenter le compteur de faux positifs *)
+	      cpt_f_pos := !cpt_f_pos + 1;
+	  )
+      done;
+      (* imprimer dans cet ordre:
+	 la taille du filtre, le nombre de fonctions, le nombre de mots testes, le nombre de faux positifs, le taux de faux positifs*)
+      Printf.printf "%2d %2d %6d %6f"
+	t
+	n
+	(puiss 2 14)
+	(!cpt_f_pos)
+	(* A FINIR ICI !!!!!*)
+    done;
+  done
+
+
+let _ = 
+  init_random_tab ();
+  (* creation du filtre *)
+  let bf = new_bloomfilter 2 code_of_string 8
+  and s = random_word ()
+  in
+  add bf "timoleon";
+  Printf.printf "timoleon est present : %b\n" (contains bf "timoleon");
+  Printf.printf "%s est present : %b\n" s (contains bf s)
+  
+
+    
+
+
+  

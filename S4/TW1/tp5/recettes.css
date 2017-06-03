@@ -1,0 +1,56 @@
+body {
+    font-familly: sans-serif;
+    background-color:  	#C8C8C8;
+    counter-reset:section;
+}
+
+div{
+    background-color: white;
+    width: 60%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+h1{
+    color: white;
+    background-color: grey;
+    text-align: center;
+    font-size: 45px;
+    padding: 20px;
+    marging: 0px;
+}
+
+h2{
+    counter-reset:subsection;
+    margin-left: 5px;
+}
+
+h2:before{
+    counter-increment:section;
+    content: counter(section, upper-latin) " ";
+    border: dashed black 4px;
+    margin-right: 4px;
+    padding-left: 4px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+h3{
+    
+    margin-left: 5px;
+}
+
+h3:before{
+    counter-increment: subsection;
+    content: counter(section, upper-latin) "." counter(subsection) " ";
+    font-style: italic;
+}
+
+ol, div.procede {
+    margin: 20px 60px;
+    border: solid 1px black;
+    list-style-type: lower-latin;
+    width: 80%;
+    
+}
+

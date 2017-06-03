@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=name
+comment0.target=Marchandise(java.lang.String)
+comment0.text=\n\ Constructor\ which\ take\ a\ String\ in\ parametre\ and\ create\ a\ new\ Marchandise\ of\ this\ name\ with\ 0\ in\ value.\n\ @para\ name\ \:\ name\ of\ the\ Marchandise\n
+comment1.params=name\ value
+comment1.target=Marchandise(java.lang.String,\ float)
+comment1.text=\n\ Constructor\ which\ create\ a\ new\ Marchandise\ with\ name\ in\ name\ and\ value\ in\ value.\n\ @para\ name\:\ the\ name\ of\ the\ Marchandise\n\ @para\ value\:\ the\ value\ of\ the\ Marchandise\n
+comment2.params=
+comment2.target=float\ getValue()
+comment2.text=\n\ getValue\ return\ the\ value\ of\ the\ Marchandise.\n\ @return\:\ value\ of\ the\ Marchandise\n
+comment3.params=n
+comment3.target=void\ addValue(float)
+comment3.text=\n\ addValue(n)\:\ add\ n\ to\ the\ value\n\ @para\ n\:\ coefficient\ of\ the\ increse\ of\ the\ value\n
+comment4.params=n
+comment4.target=float\ subValue(float)
+comment4.text=\n\ subValue(n)\:\ substract\ n\ to\ the\ value.\ If\ n\ is\ more\ important\ than\ the\ value\ the\ method\ put\ the\ value\ to\ 0\ and\ return\ the\ last\ value.\n\ @para\ n\:\ coefficient\ of\ the\ decrease\ of\ the\ value\n\ @return\ \:\ the\ value\ the\ method\ substract\ to\ the\ value.\ \n
+comment5.params=
+comment5.target=java.lang.String\ getName()
+comment5.text=\n\ getName()\:\ return\ the\ name\ of\ the\ Marchandise.\n\ @return\ \:\ the\ name\ of\ the\ marchandise.\n
+comment6.params=
+comment6.target=java.lang.String\ toString()
+comment6.text=\n\ toString()\:\ reutnr\ a\ String\ which\ give\ the\ name\ and\ the\ value\ of\ the\ Marchandise\n\ @return\ \:\ a\ String\ with\ the\ value\ and\ the\ name\ of\ the\ Marchandise\n
+comment7.params=
+comment7.target=float\ addTaxe()
+comment7.text=\n\ addTaxe()\:\ return\ the\ value\ of\ the\ Marchandise\ with\ the\ TVA\n\ @return\ \:\ the\ value\ with\ the\ TVA.\n
+numComments=8

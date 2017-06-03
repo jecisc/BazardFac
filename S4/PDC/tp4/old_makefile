@@ -1,0 +1,17 @@
+OPTIONS= -W -Wall -pedantic -ansi -g 
+#BASETP2 = fatal.o affiche_entier.o readl.o mcu_wc.o mcu_wl.o mcu_ww.o
+
+all: tri_dico
+
+tri_dico: tri_dico.o
+	gcc $(OPTIONS) -o tri_dico tri_dico.o 
+
+#wc : mon_wc.o
+#	gcc $(OPTIONS) -o wc mon_wc.o $(BASETP2)
+
+%.o: %.c %.h
+	gcc $(OPTIONS) -o $@ -c $<
+
+clean:
+	@rm -f *.o  *~ mcu_wl mcu_wc mcu_ww wc
+

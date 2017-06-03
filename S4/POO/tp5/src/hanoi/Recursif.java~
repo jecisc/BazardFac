@@ -1,0 +1,34 @@
+package hanoi;
+
+
+
+/**
+ * class Recursif.
+ * TP5 - POO
+ * @author : Ferlicot-Delbecque Cyril
+ */
+
+public class Recursif
+{
+
+    private resolution (int nombreDisque, int depart, int arriver, int intermed){
+	if (nombreDisque == 1)
+	    deplacer(depart, arriver);
+	else{
+	    resolution ((nombreDisque -1), depart, intermed, arriver);
+	    deplacer (depart, arriver);
+	    resolution ((nombreDisque -1), intermed, arriver, depart);
+	}
+	    
+    } 
+    
+    /**
+     * Resolution of the Hanoi's problem with the recursive way.
+     */
+	public void main(int nombreDisque) {
+	Plateau unPlateau = new Plateau ( nombreDisque);
+	unPlateau.resolution( nombreDisque, 0, 2, 1);
+    }
+	
+}
+

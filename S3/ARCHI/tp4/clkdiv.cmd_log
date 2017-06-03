@@ -1,0 +1,5 @@
+sch2sym -intstyle ise -family spartan3e -refsym clkdiv /home/l2/ferlicotdelbe/tp/ARCHI/tp4/clkdiv.sch /home/l2/ferlicotdelbe/tp/ARCHI/tp4/clkdiv.sym 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl clkdiv_drc.vhf -w /home/l2/ferlicotdelbe/tp/ARCHI/tp4/clkdiv.sch 
+xst -intstyle ise -ifn "/home/l2/ferlicotdelbe/tp/ARCHI/tp4/clkdiv.xst" -ofn "/home/l2/ferlicotdelbe/tp/ARCHI/tp4/clkdiv.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc S3.ucf -bm Clkdiv_tb.bmm -p xc3s1200e-fg320-4 clkdiv.ngc clkdiv.ngd  
+netgen -intstyle ise -rpw 100 -tpw 0 -ar Structure -tm clkdiv -w -dir netgen/translate -ofmt vhdl -sim clkdiv.ngd clkdiv_translate.vhd 

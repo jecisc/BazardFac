@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl mux2x16_drc.vhf -w /home/l2/ferlicotdelbe/tp/ARCHI/tp7/mux2x16.sch 
+sch2sym -intstyle ise -family spartan3e -refsym mux2x16 /home/l2/ferlicotdelbe/tp/ARCHI/tp7/mux2x16.sch /home/l2/ferlicotdelbe/tp/ARCHI/tp7/mux2x16.sym 

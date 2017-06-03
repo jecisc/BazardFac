@@ -1,0 +1,167 @@
+open Experience
+open Tris
+
+let cpt = ref 0
+
+(** [est_dans m p]  renvoit true si le marqueur [m] se trouve dans le tableau de marqueur [p]. *)
+let est_dans marqueur positifs=
+  let marq = ref true and j = ref 0 in
+  while (!marq && !j < Array.length positifs) do
+    if (cmp positifs.(!j) marqueur ) = 0 then
+      marq := false;
+    j := !j +1;
+  done;
+  !marq;;
+  
+
+(** 
+    strategie 1
+*)
+let liste_des_marqueurs_negatifs_1 marqueurs positifs =
+  let l = ref [] 
+  and long_marq = Array.length marqueurs 
+  in
+  for i = 0 to (long_marq -1) do
+    let marq = est_dans marqueurs.(i) positifs in
+    if (marq) then (* si le marqueur n'est pas dans le tableau des marqueurs positifs nous pouvons le rajouter à la liste*)
+      l:= (marqueurs.(i))::!l;
+  done;
+  !l;;
+
+
+(** [est_dans2 m p]  renvoit true si le marqueur [m] se trouve dans le tableau trié de marqueur [p]. *)
+let est_dans2 marqueur positifs=
+  let marq = ref true and j = ref 0 in
+  while (!marq && !j < Array.length positifs) do
+    let comp =  (cmp positifs.(!j) marqueur ) in
+    if comp = 0 then
+      marq := false
+    else 
+      (
+	if comp = 1 then
+	  j := Array.length positifs
+	else
+	  j := !j +1;
+      );
+  done;
+  !marq;;
+
+(** 
+    strategie 2
+*)
+let liste_des_marqueurs_negatifs_2 marqueurs positifs =
+  let l = ref [] 
+  and long_marq = Array.length marqueurs
+  and positifs_tri = Tris.trier positifs Experience.cmp
+  in
+  for i = 0 to (long_marq -1) do
+    let marq = est_dans2 marqueurs.(i) positifs_tri in
+    if (marq) then (* si le marqueur n'est pas dans le tableau des marqueurs positifs nous pouvons le rajouter à la liste*)
+      l:= (marqueurs.(i))::!l;
+  done;
+  !l;;
+
+
+(** [est_dans3 m p inf]  renvoit true si le marqueur [m] se trouve dans le tableau trié de marqueur [p] à partir de l'indice [inf]. *)
+let est_dans3 marqueur positifs inf=
+  let marq = ref true 
+  and j = ref inf 
+  and fin = ref (Array.length positifs) 
+  in
+  while (!marq && !j < Array.length positifs) do
+    let comp =  (cmp positifs.(!j) marqueur ) in
+    if comp = 0 then
+      (
+	marq := false;
+	fin := !j
+      )
+    else 
+      (
+	if comp = 1 then
+	  (
+	    fin := !j;
+	    j := Array.length positifs
+	  )
+	else
+	  j := !j +1;
+      );
+  done;
+  (!marq, !fin);;
+
+(** 
+    strategie 3
+*)
+let liste_des_marqueurs_negatifs_3 marqueurs positifs =
+  let l = ref [] 
+  and long_marq = Array.length marqueurs
+  and positifs_tri = Tris.trier positifs Experience.cmp
+  and marqueurs_tri = Tris.trier marqueurs Experience.cmp
+  and inf = ref 0
+  in
+  for i = 0 to (long_marq -1) do
+    let (marq, new_indice) = (est_dans3 marqueurs_tri.(i) positifs_tri !inf) in
+    if (marq) then (* si le marqueur n'est pas dans le tableau des marqueurs positifs nous pouvons le rajouter à la liste*)
+      l:= (marqueurs_tri.(i))::!l;
+    inf := new_indice;
+  done;
+  !l;;
+
+
+(**
+   [imprimer_liste_marqueurs l] imprime les marqueurs de la liste l
+*)
+let rec imprimer_liste_marqueurs l =
+  match l with
+  | [] -> 
+    Printf.printf "\n"
+  | m::r -> 
+    Printf.printf "%s " m;
+    imprimer_liste_marqueurs r
+
+let _ = 
+  let p = int_of_string Sys.argv.(1) (* nombre de marqueurs positifs *)
+  and m = int_of_string Sys.argv.(2) (* nombre de marqueurs total *)
+  in
+  let mtab = marqueurs m
+  in
+  let etab = experience p mtab
+  in
+
+  (* impression des marqueurs *)
+  Printf.printf "Marqueurs          : ";
+  for i = 0 to m-1 do
+    Printf.printf "%s " mtab.(i)
+  done;
+  Printf.printf "\n";
+
+  (* impression des marqueurs positifs *)
+  Printf.printf "Marqueurs positifs : ";
+  for i = 0 to p-1 do
+    Printf.printf "%s " etab.(i)
+  done;
+  Printf.printf "\n";
+
+
+  (* test methode 1 *)
+  cpt := 0;
+  Printf.printf "Marqueurs negatifs : ";
+  imprimer_liste_marqueurs (liste_des_marqueurs_negatifs_1 mtab etab);
+  Printf.printf "M1: %d\n" !cpt;
+
+
+  (* test methode 2 *)
+  cpt := 0;
+  Printf.printf "Marqueurs negatifs : ";
+  imprimer_liste_marqueurs (liste_des_marqueurs_negatifs_2 mtab etab);
+  Printf.printf "M2 : %d\n" !cpt;
+
+
+  (* test methode 3 *)
+  cpt := 0;
+  Printf.printf "Marqueurs negatifs : ";
+  imprimer_liste_marqueurs (liste_des_marqueurs_negatifs_3 mtab etab);
+  Printf.printf "M3 : %d\n" !cpt;
+
+
+  
+  

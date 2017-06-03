@@ -1,0 +1,8 @@
+V3 11
+FL /home/l2/ferlicotdelbe/tp/ARCHI/TP1/tp2/firstch.vhf 2013/09/30.10:54:28 M.81d
+EN work/firstch 1380531399 FL /home/l2/ferlicotdelbe/tp/ARCHI/TP1/tp2/firstch.vhf \
+      PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
+      PH unisim/VCOMPONENTS 1290154108
+AR work/firstch/BEHAVIORAL 1380531400 \
+      FL /home/l2/ferlicotdelbe/tp/ARCHI/TP1/tp2/firstch.vhf EN work/firstch 1380531399 \
+      CP AND2 CP INV CP NAND2 CP NOR2 CP OR2 CP XNOR2 CP XOR2

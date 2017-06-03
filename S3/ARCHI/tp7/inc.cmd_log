@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl inc_drc.vhf -w /home/l2/ferlicotdelbe/tp/ARCHI/tp7/inc.sch 
+sch2sym -intstyle ise -family spartan3e -refsym inc /home/l2/ferlicotdelbe/tp/ARCHI/tp7/inc.sch /home/l2/ferlicotdelbe/tp/ARCHI/tp7/inc.sym 

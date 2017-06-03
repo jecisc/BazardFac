@@ -1,0 +1,29 @@
+Command line:
+   connecteur16_connecteur16_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  46659
+
+Mon Nov  4 11:24:48 2013
+
+
+ Elaboration Time: 0.02 sec
+
+ Current Memory Usage: 115.814 Meg
+
+ Total Signals          : 207
+ Total Nets             : 88
+ Total Signal Drivers   : 34
+ Total Blocks           : 53
+ Total Primitive Blocks : 35
+ Total Processes        : 33
+ Total Traceable Variables  : 13
+ Total Scalar Nets and Variables : 571
+Total Line Count : 36
+
+ Total Simulation Time: 0.02 sec
+
+ Current Memory Usage: 123.163 Meg
+
+Mon Nov  4 11:25:01 2013
+

@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=utf8" http-equiv="Content-Type">
+<link rel="Start" href="index.html">
+<link rel="previous" href="Evaluation_postfixee.html">
+<link rel="Up" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Pile" rel="Chapter" href="Pile.html">
+<link title="Lexemes" rel="Chapter" href="Lexemes.html">
+<link title="Evaluation_postfixee" rel="Chapter" href="Evaluation_postfixee.html">
+<link title="Eval" rel="Chapter" href="Eval.html"><link title="Une procédure pour indiquer l'usage du programme" rel="Section" href="#2_Uneprocdurepourindiquerlusageduprogramme">
+<title>Eval</title>
+</head>
+<body>
+<div class="navbar"><a href="Evaluation_postfixee.html">Previous</a>
+&nbsp;<a href="index.html">Up</a>
+&nbsp;</div>
+<center><h1>Module <a href="type_Eval.html">Eval</a></h1></center>
+<br>
+<pre><span class="keyword">module</span> Eval: <code class="code">sig</code> <a href="Eval.html">..</a> <code class="code">end</code></pre>Évaluateur d'expressions postfixées.
+<p>
+
+   Utilise les modules Pile, Lexemes et Evaluation_postfixee.
+<p>
+
+   Programme destiné à être compilé
+   <code class="code">ocamlc -o eval pile.cmo lexemes.cmo evaluation_postfixee.cmo eval.ml</code>
+<p>
+
+   Usage : eval &lt;expr&gt;
+     où &lt;expr&gt; = expression postfixée à évaluer.
+<p>
+
+   Opérateurs autorisés :
+   <ul>
+<li>+ : addition</li>
+<li>- : soustraction</li>
+<li>* : multiplication</li>
+<li>/ : quotient entier</li>
+<li>% : reste d'une division (modulo).</li>
+</ul>
+<br>
+<b>Author(s):</b> FIL - IEEA - Univ. Lille1 (oct 2010, revu oct 2012)<br>
+<hr width="100%">
+<br>
+<span id="2_Uneprocdurepourindiquerlusageduprogramme"><h2>Une procédure pour indiquer l'usage du programme</h2></span><br>
+<pre><span id="VALusage"><span class="keyword">val</span> <a href="code_VALEval.usage.html">usage</a></span> : <code class="type">unit -> 'a</code></pre><div class="info">
+<code class="code">usage ()</code> : imprime l'usage normal du programme sur la sortie standard.<br>
+</div>
+<pre><span id="VALprincipal"><span class="keyword">val</span> <a href="code_VALEval.principal.html">principal</a></span> : <code class="type">unit -> 'a</code></pre><div class="info">
+<code class="code">principal ()</code> 
+   <ul>
+<li>vérifie le bon usage du programme,</li>
+<li>transmet l'expression à évaluer à l'évaluateur,</li>
+<li>imprime le résultat sur la sortie standard.</li>
+</ul>
+<br>
+</div>
+</body></html>

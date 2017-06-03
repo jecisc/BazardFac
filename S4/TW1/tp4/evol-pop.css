@@ -1,0 +1,21 @@
+colgroup#nombres{
+    background-color: lightyellow;
+    width: 75px;
+}
+
+#pcents{
+    background-color: hsl(43,95%,75%);
+    width: 40px;
+}
+
+tbody tr:nth-child(2n){
+    background-color: hsla(0,0%,70%,0.4);
+}
+
+thead{
+    background-color: #B0B0B0;
+    color: white;
+}
+
+
+    

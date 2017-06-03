@@ -1,0 +1,5 @@
+vhdl work "demiadd.vhf"
+vhdl work "add1bit.vhf"
+vhdl work "x7seg.vhd"
+vhdl work "add4bit.vhf"
+vhdl work "toplevel.vhf"

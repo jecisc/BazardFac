@@ -1,0 +1,29 @@
+Running: /usr/local/Xilinx/12.4/ISE_DS/ISE/bin/lin/unwrapped/fuse -intstyle ise -incremental -o /home/l2/ferlicotdelbe/tp/ARCHI/toplevel_isim_beh.exe -prj /home/l2/ferlicotdelbe/tp/ARCHI/toplevel_beh.prj work.toplevel 
+ISim M.81d (signature 0x141a37e9)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/l2/ferlicotdelbe/tp/ARCHI/circuit2.vhf" into library work
+Parsing VHDL file "/home/l2/ferlicotdelbe/tp/ARCHI/circuit1.vhf" into library work
+Parsing VHDL file "/home/l2/ferlicotdelbe/tp/ARCHI/toplevel.vhf" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 35176 KB
+Fuse CPU Usage: 200 ms
+Using precompiled package standard from library std
+Using precompiled package std_logic_1164 from library ieee
+Using precompiled package numeric_std from library ieee
+Compiling package vcomponents
+Compiling architecture inv_v of entity inv [inv_default]
+Compiling architecture nand2_v of entity nand2 [nand2_default]
+Compiling architecture behavioral of entity circuit1_muser_toplevel [circuit1_muser_toplevel_default]
+Compiling architecture nor2_v of entity nor2 [nor2_default]
+Compiling architecture behavioral of entity circuit2_muser_toplevel [circuit2_muser_toplevel_default]
+Compiling architecture behavioral of entity toplevel
+Time Resolution for simulation is 1ps.
+Waiting for 2 sub-compilation(s) to finish...
+Compiled 15 VHDL Units
+Built simulation executable /home/l2/ferlicotdelbe/tp/ARCHI/toplevel_isim_beh.exe
+Fuse Memory Usage: 76180 KB
+Fuse CPU Usage: 220 ms
+GCC CPU Usage: 310 ms

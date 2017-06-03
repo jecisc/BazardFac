@@ -1,0 +1,2 @@
+vhdtdtfi -lib work fsm3.vhd -prj tp8 -o fsm3.spl -module fsm3 -template /usr/local/Xilinx/12.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e fsm3.spl /home/l2/ferlicotdelbe/tp/ARCHI/tp8/fsm3.sym 

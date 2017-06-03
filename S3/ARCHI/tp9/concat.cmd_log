@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan3e -refsym concat /home/l2/ferlicotdelbe/tp/ARCHI/tp9/concat.sch /home/l2/ferlicotdelbe/tp/ARCHI/tp9/concat.sym 
+sch2hdl -sympath /home/l2/ferlicotdelbe/tp/ARCHI/tp9/ipcore_dir -intstyle ise -family spartan3e -flat -suppress -vhdl concat_drc.vhf -w /home/l2/ferlicotdelbe/tp/ARCHI/tp9/concat.sch 

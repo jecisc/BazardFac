@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+main
+(void)
+{
+  char carac;
+  char carac2; //caractère suivant carac si necessaire.
+  carac=getchar();
+  while (!(carac==-1)) // -1 = fin de fichier
+    {
+      if (carac = '/')
+	{
+	  
+	}
+      else
+	{
+	  putchar(carac);
+	  carac=getchar():
+	}
+    }
+
+    return 0;
+ 
+}

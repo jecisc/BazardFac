@@ -1,0 +1,47 @@
+(* version recursive *)
+let rec distance_recursive u v =  
+  let n = String.length u
+  and m = String.length v
+  in
+  0
+
+
+(* construction de la table *)
+let construire_table u v =
+  let n = String.length u
+  and m = String.length v
+  in
+  let table = Array.make_matrix (n+1) (m+1) 0
+  in
+  (* initialisation *)
+  (* remplissage *)
+  table
+
+
+(* version programmation dynamique *)
+let distance_dynamique u v =
+  let n = String.length u
+  and m = String.length v
+  and table = construire_table u v
+  in
+  0
+
+
+(* affichage de l'alignement *)
+let alignement u v =
+  let n = String.length u
+  and m = String.length v
+  and table = construire_table u v
+  in
+  Printf.printf "Alignement:\n"
+    
+  
+(* test *)
+let _ =
+  let u = Sys.argv.(1)
+  and v = Sys.argv.(2)
+  in
+  Printf.printf "distance recursive = %d\n" (distance_recursive u v);
+  Printf.printf "distance dynamique = %d\n" (distance_dynamique u v);
+  alignement u v
+

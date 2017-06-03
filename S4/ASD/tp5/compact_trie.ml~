@@ -1,0 +1,10 @@
+open Printf
+
+type trie = Vide | Noeud of noeud
+and noeud = {mutable fin_mot : bool; fils : (char, trie) Hashtbl.t}
+
+
+exception Trie_vide
+
+let new_trie () =
+  Noeud {fin_mot = false; fils = Hashtbl.create 26}

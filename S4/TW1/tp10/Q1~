@@ -1,0 +1,24 @@
+ex 1
+<?php
+$i=0;
+print( $i++ + "3 cochons". " chiens\n"); =====> 3 chiens
+print("$i" . "3 cochons" . " chiens\n"); =====> 13 cochons chiens 
+print( $i + "4.1 cochons" + " chiens" . (3/2) . "\n"); =====> 5.11.5
+?>
+
+ex 2
+
+PHP et MySQL\n
+$a et $b\n
+Le cérémonie d'ouverture a lieu le 14\n
+La cérémonie d'ouverture a lieu le\n
+La cérémonie d'ouverture a lieu le\n
+Sa devise est "Liberté Egalité Fraternité"\n
+et\n
+
+
+
+
+
+
+

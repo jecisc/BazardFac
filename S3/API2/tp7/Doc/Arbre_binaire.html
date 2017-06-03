@@ -1,0 +1,86 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=utf8" http-equiv="Content-Type">
+<link rel="Start" href="index.html">
+<link rel="Up" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Arbre_binaire" rel="Chapter" href="Arbre_binaire.html"><link title="Le type" rel="Section" href="#2_Letype">
+<link title="Les constructeurs" rel="Section" href="#2_Lesconstructeurs">
+<link title="Les sélecteurs" rel="Section" href="#2_Lesslecteurs">
+<link title="Prédicat" rel="Section" href="#2_Prdicat">
+<link title="Opérations non primitives" rel="Section" href="#2_Oprationsnonprimitives">
+<title>TP sur les arbres : Arbre_binaire</title>
+</head>
+<body>
+<div class="navbar">&nbsp;<a href="index.html">Up</a>
+&nbsp;</div>
+<center><h1>Module <a href="type_Arbre_binaire.html">Arbre_binaire</a></h1></center>
+<br>
+<pre><span class="keyword">module</span> Arbre_binaire: <code class="code">sig</code> <a href="Arbre_binaire.html">..</a> <code class="code">end</code></pre>Module définissant un type de données pour les arbres binaires, ainsi que les opérations primitives les accompagnant.<br>
+<b>Author(s):</b> FIL - IEEA - Univ. Lille1 (oct 2010)<br>
+<hr width="100%">
+<br>
+<span id="2_Letype"><h2>Le type</h2></span><br>
+<pre><span id="TYPEt"><span class="keyword">type</span> <code class="type">'a</code> t</span> </pre>
+<div class="info">
+Le type des arbres binaires étiquetés par des éléments de type <code class="code">'a</code>.<br>
+</div>
+
+<pre><span id="EXCEPTIONArbre_vide"><span class="keyword">exception</span> Arbre_vide</span></pre>
+<div class="info">
+Exception déclenchée par les trois sélecteurs.<br>
+</div>
+<br>
+<span id="2_Lesconstructeurs"><h2>Les constructeurs</h2></span><br>
+<pre><span id="VALvide"><span class="keyword">val</span> vide</span> : <code class="type">'a <a href="Arbre_binaire.html#TYPEt">t</a></code></pre><div class="info">
+La constante arbre binaire vide.<br>
+</div>
+<pre><span id="VALcree"><span class="keyword">val</span> cree</span> : <code class="type">'a -> 'a <a href="Arbre_binaire.html#TYPEt">t</a> -> 'a <a href="Arbre_binaire.html#TYPEt">t</a> -> 'a <a href="Arbre_binaire.html#TYPEt">t</a></code></pre><div class="info">
+<code class="code">cree a g d</code> renvoie un arbre binaire dont le noeud racine a la valeur <code class="code">a</code> et les sous-arbres gauche et droit sont les arbres binaires <code class="code">g</code> et <code class="code">d</code>.<br>
+</div>
+<br>
+<span id="2_Lesslecteurs"><h2>Les sélecteurs</h2></span><br>
+<pre><span id="VALracine"><span class="keyword">val</span> racine</span> : <code class="type">'a <a href="Arbre_binaire.html#TYPEt">t</a> -> 'a</code></pre><div class="info">
+<code class="code">racine a</code> renvoie la valeur du noeud racine de l'arbre <code class="code">a</code>.<br>
+<b>Raises</b> <code>Arbre_vide</code> si <code class="code">a</code> est vide.<br>
+</div>
+<pre><span id="VALgauche"><span class="keyword">val</span> gauche</span> : <code class="type">'a <a href="Arbre_binaire.html#TYPEt">t</a> -> 'a <a href="Arbre_binaire.html#TYPEt">t</a></code></pre><div class="info">
+<code class="code">gauche a</code> renvoie le sous-arbre gauche de l'arbre <code class="code">a</code>.<br>
+<b>Raises</b> <code>Arbre_vide</code> si <code class="code">a</code> est vide.<br>
+</div>
+<pre><span id="VALdroit"><span class="keyword">val</span> droit</span> : <code class="type">'a <a href="Arbre_binaire.html#TYPEt">t</a> -> 'a <a href="Arbre_binaire.html#TYPEt">t</a></code></pre><div class="info">
+<code class="code">droit a</code> renvoie le sous-arbre droit de l'arbre <code class="code">a</code>.<br>
+<b>Raises</b> <code>Arbre_vide</code> si <code class="code">a</code> est vide.<br>
+</div>
+<br>
+<span id="2_Prdicat"><h2>Prédicat</h2></span><br>
+<pre><span id="VALest_vide"><span class="keyword">val</span> est_vide</span> : <code class="type">'a <a href="Arbre_binaire.html#TYPEt">t</a> -> bool</code></pre><div class="info">
+<code class="code">est_vide a</code> =<ul>
+<li>Vrai si <code class="code">a</code> est vide</li>
+<li>Faux sinon.</li>
+</ul>
+<br>
+</div>
+<br>
+<span id="2_Oprationsnonprimitives"><h2>Opérations non primitives</h2></span><br>
+<pre><span id="VALtaille"><span class="keyword">val</span> taille</span> : <code class="type">'a <a href="Arbre_binaire.html#TYPEt">t</a> -> int</code></pre><div class="info">
+<code class="code">taille a</code> renvoie la taille de l'arbre <code class="code">a</code>.<br>
+</div>
+<pre><span id="VALhauteur"><span class="keyword">val</span> hauteur</span> : <code class="type">'a <a href="Arbre_binaire.html#TYPEt">t</a> -> int</code></pre><div class="info">
+<code class="code">hauteur a</code> renvoie la hauteur de l'arbre <code class="code">a</code>.
+<p>
+
+   Par convention, la hauteur de l'arbre vide est -1.<br>
+</div>
+<pre><span id="VALimprimer"><span class="keyword">val</span> imprimer</span> : <code class="type">('a -> unit) -> 'a <a href="Arbre_binaire.html#TYPEt">t</a> -> unit</code></pre><div class="info">
+<code class="code">imprimer imp a</code> imprime l'arbre <code class="code">a</code> sous forme préfixée complètement parenthésée en utilisant l'imprimeur <code class="code">imp</code> pour imprimer les étiquettes des noeuds de l'arbre. 
+<p>
+
+   L'arbre vide est imprimé par le couple de parenthèses <code class="code">()</code>.<br>
+</div>
+</body></html>

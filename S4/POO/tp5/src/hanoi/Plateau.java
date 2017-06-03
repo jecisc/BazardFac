@@ -1,0 +1,95 @@
+package hanoi;
+import hanoi.utils.*;
+
+
+/**
+ * Class Plateau : Plateau is a class use in the Hanoi problem 
+ * POO - TP5
+ * @author : Ferlicot-Delbecque Cyril
+ */
+
+public class Plateau
+{
+    // Attribute
+    private Tour[] lesTours;
+	
+
+    //Constructor 
+    /**
+     * Constructor
+     * Allow to create a Plateau with 3 Tour.
+     *@param nombreDisque : number of Disque on the first Tour.
+     */
+    public Plateau(int nombreDisque) {
+	this.lesTours = new Tour[3];
+	this.lesTours[0] = new Tour ( nombreDisque, nombreDisque);
+	this.lesTours[1] = new Tour ( 0, nombreDisque);
+	this.lesTours[2] = new Tour ( 0, nombreDisque);
+    }
+	
+    //Methode
+    /**
+     * Take a Disque on a Tour and put this Disque on an other Tour.
+     * @param depart : Tour where we remove the Disque.
+     * @param arriver : Tour where we move the Disque.
+     */
+    public void deplacer(int depart, int arriver) {
+	if (deplacementPossible (depart, arriver)){
+	    this.lesTours[arriver].poser(this.lesTours[depart].enlever());
+	}
+    }
+	
+
+    /**
+     *Returns a String object representing of a Plateau.
+     *@return a string representation of Plateau.
+     */
+    public String toString() {
+	return lesTours[0].toString() + "\n" + lesTours[1].toString() + "\n" + lesTours[2].toString() + "\n";	
+    }
+	
+
+    /**
+     * Allow to know if the Hanoi problem is solve or not.
+     *@return true if the problem is solve, else return false.
+     */
+    public boolean estFini() {
+	if (this.lesTours[0].estVide() && this.lesTours[1].estVide())
+	    return true;
+	else
+	    return false;	
+    }
+	
+
+    /**
+     * Allow to know if a move is possible.
+     *@param depart : Tour where we want to take the Disque
+     *@param arriver : Tour where we want to put the Disque
+     */
+    public boolean deplacementPossible(int depart, int arriver) {
+	if (lesTours[depart].estVide())
+	    return false;
+	else {
+	    if (lesTours[arriver].estVide())
+		return true;
+	    else{
+		if (lesTours[depart].getSommet().getTaille() > lesTours[arriver].getSommet().getTaille())
+		    return false;
+		else
+		    return true;
+	    }
+	}
+    }
+
+    /**
+     * return the Tower that we choose.
+     * @param choixTour is the choice of the Tower. He must be between 0 and 2.
+     * @return  the Tower number 'choixTour'
+     */
+    public Tour getTour(int choixTour){
+	return this.lesTours[choixTour];
+    }
+
+	
+}
+

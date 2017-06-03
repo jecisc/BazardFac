@@ -1,0 +1,5 @@
+vhdtdtfi -lib work fsm2.vhd -prj tp5.2 -o fsm.spl -module fsm -template /usr/local/Xilinx/12.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e fsm.spl /home/l2/ferlicotdelbe/tp/ARCHI/tp5.2/fsm.sym 
+vhdtdtfi -lib work fsm3.vhd -lib work fsm2.vhd -prj tp5.2 -o fsm.spl -module fsm -template /usr/local/Xilinx/12.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e fsm.spl /home/l2/ferlicotdelbe/tp/ARCHI/tp5.2/fsm.sym 
+vhdtdtfi -lib work fsm2.vhd -lib work fsm4.vhd -prj tp5.2 -o fsm.spl -module fsm -template /usr/local/Xilinx/12.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 

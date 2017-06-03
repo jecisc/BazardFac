@@ -1,0 +1,8 @@
+(* Calcul des ressources*)
+
+let pt (or, taux)=
+	taux * pt + 50*pt;;
+
+#use "ressources.ml";;
+
+let pt (5000, 300);;

@@ -1,0 +1,44 @@
+Release 12.4 - xst M.81d (lin)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /home/l2/ferlicotdelbe/tp/ARCHI/tp9/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Parameter xsthdpdir set to /home/l2/ferlicotdelbe/tp/ARCHI/tp9/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+WARNING:HDLParsers:3607 - Unit work/fsm/Behavioral is now defined in a different file.  It was defined in "/home/l2/ferlicotdelbe/tp/ARCHI/tp9/fsm.vhd", and is now defined in "/home/l2/ferlicotdelbe/tp/ARCHI/tp9/fsm2.vhd".
+WARNING:HDLParsers:3607 - Unit work/fsm is now defined in a different file.  It was defined in "/home/l2/ferlicotdelbe/tp/ARCHI/tp9/fsm2.vhd", and is now defined in "/home/l2/ferlicotdelbe/tp/ARCHI/tp9/fsm.vhd".
+WARNING:HDLParsers:3607 - Unit work/fsm/Behavioral is now defined in a different file.  It was defined in "/home/l2/ferlicotdelbe/tp/ARCHI/tp9/fsm2.vhd", and is now defined in "/home/l2/ferlicotdelbe/tp/ARCHI/tp9/fsm.vhd".
+Compiling vhdl file "/home/l2/ferlicotdelbe/tp/ARCHI/tp9/fsm2.vhd" in Library work.
+Entity <fsm> compiled.
+Entity <fsm> (Architecture <behavioral>) compiled.
+Compiling vhdl file "/home/l2/ferlicotdelbe/tp/ARCHI/tp9/fsm.vhd" in Library work.
+Architecture behavioral of Entity fsm is up to date.
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> 
+
+
+Total memory usage is 133848 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

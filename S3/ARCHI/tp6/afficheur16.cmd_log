@@ -1,0 +1,4 @@
+sch2sym -intstyle ise -family spartan3e -refsym afficheur16 /home/l2/ferlicotdelbe/tp/ARCHI/tp6/afficheur16.sch /home/l2/ferlicotdelbe/tp/ARCHI/tp6/afficheur16.sym 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl afficheur16_drc.vhf -w /home/l2/ferlicotdelbe/tp/ARCHI/tp6/afficheur16.sch 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl afficheur16_drc.vhf -w /home/l2/ferlicotdelbe/tp/ARCHI/tp6/afficheur16.sch 
+sch2sym -intstyle ise -family spartan3e -refsym afficheur16 /home/l2/ferlicotdelbe/tp/ARCHI/tp6/afficheur16.sch /home/l2/ferlicotdelbe/tp/ARCHI/tp6/afficheur16.sym 

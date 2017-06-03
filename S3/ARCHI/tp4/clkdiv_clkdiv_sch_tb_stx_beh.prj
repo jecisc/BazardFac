@@ -1,0 +1,2 @@
+vhdl isim_temp "clkdiv.vhf"
+vhdl isim_temp "Clkdiv_tb.vhd"

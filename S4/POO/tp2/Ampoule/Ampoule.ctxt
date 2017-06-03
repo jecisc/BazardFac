@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.params=etat\ puissance\ couleur
+comment0.target=Ampoule(java.lang.Boolean,\ int,\ java.lang.String)
+comment1.params=
+comment1.target=java.lang.Boolean\ setLight()
+comment1.text=\n\ setLight\n\ @return\ \:\ if\ the\ light\ is\ on\ or\ off\n
+comment2.params=
+comment2.target=void\ allume()
+comment2.text=\n\ allumer()\ \:\ turn\ on\ the\ light.\n
+comment3.params=
+comment3.target=void\ etiend()
+comment3.text=\n\ eteind()\ \:\ turn\ off\ the\ light.\n
+comment4.params=color
+comment4.target=void\ changColor(java.lang.String)
+comment4.text=\n\ changColor(color)\ \:\ change\ the\ color\ of\ the\ light\n\ @para\ color\:\ new\ color\n
+comment5.params=n
+comment5.target=void\ changPower(int)
+comment5.text=\n\ changPower\ (n)\ change\ the\ power\n\ @para\ \:\ n\ the\ new\ power\n
+numComments=6

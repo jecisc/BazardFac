@@ -1,0 +1,45 @@
+Class documentation
+<---- javadoc command: ---->
+/usr/lib/jvm/java-6-openjdk-i386/bin/javadoc
+-author
+-version
+-nodeprecated
+-package
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+1.6
+-classpath
+/usr/share/bluej/bluejcore.jar:/usr/share/bluej/junit-4.8.2.jar:/home/l2/ferlicotdelbe/po/tp2/Premier
+-d
+/home/l2/ferlicotdelbe/po/tp2/Premier/doc
+-encoding
+UTF-8
+-charset
+UTF-8
+-docletpath
+/usr/share/bluej/bjdoclet.jar
+-doclet
+bluej.doclet.doclets.formats.html.HtmlDoclet
+/home/l2/ferlicotdelbe/po/tp2/Premier/Stock.java
+<---- end of javadoc command ---->
+Loading source file /home/l2/ferlicotdelbe/po/tp2/Premier/Stock.java...
+Constructing Javadoc information...
+Standard Doclet version 1.6.0_27
+Building tree for all the packages and classes...
+Generating /home/l2/ferlicotdelbe/po/tp2/Premier/doc/Stock.html...
+/home/l2/ferlicotdelbe/po/tp2/Premier/Stock.java:34: warning - @para is an unknown tag.
+/home/l2/ferlicotdelbe/po/tp2/Premier/Stock.java:43: warning - @para is an unknown tag.
+/home/l2/ferlicotdelbe/po/tp2/Premier/Stock.java:43: warning - @return tag cannot be used in method with void return type.
+Generating /home/l2/ferlicotdelbe/po/tp2/Premier/doc/package-frame.html...
+Generating /home/l2/ferlicotdelbe/po/tp2/Premier/doc/package-summary.html...
+Generating /home/l2/ferlicotdelbe/po/tp2/Premier/doc/constant-values.html...
+Building index for all the packages and classes...
+Building index for all classes...
+Generating /home/l2/ferlicotdelbe/po/tp2/Premier/doc/allclasses-frame.html...
+Generating /home/l2/ferlicotdelbe/po/tp2/Premier/doc/allclasses-noframe.html...
+Generating /home/l2/ferlicotdelbe/po/tp2/Premier/doc/index.html...
+Generating /home/l2/ferlicotdelbe/po/tp2/Premier/doc/stylesheet.css...
+3 warnings

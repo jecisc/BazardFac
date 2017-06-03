@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan3e -refsym circuit1 /home/l2/ferlicotdelbe/tp/ARCHI/circuit1.sch /home/l2/ferlicotdelbe/tp/ARCHI/circuit1.sym 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl circuit1_drc.vhf -w /home/l2/ferlicotdelbe/tp/ARCHI/circuit1.sch 

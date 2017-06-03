@@ -1,0 +1,77 @@
+package hanoi.utils;
+
+
+/**
+ * The Disque class contains a integer value for this size and a child of the same class 
+ * TP 05 :hanoi
+ *Lesage Yann
+ */
+
+public class Disque
+{
+    /**
+     * the size of the Disque
+     */
+    private int taille;
+	
+    /**
+     *the child of the Disque
+     */
+    private Disque dessous;
+	
+
+    /**
+     * create a disque with no child
+     * @param taille : the size of the Disque
+     */
+    public Disque (int taille) {
+	this.taille= taille;
+    }
+	
+    /**
+     * @return the child Disque
+     */
+	
+    public Disque getDessous() {
+	return this.dessous;	
+    }
+	
+    /**
+     * @return the size of this Disque
+     */	
+    public int getTaille() {
+	return this.taille;	
+    }
+	
+    /**
+     * set a child of the class child
+     */	
+    public void setDessous(Disque disqueFils) {
+	this.dessous= disqueFils;	
+    }
+	
+    /**
+     * @return string : size of Disque 
+     */	
+    public String toString() {
+	return (Integer.toString(this.getTaille()));	
+    }
+
+    /**
+     *compare the size of two disque this and d2
+     *
+     *@return -1 if this<d2, 0 if this = d2 and 1 if this > d1
+     */
+    public int compare(Disque d2) {
+	if (this.getTaille()<d2.getTaille()){
+	    return -1;
+	}
+	else if(this.getTaille()==d2.getTaille()){
+	    return 0;
+	}
+	else {
+	    return 1;
+	}
+    }
+}
+

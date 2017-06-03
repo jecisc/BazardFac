@@ -1,0 +1,6 @@
+sch2sym -intstyle ise -family spartan3e -refsym andor /home/l2/verheyde/Cours/Archi/TP/TP09/andor.sch /home/l2/verheyde/Cours/Archi/TP/TP09/andor.sym 
+sch2sym -intstyle ise -family spartan3e -refsym andor /home/l2/verheyde/Cours/Archi/TP/TP09/andor.sch /home/l2/verheyde/Cours/Archi/TP/TP09/andor.sym 
+sch2sym -intstyle ise -family spartan3e -refsym andor /home/l2/verheyde/Cours/Archi/TP/TP09/andor.sch /home/l2/verheyde/Cours/Archi/TP/TP09/andor.sym 
+sch2hdl -sympath /home/l2/verheyde/Cours/Archi/TP/TP09/ipcore_dir -intstyle ise -family spartan3e -flat -suppress -vhdl andor_drc.vhf -w /home/l2/verheyde/Cours/Archi/TP/TP09/andor.sch 
+sch2sym -intstyle ise -family spartan3e -refsym andor /home/l2/verheyde/Cours/Archi/TP/TP09/andor.sch /home/l2/verheyde/Cours/Archi/TP/TP09/andor.sym 
+sch2sym -intstyle ise -family spartan3e -refsym andor /home/l2/verheyde/Cours/Archi/TP/TP09/andor.sch /home/l2/verheyde/Cours/Archi/TP/TP09/andor.sym 

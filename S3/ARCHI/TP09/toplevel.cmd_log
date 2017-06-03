@@ -1,0 +1,6 @@
+sch2sym -intstyle ise -family spartan3e -refsym toplevel /home/l2/verheyde/Cours/Archi/TP/TP09/toplevel.sch /home/l2/verheyde/Cours/Archi/TP/TP09/toplevel.sym 
+xst -intstyle ise -ifn "/home/l2/ferlicotdelbe/tp/ARCHI/TP09/toplevel.xst" -ofn "/home/l2/ferlicotdelbe/tp/ARCHI/TP09/toplevel.syr" 
+xst -intstyle ise -ifn "/home/l2/ferlicotdelbe/tp/ARCHI/TP09/toplevel.xst" -ofn "/home/l2/ferlicotdelbe/tp/ARCHI/TP09/toplevel.syr" 
+xst -intstyle ise -ifn "/home/l2/ferlicotdelbe/tp/ARCHI/TP09/toplevel.xst" -ofn "/home/l2/ferlicotdelbe/tp/ARCHI/TP09/toplevel.syr" 
+xst -intstyle ise -ifn "/home/l2/ferlicotdelbe/tp/ARCHI/TP09/toplevel.xst" -ofn "/home/l2/ferlicotdelbe/tp/ARCHI/TP09/toplevel.syr" 
+xst -intstyle ise -ifn "/home/l2/ferlicotdelbe/tp/ARCHI/TP09/toplevel.xst" -ofn "/home/l2/ferlicotdelbe/tp/ARCHI/TP09/toplevel.syr" 

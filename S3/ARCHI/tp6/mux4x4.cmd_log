@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl mux4x4_drc.vhf -w /home/l2/ferlicotdelbe/tp/ARCHI/tp6/mux4x4.sch 
+sch2sym -intstyle ise -family spartan3e -refsym mux4x4 /home/l2/ferlicotdelbe/tp/ARCHI/tp6/mux4x4.sch /home/l2/ferlicotdelbe/tp/ARCHI/tp6/mux4x4.sym 

@@ -1,0 +1,113 @@
+body{
+    color: rgb(255,255,255);
+    font-family: 'Helvetica Neue',Helvetica, Verdana,Arial,Helvetica,sans-serif;
+    line-height: 1.4em;
+	margin : 0px;
+	background-image: url("image/fond.png");
+}
+
+#logoTete{
+	height : 25px;
+	width : 58px;
+	background-image: url("http://webtp.fil.univ-lille1.fr/~lesagey/projet/design/image/logo.png");
+}
+header{
+    background-image : url("image/index.png");
+    background-repeat: repeat;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+nav {
+	padding-bottom: 10px;
+    border-bottom: 0.25rem solid;
+    border-color: rgb(179, 19, 19);
+}
+
+
+nav *{
+    margin: 0px 10px 0px 0px;
+    left: 0px;
+    top: 0px;
+	min-width: 15%;
+	display: inline-block;
+}
+
+nav form{
+    margin-left: 30px;
+    max-width: 400px;
+	max-height: 30px;
+	padding-top: 10px;
+	min-width: 45%;
+	
+}
+
+a:link{
+	text-decoration: none;
+	padding: 10px;
+	color: #FFFFFF;
+}
+
+
+a:visited{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+nav div a:hover{
+	background-color: rgba(255,0,0,0.3);
+}
+
+#cadre, #principal{
+	border:1px solid rgb(121,128,129);
+	border-radius: 6px 6px 6px 6px;
+	background-color: rgba(233,56,63,0.65);
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+	margin-top: 20px ;
+}
+
+#cadre{
+	float : left;
+	width: 13%;
+	min-width: 170px ;
+	max-width: 300px;
+}
+
+#cadre img{
+	height : 150px;
+	width : 150px;
+	border:2px solid black;
+}
+
+#principal *{
+	vertical-align:middle;
+}
+
+#principal{
+	margin-left: 18%;
+	margin-right: 5%;
+	min-width: 600px;
+	max-width: 1500px;
+	min-height: 100px;
+	padding: 50px 20px 30px 20px;
+}
+
+h1{
+	color: rgb(140, 30, 8);
+}
+
+#principal p{
+	text-align: left;
+}
+
+
+footer{
+	font-size: 80%
+}
+
+footer div{
+	display: inline-block;
+	min-width: 15%;
+}

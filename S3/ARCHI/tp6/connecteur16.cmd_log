@@ -1,0 +1,3 @@
+sch2sym -intstyle ise -family spartan3e -refsym connecteur16 /home/l2/ferlicotdelbe/tp/ARCHI/tp6/connecteur16.sch /home/l2/ferlicotdelbe/tp/ARCHI/tp6/connecteur16.sym 
+sch2sym -intstyle ise -family spartan3e -refsym connecteur16 /home/l2/ferlicotdelbe/tp/ARCHI/tp6/connecteur16.sch /home/l2/ferlicotdelbe/tp/ARCHI/tp6/connecteur16.sym 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl connecteur16_drc.vhf -w /home/l2/ferlicotdelbe/tp/ARCHI/tp6/connecteur16.sch 

@@ -1,0 +1,3 @@
+vhdl work "circuit2.vhf"
+vhdl work "circuit1.vhf"
+vhdl work "toplevel.vhf"

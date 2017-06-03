@@ -1,0 +1,31 @@
+<body>
+  <div id="contenu">
+    <h1>Recettes</h1>
+    <h2>Crêpes</h2>
+    <h3>Crêpes classiques</h3>
+    <ol class="ingredients">
+      <li>250g de farine</li>
+      <li>...</li>
+    </ol>
+    <div class="procede">
+      Lorem ipsum ...
+    </div>
+    <h3>Crêpes à la bière</h3>
+    <ol class="ingredients">
+      <li>25cl de Trois-Monts
+      </li>
+      <li>...</li>
+    </ol>
+    <div class="procede">
+      Lorem ipsum ...
+    </div>
+    <h2>Gaufres</h2>
+    <h3>Gaufres de Liège</h3>
+    <ol class="ingredients">
+      <li>...</li>
+    </ol>
+    <div class="procede">
+      Lorem ipsum ...
+    </div>
+  </div>
+</body>

@@ -1,0 +1,24 @@
+<html><head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=utf8" http-equiv="Content-Type">
+<link rel="Start" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Pile" rel="Chapter" href="Pile.html">
+<link title="Lexemes" rel="Chapter" href="Lexemes.html">
+<link title="Evaluation_postfixee" rel="Chapter" href="Evaluation_postfixee.html">
+<link title="Eval" rel="Chapter" href="Eval.html"><title>Eval.usage</title>
+</head>
+<body>
+<code class="code"><span class="keyword">let</span>&nbsp;usage&nbsp;()&nbsp;=<br>
+&nbsp;&nbsp;<span class="constructor">Printf</span>.printf&nbsp;<span class="string">"Usage&nbsp;:&nbsp;%s&nbsp;&lt;expr&gt;\n"</span>&nbsp;<span class="constructor">Sys</span>.argv.(0)&nbsp;;<br>
+&nbsp;&nbsp;<span class="constructor">Printf</span>.printf&nbsp;<span class="string">"\t&lt;expr&gt;&nbsp;=&nbsp;expression&nbsp;postfixee&nbsp;a&nbsp;evaluer.\n"</span>&nbsp;;<br>
+&nbsp;&nbsp;<span class="constructor">Printf</span>.printf&nbsp;<span class="string">"Operateurs&nbsp;autorises&nbsp;:\n"</span>&nbsp;;<br>
+&nbsp;&nbsp;<span class="constructor">Printf</span>.printf&nbsp;<span class="string">"\t+&nbsp;:&nbsp;addition\n"</span>&nbsp;;<br>
+&nbsp;&nbsp;<span class="constructor">Printf</span>.printf&nbsp;<span class="string">"\t-&nbsp;:&nbsp;soustraction\n"</span>&nbsp;;<br>
+&nbsp;&nbsp;<span class="constructor">Printf</span>.printf&nbsp;<span class="string">"\t*&nbsp;:&nbsp;multiplication\n"</span>&nbsp;;<br>
+&nbsp;&nbsp;<span class="constructor">Printf</span>.printf&nbsp;<span class="string">"\t/&nbsp;:&nbsp;quotient&nbsp;entier\n"</span>&nbsp;;<br>
+&nbsp;&nbsp;<span class="constructor">Printf</span>.printf&nbsp;<span class="string">"\t%%&nbsp;:&nbsp;reste&nbsp;d'une&nbsp;division&nbsp;(modulo).\n"</span>&nbsp;;<br>
+&nbsp;&nbsp;exit&nbsp;1</code></body></html>

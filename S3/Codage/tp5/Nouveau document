@@ -1,0 +1,20 @@
+open Codage;;
+
+let alphabet_source = [|'a'; 'b'; 'c'|];;
+
+let code1 = [|"010"; "100"; "110"|];;
+
+let codage = creer alphabet_source code1;;
+
+code 'a' codage  ;;
+
+code 'b' codage;;
+
+code 'c' codage;;
+
+decode "010" codage;;
+
+decode "110" codage;;
+
+
+

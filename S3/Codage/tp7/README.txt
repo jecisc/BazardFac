@@ -1,0 +1,3 @@
+- Les modules ont été compilés avec la version 4.00.1 d'ocaml.
+- Désolé mais je n'ai pas réussi à sauvegarder les essaie1 et 2.png sous windows, j'ai donc pris un screen des rendus.
+- Ma fonction décode marche pour le début du texte.code mais arrivé à la ligne 13 cela me créer une erreure et seules les 13 premières lignes sont décodés. 

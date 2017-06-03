@@ -1,0 +1,1 @@
+Le TP s'exécute normalement cependant l'enum Reponse ne se situe pas dans un fichier à part comme attendu mais dans le Mer.java car nous n'avons pas réussi à l'utiliser dans un fichier à part. Cela nous causait une erreur lors de la compression. 

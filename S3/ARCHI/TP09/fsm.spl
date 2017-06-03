@@ -1,0 +1,11 @@
+[Inputs]
+clk
+=instr[15:0]=
+[Outputs]
+COinc
+RIload
+Rdestload
+=OP[3:0]=
+=source[3:0]=
+=dest[3:0]=
+[BiDir]

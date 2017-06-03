@@ -1,0 +1,33 @@
+body{
+    text-align: center;
+}
+
+p, h1{
+    padding: 15px;
+    font-family: sans-serif;
+    }
+
+h1{
+    text-transform : uppercase;
+    border-bottom: dotted 2px black;
+    font-size: 150%;
+}
+
+div{
+    border: solid black 2px;
+    margin: 20px;
+    display: inline-block;
+    width: 30%;
+}
+
+#right{
+    float: right;
+}
+
+#left{
+    float: left;
+}
+
+#center p{
+    text-align: left;
+}

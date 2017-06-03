@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/IBUF8_MXILINX_toplevel</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/toplevel.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/toplevel.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/IBUF8_MXILINX_toplevel/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/toplevel.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/toplevel.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/OBUF8_MXILINX_toplevel</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/toplevel.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/toplevel.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/OBUF8_MXILINX_toplevel/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/toplevel.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/toplevel.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/connecteur_MUSER_toplevel</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/toplevel.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/toplevel.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/connecteur_MUSER_toplevel/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/toplevel.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/toplevel.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/connect16_MUSER_toplevel</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/toplevel.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/toplevel.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/connect16_MUSER_toplevel/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/toplevel.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/toplevel.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/M2_1_MXILINX_toplevel</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/toplevel.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/toplevel.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/M2_1_MXILINX_toplevel/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/toplevel.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/toplevel.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/mux2x16_MUSER_toplevel</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/toplevel.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/toplevel.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/mux2x16_MUSER_toplevel/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/toplevel.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/toplevel.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ADD16_MXILINX_toplevel</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/toplevel.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/toplevel.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ADD16_MXILINX_toplevel/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/toplevel.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/toplevel.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/inc_MUSER_toplevel</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/toplevel.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/toplevel.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/inc_MUSER_toplevel/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/toplevel.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/toplevel.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/M2_1E_MXILINX_toplevel</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/toplevel.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/toplevel.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/M2_1E_MXILINX_toplevel/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/toplevel.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/toplevel.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/M4_1E_MXILINX_toplevel</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/toplevel.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/toplevel.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/M4_1E_MXILINX_toplevel/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/toplevel.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/toplevel.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/mux4x4_MUSER_toplevel</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/toplevel.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/toplevel.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/mux4x4_MUSER_toplevel/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/toplevel.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/toplevel.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/compteur4_MUSER_toplevel</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/toplevel.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/toplevel.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/compteur4_MUSER_toplevel/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/toplevel.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/toplevel.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/afficheur16_MUSER_toplevel</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/toplevel.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/toplevel.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/afficheur16_MUSER_toplevel/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/toplevel.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/toplevel.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/clkdiv_MUSER_toplevel</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/toplevel.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/toplevel.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/clkdiv_MUSER_toplevel/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/toplevel.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/toplevel.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/FD16CE_MXILINX_toplevel</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/toplevel.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/toplevel.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/FD16CE_MXILINX_toplevel/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/toplevel.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/toplevel.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/S3_MUSER_toplevel</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/toplevel.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/toplevel.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/S3_MUSER_toplevel/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/toplevel.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/toplevel.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/toplevel</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/toplevel.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/toplevel.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/toplevel/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/toplevel.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/toplevel.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/connecteur_MUSER_S3</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/S3.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/S3.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/connecteur_MUSER_S3/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/S3.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/S3.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/connect16_MUSER_S3</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/S3.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/S3.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/connect16_MUSER_S3/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/S3.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/S3.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/M2_1_MXILINX_S3</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/S3.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/S3.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/M2_1_MXILINX_S3/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/S3.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/S3.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/mux2x16_MUSER_S3</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/S3.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/S3.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/mux2x16_MUSER_S3/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/S3.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/S3.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ADD16_MXILINX_S3</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/S3.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/S3.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ADD16_MXILINX_S3/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/S3.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/S3.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/inc_MUSER_S3</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/S3.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/S3.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/inc_MUSER_S3/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/S3.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/S3.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/M2_1E_MXILINX_S3</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/S3.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/S3.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/M2_1E_MXILINX_S3/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/S3.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/S3.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/M4_1E_MXILINX_S3</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/S3.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/S3.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/M4_1E_MXILINX_S3/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/S3.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/S3.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/mux4x4_MUSER_S3</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/S3.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/S3.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/mux4x4_MUSER_S3/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/S3.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/S3.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/compteur4_MUSER_S3</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/S3.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/S3.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/compteur4_MUSER_S3/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/S3.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/S3.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/afficheur16_MUSER_S3</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/S3.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/S3.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/afficheur16_MUSER_S3/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/S3.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/S3.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/clkdiv_MUSER_S3</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/S3.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/S3.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/clkdiv_MUSER_S3/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/S3.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/S3.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/FD16CE_MXILINX_S3</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/S3.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/S3.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/FD16CE_MXILINX_S3/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/S3.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/S3.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/S3</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/S3.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/S3.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/S3/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/S3.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/S3.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/M2_1E_MXILINX_afficheur16</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/afficheur16.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/afficheur16.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/M2_1E_MXILINX_afficheur16/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/afficheur16.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/afficheur16.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/M4_1E_MXILINX_afficheur16</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/afficheur16.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/afficheur16.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/M4_1E_MXILINX_afficheur16/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/afficheur16.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/afficheur16.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/mux4x4_MUSER_afficheur16</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/afficheur16.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/afficheur16.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/mux4x4_MUSER_afficheur16/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/afficheur16.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/afficheur16.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/compteur4_MUSER_afficheur16</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/afficheur16.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/afficheur16.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/compteur4_MUSER_afficheur16/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/afficheur16.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/afficheur16.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/afficheur16</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/afficheur16.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/afficheur16.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/afficheur16/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/afficheur16.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/afficheur16.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/clkdiv</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/clkdiv.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/clkdiv.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/clkdiv/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/clkdiv.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/clkdiv.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/connecteur_MUSER_connect16</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/connect16.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/connect16.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/connecteur_MUSER_connect16/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/connect16.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/connect16.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/connect16</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/connect16.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/connect16.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/connect16/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/connect16.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/connect16.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ADD16_MXILINX_inc</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/inc.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/inc.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ADD16_MXILINX_inc/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/inc.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/inc.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/inc</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/inc.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/inc.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/inc/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/inc.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/inc.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/M2_1_MXILINX_mux2x16</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/mux2x16.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/mux2x16.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/M2_1_MXILINX_mux2x16/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/mux2x16.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/mux2x16.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/mux2x16</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/mux2x16.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/mux2x16.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/mux2x16/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/mux2x16.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/mux2x16.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/compteur4</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/compteur4.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/compteur4.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/compteur4/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/compteur4.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/compteur4.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/M2_1E_MXILINX_mux4x4</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/mux4x4.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/mux4x4.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/M2_1E_MXILINX_mux4x4/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/mux4x4.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/mux4x4.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/M4_1E_MXILINX_mux4x4</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/mux4x4.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/mux4x4.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/M4_1E_MXILINX_mux4x4/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/mux4x4.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/mux4x4.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/mux4x4</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/mux4x4.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/mux4x4.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/mux4x4/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/mux4x4.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/mux4x4.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/x7seg</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/x7seg.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/x7seg.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/x7seg/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/x7seg.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/x7seg.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/insmem</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/ipcore_dir/insmem.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/ipcore_dir/insmem.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/insmem/insmem_a</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/l2/ferlicotdelbe/tp/ARCHI/tp7/ipcore_dir/insmem.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/ipcore_dir/insmem.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/toplevel.vhf</arg>&quot; line <arg fmt="%d" index="2">2540</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">clksec</arg>&apos; of component &apos;<arg fmt="%s" index="4">clkdiv_MUSER_toplevel</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/toplevel.vhf</arg>&quot; line <arg fmt="%d" index="2">2556</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">insmem</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/toplevel.vhf</arg>&quot; line <arg fmt="%d" index="2">2560</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fsm3</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/toplevel.vhf</arg>&quot; line <arg fmt="%d" index="2">1270</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CO</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADD16_MXILINX_toplevel</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/toplevel.vhf</arg>&quot; line <arg fmt="%d" index="2">1270</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OFL</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADD16_MXILINX_toplevel</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/l2/ferlicotdelbe/tp/ARCHI/tp8/toplevel.vhf</arg>&quot; line <arg fmt="%d" index="2">1619</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">anodes</arg>&apos; of component &apos;<arg fmt="%s" index="4">x7seg</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">dummy</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">XLXN_136</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">XLXN_120</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">XLXN_113</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">XLXN_109</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">XLXN_105</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">Rsw_CLR_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">Rsrc2_CLR_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">Rsrc1_CLR_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">Rled_CLR_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">Rdm_D_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0000000000000000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">Rdm_CLR_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">Rdest_D_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0000000000000000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">Rdest_CLR_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">Ram_CLR_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">RI_CLR_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">R7seg_CLR_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">R5_CLR_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">R4_CLR_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">R3_CLR_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">R2_CLR_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">R1_CLR_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">CO_CLR_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">B2Rswload</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">B2Rdmload</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">B2Rdm</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">B2Rdestload</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">ld&lt;15:8&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+

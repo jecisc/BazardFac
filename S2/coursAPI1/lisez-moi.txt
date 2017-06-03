@@ -1,0 +1,64 @@
+Cinq variantes d'un module sur les nombres complexes.
+
+Variante 1 :
+Module complexe défini par son seul fichier d'implémentation (complexe1.ml).
+Déclaration d'un type (concret) et de trois fonctions.
+Compilation
+  ocamlc -c complexe1.ml
+Résultat : deux fichiers complexe1.cmi et complexe1.cmo
+Utilisation en mode interprété :
+> ocaml  
+# #load "complexe1.cmo" ;;
+# let z = {Complexe1.re = 1. ; Complexe1.im = 1.} ;;
+val z : Complexe1.complexe = {re = 1. ; im = 1.}
+
+Variante 2 : 
+Module complexe défini par deux fichiers :
+- complexe2.mli : fichier d'interface donnant les déclarations publiques
+- complexe2.ml  : fichier d'implémentation (identique à complexe1.ml) réalisant les déclarations de l'interface, plus la fonction norme2 qui n'est pas publique.
+Production du fichier d'interface : deux possibilités :
+- 1) on le rédige entièrement à partir de zéro
+- 2) on le produit par la commande
+  ocamlc -i complexe2.ml > complexe2.mli
+puis à l'aide d'un éditeur on supprime la ligne correspondant à la fonction norme2.
+  
+Compilation :
+  ocamlc -c complexe2.mli
+  ocamlc -c complexe2.ml
+La première commande produit le fichier complexe2.cmi et la seconde le fichier complexe2.cmo   
+
+Utilisation en mode interprété
+> ocaml complexe2.cmo
+
+
+Variante 3 :
+Module défini par deux fichiers 
+- complexe3.mli : fichier d'interface ne donnant plus la définition du type complexe. Le type complexe devient ainsi ABSTRAIT.
+- complexe3.ml : fichier d'implémentation (identique à complexe1.ml)
+
+Compilation identique à la variante 2
+Utilisation en mode interprété :
+> ocaml complexe3.cmo
+...
+mais impossibilité de faire quoi que ce soit car impossibilité de construire une valeur de type complexe.
+
+Variante 4 :
+Module toujours défini par deux fichiers
+- complexe4.mli : fichier d'interface avec un type complexe abstrait, mais avec en plus un constructeur (fonction cree) et deux sélecteurs (fonctions re et im)
+- complexe4.ml : fichier d'implémentation.
+
+
+Variante 5 :
+Module identique à la variante 4. Mais contient de la documentation au format ocamldoc.
+
+Pour obtenir la doc :
+ocamldoc -html -t "Les nombres complexes" -charset utf8 complexe5.mli
+
+
+Utilisation du module complexe5 dans un programme :
+fichier add_complexes.ml
+
+Pour la compilation :
+ocamlc -c complexe5.mli
+ocamlc -c complexe5.ml
+ocamlc -o add_complexes complexe5.cmo add_complexes.ml

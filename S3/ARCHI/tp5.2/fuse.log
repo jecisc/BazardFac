@@ -1,0 +1,22 @@
+Running: /usr/local/Xilinx/12.4/ISE_DS/ISE/bin/lin/unwrapped/fuse -intstyle ise -incremental -o /home/l2/ferlicotdelbe/tp/ARCHI/tp5.2/fsmtravaux4_tb_isim_beh.exe -prj /home/l2/ferlicotdelbe/tp/ARCHI/tp5.2/fsmtravaux4_tb_beh.prj work.fsmtravaux4_tb 
+ISim M.81d (signature 0x141a37e9)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/l2/ferlicotdelbe/tp/ARCHI/tp5.2/fsmtravaux4_tb.vhd" into library work
+Starting static elaboration
+WARNING:HDLCompiler:89 - "/home/l2/ferlicotdelbe/tp/ARCHI/tp5.2/fsmtravaux4_tb.vhd" Line 64: <fsm> remains a black-box since it has no binding entity.
+Completed static elaboration
+Fuse Memory Usage: 28916 KB
+Fuse CPU Usage: 110 ms
+Using precompiled package standard from library std
+Using precompiled package std_logic_1164 from library ieee
+WARNING:Simulator:648 - "/home/l2/ferlicotdelbe/tp/ARCHI/tp5.2/fsmtravaux4_tb.vhd" Line 64. Instance fsm is unbound
+Compiling architecture behavior of entity fsmtravaux4_tb
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 3 VHDL Units
+Built simulation executable /home/l2/ferlicotdelbe/tp/ARCHI/tp5.2/fsmtravaux4_tb_isim_beh.exe
+Fuse Memory Usage: 67864 KB
+Fuse CPU Usage: 120 ms
+GCC CPU Usage: 170 ms

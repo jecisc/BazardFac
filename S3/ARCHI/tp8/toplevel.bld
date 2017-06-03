@@ -1,0 +1,46 @@
+Release 12.4 ngdbuild M.81d (lin)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Command Line: /usr/local/Xilinx/12.4/ISE_DS/ISE/bin/lin/unwrapped/ngdbuild
+-intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc S3.ucf -p
+xc3s1200e-fg320-4 toplevel.ngc toplevel.ngd
+
+Reading NGO file "/home/l2/ferlicotdelbe/tp/ARCHI/tp8/toplevel.ngc" ...
+Loading design module "ipcore_dir/insmem.ngc"...
+Applying constraints in "ipcore_dir/insmem.ncf" to module
+"ipcore_dir/insmem.ngc"...
+Checking Constraint Associations...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "S3.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Checking expanded design ...
+ERROR:NgdBuild:604 - logical block 'mon_S3/XLXI_60' with type 'fsm3' could not
+   be resolved. A pin name misspelling can cause this, a missing edif or ngc
+   file, case mismatch between the block name and the edif or ngc file name, or
+   the misspelling of a type name. Symbol 'fsm3' is not supported in target
+   'spartan3e'.
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     1
+  Number of warnings:   0
+
+Total memory usage is 87188 kilobytes
+
+Total REAL time to NGDBUILD completion:  2 sec
+Total CPU time to NGDBUILD completion:   1 sec
+
+One or more errors were found during NGDBUILD.  No NGD file will be written.
+
+Writing NGDBUILD log file "toplevel.bld"...

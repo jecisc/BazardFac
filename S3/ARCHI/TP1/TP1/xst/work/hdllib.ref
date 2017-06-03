@@ -1,0 +1,8 @@
+AR x7seg behavioral /home/l2/ferlicotdelbe/tp/ARCHI/TP1/TP1/x7seg.vhd sub00/vhpl07 1379929191
+AR toplevel behavioral /home/l2/ferlicotdelbe/tp/ARCHI/TP1/TP1/toplevel.vhf sub00/vhpl05 1379929197
+EN ibuf8_mxilinx_toplevel NULL /home/l2/ferlicotdelbe/tp/ARCHI/TP1/TP1/toplevel.vhf sub00/vhpl02 1379929194
+EN x7seg NULL /home/l2/ferlicotdelbe/tp/ARCHI/TP1/TP1/x7seg.vhd sub00/vhpl06 1379929190
+EN toplevel NULL /home/l2/ferlicotdelbe/tp/ARCHI/TP1/TP1/toplevel.vhf sub00/vhpl04 1379929196
+EN obuf8_mxilinx_toplevel NULL /home/l2/ferlicotdelbe/tp/ARCHI/TP1/TP1/toplevel.vhf sub00/vhpl00 1379929192
+AR ibuf8_mxilinx_toplevel behavioral /home/l2/ferlicotdelbe/tp/ARCHI/TP1/TP1/toplevel.vhf sub00/vhpl03 1379929195
+AR obuf8_mxilinx_toplevel behavioral /home/l2/ferlicotdelbe/tp/ARCHI/TP1/TP1/toplevel.vhf sub00/vhpl01 1379929193

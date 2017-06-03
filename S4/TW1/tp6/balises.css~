@@ -1,0 +1,33 @@
+#menu .info{
+    display:none;
+}
+
+section h2{
+    background: url(jabber_online.png) no-repeat aquamarine 0.5% 50%;
+    padding-left: 35px;
+    
+}
+
+#menu li{
+    display: inline-block;
+    border: solid black 2px;
+    border-radius: 10px;
+    background-color:#66CCCC;
+    padding: 5px 20px;
+    margin: 2px;
+    width: 30%;
+    text-align: center;
+    }
+
+#menu li:hover{
+    background-color: #33FFCC;
+}
+
+#menu a:hover .info{
+    display: block;
+    position: relative;
+}
+
+
+
+

@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -refsym concat /home/l2/verheyde/Cours/Archi/TP/TP09/concat.sch /home/l2/verheyde/Cours/Archi/TP/TP09/concat.sym 

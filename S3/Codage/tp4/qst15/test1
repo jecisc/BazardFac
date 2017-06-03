@@ -1,0 +1,29 @@
+ 
+TP : Le codage Base 64
+
+Vous trouverez une version de ce document au format PDF ici.
+Objectifs du TP
+
+Ce TP a pour but
+
+    de convertir des fichiers quelconques en un fichier texte codé en «base 64» ;
+    et de faire la conversion inverse. 
+
+Outils utilisés
+
+    l’utilitaire base64,
+    le langage Caml. 
+
+Matériel fourni
+
+Le travail à réaliser :
+
+    Le codage base 64
+        Principe du codage
+        L’utilitaire base64 
+    Codage d’un fichier en base 64
+        Représentation de la table de codage
+        Encodage
+        Procédure traiter_octets 
+    Décodage d’un fichier au format base 64
+    Réalisation de l’utilitaire base64 

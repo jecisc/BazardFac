@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl add4bit_drc.vhf -w /home/l2/ferlicotdelbe/tp/ARCHI/TP3/add4bit.sch 
+sch2sym -intstyle ise -family spartan3e -refsym add4bit /home/l2/ferlicotdelbe/tp/ARCHI/TP3/add4bit.sch /home/l2/ferlicotdelbe/tp/ARCHI/TP3/add4bit.sym 

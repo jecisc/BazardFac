@@ -1,0 +1,31 @@
+Fichiers contenus dans l'archive :
+
+FICHIERS SOURCE
+pile.mli : source de l'interface du module Pile
+lexemes.mli : source de l'interface du module Lexemes
+evaluation_postfixee.mli : source de l'interface du module Evaluation_postfixee
+eval.ml : source du programme principal.
+
+FICHIERS COMPILES
+pile.cmo : version compilee de l'implementation du module Pile
+lexemes.cmo : version compilee de l'implementation du module Lexemes
+evaluation_postfixee.cmo : version compilee de l'inplementation du module Evaluation_Postfixee
+
+Ces fichiers compilés le sont pour la version 3.12.1.
+
+DOCUMENTATION
+dans le dossier Doc
+
+
+Pour compiler :
+
+ocamlc -o eval pile.cmo lexemes.cmo evaluation_postfixee.cmo eval.ml
+(en supposant que tous les fichiers .ml et .cmo sont dans le même dossier)
+
+MAKEFILE
+Un fichier Makefile pour compiler
+make eval
+Il est peut être utile de modifier les deux premières lignes de ce fichier pour les adapter à la situation de votre poste de travail.
+Attention la commande
+make clean efface les fichiers compilés.
+

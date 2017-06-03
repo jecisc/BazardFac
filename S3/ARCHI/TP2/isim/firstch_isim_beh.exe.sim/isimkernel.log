@@ -1,0 +1,10 @@
+Command line:
+   firstch_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  33285
+
+Mon Sep 30 10:54:30 2013
+
+
+ Elaboration Time: 0.02 sec

@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan3e -refsym clkdiv /home/l2/ferlicotdelbe/tp/ARCHI/tp5/clkdiv.sch /home/l2/ferlicotdelbe/tp/ARCHI/tp5/clkdiv.sym 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl clkdiv_drc.vhf -w /home/l2/ferlicotdelbe/tp/ARCHI/tp5/clkdiv.sch 

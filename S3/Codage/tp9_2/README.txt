@@ -1,0 +1,1 @@
+Désolé mais je n'ai pas réussi à faire la seconde partie du TP. Je bloque pour remplire le fichier compresse.ml.

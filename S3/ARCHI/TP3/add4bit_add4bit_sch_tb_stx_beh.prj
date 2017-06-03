@@ -1,0 +1,4 @@
+vhdl isim_temp "demiadd.vhf"
+vhdl isim_temp "add1bit.vhf"
+vhdl isim_temp "add4bit.vhf"
+vhdl isim_temp "add4bit_tb.vhd"

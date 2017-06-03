@@ -1,0 +1,8 @@
+; Sample Initialization file for a 16x32 distributed ROM
+memory_initialization_radix = 16;
+memory_initialization_vector = 
+0073
+0034
+0046
+0048
+FEFE ;

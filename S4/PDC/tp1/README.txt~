@@ -1,0 +1,6 @@
+Le TP est fini.
+
+Premierprogramme.c correspond au début du tp. 
+tp1.c servait à apprendre à utiliser les getchar et putchar.
+tp1-crypto.c est le programme de décodage. Je n'ai pas réussi à décoder crypto2.txt car je n'ai aps réussi à trouver la clef de chiffrement. Pour utiliser l'executable il faut mettre la cle en premier caractère du fichier à décoder.
+suppr_com.c est le programme pour supprimer les commentaires d'un fichier. suppr_com_propre est un exemple du programme utiliser sur son propre code. 

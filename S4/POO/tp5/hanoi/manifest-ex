@@ -1,0 +1,2 @@
+Main-Class: hanoi/ChoixHanoi
+Class-Path: classes/ drawing.jar .

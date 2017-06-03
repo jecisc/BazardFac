@@ -1,0 +1,16 @@
+(* 
+Auteur : Ferlicot Cyril 
+Date : 4/10/2012
+Objet : Exercice Mr Parfait
+*) 
+
+(* Les cas sont bien couvert pour les cas où l'état initial est: *)
+
+-Tas 1 "C" Tas 2 "" Tas 3 "" Tas 4 ""
+-Tas 1 "T" Tas 2 "" Tas 3 "" Tas 4 ""
+-Tas 1 "P" Tas 2 "" Tas 3 "" Tas 4 ""
+-Tas 1 "K" Tas 2 "" Tas 3 "" Tas 4 ""
+
+(* Les cas ne sont pas bien couvert pour les cas où l'état initial est: *)
+
+

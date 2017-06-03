@@ -1,0 +1,56 @@
+type trie = Vide | Noeud of noeud
+and noeud = {mutable fin_mot : bool; fils : (char, trie) Hashtbl.t}
+
+exception Trie_vide
+
+let new_trie () =
+  Noeud {fin_mot = false; fils = Hashtbl.create 26}
+  
+let le_noeud a=
+  match a with 
+  | Vide -> raise Trie_vide
+  | Noeud a -> a
+
+
+let rec add t w =
+  (* si la chaine est vide on ne fait rien, sinon l'ajoute *)
+  if not(String.length w < 1)
+    (
+      (* Si la longueur de notre chaine est de 1 alors on vérifie s'il existe déjà notre dernière lettre dans notre Hashtable. Si oui on change la valeur de fin_mot, sinon on crée la lettre. *)
+      if String.length w = 1 then
+	(
+	  let c = w.[0] in
+	  try
+	    (le_noeud (Hashtbl.find (le_noeud t).fils c)).fin_mot <- true
+	  with
+	  |Not_found -> Hashtbl.add (le_noeud t).fils c (Noeud {fin_mot = true; fils = Hashtbl.create 26})
+	)
+      else 
+	(* Si la longueur est superieur a 1 on essaye de voir si la premiere lettre existe deja, si elle existe pas on la cree puis on rappel notre fonction pour le reste du mot. *)
+	(
+	  let c = w.[0] in
+	  try 
+	    add (Hashtbl.find (le_noeud t).fils c) (String.sub w  2 (String.length w -1))
+	  with
+	  |Not_found -> Hashtbl.add (le_noeud t).fils c (Noeud {fin_mot = false; fils = Hashtbl.create 26}); add (Hashtbl.find (le_noeud t).fils c) (String.sub w  2 (String.length w -1))
+	)
+    )
+
+let rec contains t w =
+  (* Si notre mot a une longueur de 1 alors on verifie que la lettre appartient au trie et que c'est une fin de mot. Si oui, on renvoit true, sinon on renvoit false.*)
+  if String.length = 1 then
+    (
+      let c = w.[0] in
+      try 
+	(le_noeud (Hashtbl.find (le_noeud t).fils c)).fin_mot = true
+      with
+      |Not_found -> false
+    )
+  else 
+    (* Sinon on verifie que la premiere lettre est dans le trie, si oui on rappel contains avec le reste du mot, sinon on renvoit false *)
+    (
+      let c = w.[0]
+    )
+(*
+let print_trie t =
+*)

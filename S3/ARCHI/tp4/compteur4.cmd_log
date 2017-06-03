@@ -1,0 +1,3 @@
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl compteur4_drc.vhf -w /home/l2/ferlicotdelbe/tp/ARCHI/tp4/compteur4.sch 
+sch2sym -intstyle ise -family spartan3e -refsym compteur4 /home/l2/ferlicotdelbe/tp/ARCHI/tp4/compteur4.sch /home/l2/ferlicotdelbe/tp/ARCHI/tp4/compteur4.sym 
+sch2sym -intstyle ise -family spartan3e -refsym compteur4 /home/l2/ferlicotdelbe/tp/ARCHI/tp4/compteur4.sch /home/l2/ferlicotdelbe/tp/ARCHI/tp4/compteur4.sym 

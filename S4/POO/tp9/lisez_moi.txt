@@ -1,0 +1,4 @@
+Ferlicot-Delbecque Cyril.
+
+Le TP s'est bien déroulé. Il est fini.
+Dans le cas du postfixée il ne faut pas faire de '=' avant une opération et il faut faire un '=' après une opération pour pouvoir afficher le résultat de l'opération avant de rentrer un nouveau chiffre.

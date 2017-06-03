@@ -1,0 +1,169 @@
+body{
+    color: rgb(255,255,255);
+    font-family: 'Helvetica Neue',Helvetica, Verdana,Arial,Helvetica,sans-serif;
+    line-height: 1.4em;
+	margin : 0px;
+	background-image: url("image/background.png");
+}
+
+#logoTete{
+	height : 25px;
+	width : 58px;
+	background-image: url("http://webtp.fil.univ-lille1.fr/~lesagey/projet/design/image/logo.png");
+}
+header{
+    background-image : url("image/index2.png");
+    background-repeat: repeat;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+#texte_recherche {
+	width: 400px;
+	padding-top: 5px;
+	padding-left: 10px;
+	font-family: arial, verdana, sans-serif;
+	color: #7a5440;
+}
+
+#texte_recherche:focus {
+	background-color: rgba(255,255,255,0.8);
+	outline: 0 none; /* Pour enlever la "bordure" jaune qu'ajoute Google Chrome au focus */
+	color: #000;
+}
+
+#bouton_recherche {
+	min-width: 0%;
+}
+
+nav {
+    border-bottom: 0.25rem solid;
+    border-color: #03224C;
+}
+
+
+nav *{
+    margin: 0px 10px 0px 0px;
+    left: 0px;
+    top: 0px;
+	min-width: 11%;
+	display: inline-block;
+}
+
+.divtete{
+	background: none repeat scroll 0% 0% rgba(24, 24, 24, 0.5);
+	border-radius: 4px 4px 0px 0px;
+	padding-left: 5px;
+}
+
+#prohib{
+	text-align: left;
+}
+
+
+nav form{
+    margin-left: 30px;
+    max-width: 400px;
+	max-height: 30px;
+	padding-top: 10px;
+	min-width: 45%;
+	
+}
+
+a:link{
+	text-decoration: none;
+	padding: 10px;
+	color: #FFFFFF;
+}
+
+
+a:visited{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+nav div a:hover{
+	background: none repeat scroll 0% 0% rgb(85, 85, 85);
+	color: rgb(255, 255, 255);
+}
+
+.sousdiv{
+	background: none repeat scroll 0% 0% rgba(16, 16, 16, 0.8);
+	padding:5px;
+}
+
+#cadre, #principal{
+	background: none repeat scroll 0% 0% rgba(16, 16, 16, 0.8);
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.898);
+	border-radius: 0px 0px 4px 4px;		
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+	margin-top: 20px ;
+	color: rgb(119, 119, 119);
+}
+
+#cadre{
+	float : left;
+	width: 15%;
+	min-width: 170px ;
+	max-width: 300px;
+}
+
+#cadre img{
+	height : 150px;
+	width : 150px;
+	border:2px solid black;
+}
+
+#principal *{
+	vertical-align:middle;
+}
+
+#principal{
+	margin-left: 18%;
+	margin-right: 5%;
+	min-width: 600px;
+	max-width: 1500px;
+	min-height: 100px;
+	padding: 20px 20px 20px 20px;
+}
+
+h1{
+	color: rgb(142, 175, 190);
+}
+
+h2{
+	font-family: verdana,helvetica,arial,sans-serif;
+	font-weight: bold;
+}
+
+h3{
+	background: none repeat scroll 0% 0% rgb(37, 37, 37);
+	font-size: 15px;
+	font-weight: normal;
+	padding: 8px !important;
+	box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.09) inset;
+	border-radius: 4px 4px 0px 0px;
+	text-shadow: -1px -1px 0px rgb(0, 0, 0);
+	overflow: hidden;
+	margin-bottom : 0px;
+}
+
+#principal p, #principal input{
+	text-align: left;
+	padding-left: 10px;
+}
+
+div input{
+	margin: 10px;
+}
+
+footer{
+	font-size: 80%
+}
+
+footer div{
+	display: inline-block;
+	min-width: 15%;
+}

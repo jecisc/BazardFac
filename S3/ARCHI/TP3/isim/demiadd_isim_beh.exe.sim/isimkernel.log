@@ -1,0 +1,29 @@
+Command line:
+   demiadd_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  41625
+
+Mon Oct  7 10:30:06 2013
+
+
+ Elaboration Time: 0.02 sec
+
+ Current Memory Usage: 115.54 Meg
+
+ Total Signals          : 33
+ Total Nets             : 27
+ Total Signal Drivers   : 2
+ Total Blocks           : 6
+ Total Primitive Blocks : 5
+ Total Processes        : 2
+ Total Traceable Variables  : 13
+ Total Scalar Nets and Variables : 510
+Total Line Count : 2
+
+ Total Simulation Time: 0.03 sec
+
+ Current Memory Usage: 122.888 Meg
+
+Mon Oct  7 10:31:28 2013
+

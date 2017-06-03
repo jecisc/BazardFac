@@ -1,0 +1,6 @@
+Ferlicot-Delbecque Cyril
+
+Le TP s'est bien déroulé. 
+Il existe plusieurs stratégies dans le dossier src/pfc/strategie.
+Le Main s'execute avec un choix humain (il faut rentrer un mot commençant par p, f ou c) contre une stratégie qui fait toujours p -> f -> c -> p -> f -> c...
+Le run a été conçu pour joueur pendant 5 tours.

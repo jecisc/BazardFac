@@ -1,0 +1,5 @@
+
+Robot:
+	javac exemple/Robot.java -d ../classes
+
+

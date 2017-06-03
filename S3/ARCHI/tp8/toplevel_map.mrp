@@ -1,0 +1,1269 @@
+Release 12.4 Map M.81d (lin)
+Xilinx Mapping Report File for Design 'toplevel'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off
+-c 100 -o toplevel_map.ncd toplevel.ngd toplevel.pcf 
+Target Device  : xc3s1200e
+Target Package : fg320
+Target Speed   : -4
+Mapper Version : spartan3e -- $Revision: 1.52.76.2 $
+Mapped Date    : Mon Nov 25 11:49:35 2013
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    8
+Logic Utilization:
+  Number of Slice Flip Flops:            61 out of  17,344    1%
+  Number of 4 input LUTs:                53 out of  17,344    1%
+Logic Distribution:
+  Number of occupied Slices:             57 out of   8,672    1%
+    Number of Slices containing only related logic:      57 out of      57 100%
+    Number of Slices containing unrelated logic:          0 out of      57   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:          55 out of  17,344    1%
+    Number used as logic:                53
+    Number used as a route-thru:          2
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 20 out of     250    8%
+  Number of BUFGMUXs:                     1 out of      24    4%
+
+  Number of RPM macros:            1
+Average Fanout of Non-Clock Nets:                2.75
+
+Peak Memory Usage:  159 MB
+Total REAL time to MAP completion:  3 secs 
+Total CPU time to MAP completion:   1 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
+WARNING:MapLib:701 - Signal switches<4> connected to top level port switches<4>
+   has been removed.
+WARNING:MapLib:701 - Signal switches<5> connected to top level port switches<5>
+   has been removed.
+WARNING:MapLib:701 - Signal switches<6> connected to top level port switches<6>
+   has been removed.
+WARNING:MapLib:701 - Signal switches<7> connected to top level port switches<7>
+   has been removed.
+WARNING:MapLib:701 - Signal switches<3> connected to top level port switches<3>
+   has been removed.
+WARNING:MapLib:701 - Signal switches<2> connected to top level port switches<2>
+   has been removed.
+WARNING:MapLib:701 - Signal switches<1> connected to top level port switches<1>
+   has been removed.
+WARNING:MapLib:701 - Signal switches<0> connected to top level port switches<0>
+   has been removed.
+
+Section 3 - Informational
+-------------------------
+INFO:Security:54 - 'xc3s1200e' is a WebPack part.
+INFO:LIT:243 - Logical network mon_S3/incCO/XLXI_1/OFL has no load.
+INFO:LIT:395 - The above info message is repeated 2 more times for the following
+   (max. 5 shown):
+   mon_S3/XLXI_54/N1,
+   mon_S3/XLXI_54/N0
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+  97 block(s) removed
+ 664 block(s) optimized away
+  98 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal "mon_S3/selecCO/XLXI_20/M0" is sourceless and has been removed.
+ Sourceless block "mon_S3/selecCO/XLXI_20/I_36_8" (OR) removed.
+  The signal "mon_S3/XLXN_89<12>" is sourceless and has been removed.
+   Sourceless block "mon_S3/CO/I_Q12" (FF) removed.
+    The signal "mon_S3/COBus<12>" is sourceless and has been removed.
+     Sourceless block "mon_S3/incCO/XLXI_1/I_36_366" (XOR) removed.
+      The signal "mon_S3/incCO/XLXI_1/I12" is sourceless and has been removed.
+       Sourceless block "mon_S3/incCO/XLXI_1/I_36_78" (XOR) removed.
+        The signal "mon_S3/XLXN_80<12>" is sourceless and has been removed.
+         Sourceless block "mon_S3/selecCO/XLXI_20/I_36_7" (AND) removed.
+       Sourceless block "mon_S3/incCO/XLXI_1/I_36_63" (MUX) removed.
+        The signal "mon_S3/incCO/XLXI_1/I_36_63/O" is sourceless and has been removed.
+The signal "mon_S3/selecCO/XLXI_20/M1" is sourceless and has been removed.
+The signal "mon_S3/selecCO/XLXI_19/M0" is sourceless and has been removed.
+ Sourceless block "mon_S3/selecCO/XLXI_19/I_36_8" (OR) removed.
+  The signal "mon_S3/XLXN_89<13>" is sourceless and has been removed.
+   Sourceless block "mon_S3/CO/I_Q13" (FF) removed.
+    The signal "mon_S3/COBus<13>" is sourceless and has been removed.
+     Sourceless block "mon_S3/incCO/XLXI_1/I_36_367" (XOR) removed.
+      The signal "mon_S3/incCO/XLXI_1/I13" is sourceless and has been removed.
+       Sourceless block "mon_S3/incCO/XLXI_1/I_36_77" (XOR) removed.
+        The signal "mon_S3/XLXN_80<13>" is sourceless and has been removed.
+         Sourceless block "mon_S3/selecCO/XLXI_19/I_36_7" (AND) removed.
+       Sourceless block "mon_S3/incCO/XLXI_1/I_36_110" (MUX) removed.
+        The signal "mon_S3/incCO/XLXI_1/I_36_110/O" is sourceless and has been removed.
+The signal "mon_S3/selecCO/XLXI_19/M1" is sourceless and has been removed.
+The signal "mon_S3/selecCO/XLXI_18/M0" is sourceless and has been removed.
+ Sourceless block "mon_S3/selecCO/XLXI_18/I_36_8" (OR) removed.
+  The signal "mon_S3/XLXN_89<14>" is sourceless and has been removed.
+   Sourceless block "mon_S3/CO/I_Q14" (FF) removed.
+    The signal "mon_S3/COBus<14>" is sourceless and has been removed.
+     Sourceless block "mon_S3/incCO/XLXI_1/I_36_368" (XOR) removed.
+      The signal "mon_S3/incCO/XLXI_1/I14" is sourceless and has been removed.
+       Sourceless block "mon_S3/incCO/XLXI_1/I_36_81" (XOR) removed.
+        The signal "mon_S3/XLXN_80<14>" is sourceless and has been removed.
+         Sourceless block "mon_S3/selecCO/XLXI_18/I_36_7" (AND) removed.
+       Sourceless block "mon_S3/incCO/XLXI_1/I_36_107" (MUX) removed.
+        The signal "mon_S3/incCO/XLXI_1/C14O" is sourceless and has been removed.
+         Sourceless block "mon_S3/incCO/XLXI_1/I_36_375" (XOR) removed.
+          The signal "mon_S3/incCO/XLXI_1/OFL" is sourceless and has been removed.
+The signal "mon_S3/selecCO/XLXI_18/M1" is sourceless and has been removed.
+The signal "mon_S3/selecCO/XLXI_17/M0" is sourceless and has been removed.
+ Sourceless block "mon_S3/selecCO/XLXI_17/I_36_8" (OR) removed.
+  The signal "mon_S3/XLXN_89<15>" is sourceless and has been removed.
+   Sourceless block "mon_S3/CO/I_Q15" (FF) removed.
+    The signal "mon_S3/COBus<15>" is sourceless and has been removed.
+     Sourceless block "mon_S3/incCO/XLXI_1/I_36_64" (MUX) removed.
+      The signal "mon_S3/incCO/XLXI_1/CO" is sourceless and has been removed.
+     Sourceless block "mon_S3/incCO/XLXI_1/I_36_369" (XOR) removed.
+      The signal "mon_S3/incCO/XLXI_1/I15" is sourceless and has been removed.
+       Sourceless block "mon_S3/incCO/XLXI_1/I_36_80" (XOR) removed.
+        The signal "mon_S3/XLXN_80<15>" is sourceless and has been removed.
+         Sourceless block "mon_S3/selecCO/XLXI_17/I_36_7" (AND) removed.
+The signal "mon_S3/selecCO/XLXI_17/M1" is sourceless and has been removed.
+The signal "mon_S3/selecCO/XLXI_4/M0" is sourceless and has been removed.
+ Sourceless block "mon_S3/selecCO/XLXI_4/I_36_8" (OR) removed.
+  The signal "mon_S3/XLXN_89<8>" is sourceless and has been removed.
+   Sourceless block "mon_S3/CO/I_Q8" (FF) removed.
+    The signal "mon_S3/COBus<8>" is sourceless and has been removed.
+     Sourceless block "mon_S3/incCO/XLXI_1/I_36_362" (XOR) removed.
+      The signal "mon_S3/incCO/XLXI_1/I8" is sourceless and has been removed.
+       Sourceless block "mon_S3/incCO/XLXI_1/I_36_73" (XOR) removed.
+        The signal "mon_S3/XLXN_80<8>" is sourceless and has been removed.
+         Sourceless block "mon_S3/selecCO/XLXI_4/I_36_7" (AND) removed.
+       Sourceless block "mon_S3/incCO/XLXI_1/I_36_111" (MUX) removed.
+        The signal "mon_S3/incCO/XLXI_1/I_36_111/O" is sourceless and has been removed.
+The signal "mon_S3/selecCO/XLXI_4/M1" is sourceless and has been removed.
+The signal "mon_S3/selecCO/XLXI_3/M0" is sourceless and has been removed.
+ Sourceless block "mon_S3/selecCO/XLXI_3/I_36_8" (OR) removed.
+  The signal "mon_S3/XLXN_89<9>" is sourceless and has been removed.
+   Sourceless block "mon_S3/CO/I_Q9" (FF) removed.
+    The signal "mon_S3/COBus<9>" is sourceless and has been removed.
+     Sourceless block "mon_S3/incCO/XLXI_1/I_36_363" (XOR) removed.
+      The signal "mon_S3/incCO/XLXI_1/I9" is sourceless and has been removed.
+       Sourceless block "mon_S3/incCO/XLXI_1/I_36_74" (XOR) removed.
+        The signal "mon_S3/XLXN_80<9>" is sourceless and has been removed.
+         Sourceless block "mon_S3/selecCO/XLXI_3/I_36_7" (AND) removed.
+       Sourceless block "mon_S3/incCO/XLXI_1/I_36_55" (MUX) removed.
+        The signal "mon_S3/incCO/XLXI_1/I_36_55/O" is sourceless and has been removed.
+The signal "mon_S3/selecCO/XLXI_3/M1" is sourceless and has been removed.
+The signal "mon_S3/selecCO/XLXI_2/M0" is sourceless and has been removed.
+ Sourceless block "mon_S3/selecCO/XLXI_2/I_36_8" (OR) removed.
+  The signal "mon_S3/XLXN_89<10>" is sourceless and has been removed.
+   Sourceless block "mon_S3/CO/I_Q10" (FF) removed.
+    The signal "mon_S3/COBus<10>" is sourceless and has been removed.
+     Sourceless block "mon_S3/incCO/XLXI_1/I_36_364" (XOR) removed.
+      The signal "mon_S3/incCO/XLXI_1/I10" is sourceless and has been removed.
+       Sourceless block "mon_S3/incCO/XLXI_1/I_36_76" (XOR) removed.
+        The signal "mon_S3/XLXN_80<10>" is sourceless and has been removed.
+         Sourceless block "mon_S3/selecCO/XLXI_2/I_36_7" (AND) removed.
+       Sourceless block "mon_S3/incCO/XLXI_1/I_36_62" (MUX) removed.
+        The signal "mon_S3/incCO/XLXI_1/I_36_62/O" is sourceless and has been removed.
+The signal "mon_S3/selecCO/XLXI_2/M1" is sourceless and has been removed.
+The signal "mon_S3/selecCO/XLXI_1/M0" is sourceless and has been removed.
+ Sourceless block "mon_S3/selecCO/XLXI_1/I_36_8" (OR) removed.
+  The signal "mon_S3/XLXN_89<11>" is sourceless and has been removed.
+   Sourceless block "mon_S3/CO/I_Q11" (FF) removed.
+    The signal "mon_S3/COBus<11>" is sourceless and has been removed.
+     Sourceless block "mon_S3/incCO/XLXI_1/I_36_365" (XOR) removed.
+      The signal "mon_S3/incCO/XLXI_1/I11" is sourceless and has been removed.
+       Sourceless block "mon_S3/incCO/XLXI_1/I_36_75" (XOR) removed.
+        The signal "mon_S3/XLXN_80<11>" is sourceless and has been removed.
+         Sourceless block "mon_S3/selecCO/XLXI_1/I_36_7" (AND) removed.
+       Sourceless block "mon_S3/incCO/XLXI_1/I_36_58" (MUX) removed.
+        The signal "mon_S3/incCO/XLXI_1/I_36_58/O" is sourceless and has been removed.
+The signal "mon_S3/selecCO/XLXI_1/M1" is sourceless and has been removed.
+The signal "mon_S3/incCO/XLXI_1/dummy" is sourceless and has been removed.
+The signal "mon_S3/incCO/XLXI_1/I_36_248/O" is sourceless and has been removed.
+The signal "mon_S3/XLXI_54/N1" is sourceless and has been removed.
+The signal "mon_S3/XLXI_54/N0" is sourceless and has been removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "mon_S3/XLXI_49/XLXN_100" is unused and has been removed.
+ Unused block "mon_S3/XLXI_49/XLXI_93" (BUF) removed.
+  The signal "mon_S3/XLXI_49/clksec_DUMMY" is unused and has been removed.
+   Unused block "mon_S3/XLXI_49/XLXI_94" (FF) removed.
+    The signal "mon_S3/XLXI_49/XLXN_93" is unused and has been removed.
+     Unused block "mon_S3/XLXI_49/XLXI_88" (FF) removed.
+      The signal "mon_S3/XLXI_49/XLXN_95" is unused and has been removed.
+       Unused block "mon_S3/XLXI_49/XLXI_90" (FF) removed.
+        The signal "mon_S3/XLXI_49/XLXN_89" is unused and has been removed.
+         Unused block "mon_S3/XLXI_49/XLXI_84" (FF) removed.
+          The signal "mon_S3/XLXI_49/xyx" is unused and has been removed.
+           Unused block "mon_S3/XLXI_49/XLXI_86" (FF) removed.
+            The signal "mon_S3/XLXI_49/XLXN_87" is unused and has been removed.
+             Unused block "mon_S3/XLXI_49/XLXI_82" (FF) removed.
+              The signal "mon_S3/XLXI_49/XLXN_83" is unused and has been removed.
+               Unused block "mon_S3/XLXI_49/XLXI_78" (FF) removed.
+                The signal "mon_S3/XLXI_49/XLXN_85" is unused and has been removed.
+                 Unused block "mon_S3/XLXI_49/XLXI_80" (FF) removed.
+                  The signal "mon_S3/XLXI_49/XLXN_86" is unused and has been removed.
+                   Unused block "mon_S3/XLXI_49/XLXI_79" (BUF) removed.
+                The signal "mon_S3/XLXI_49/XLXN_84" is unused and has been removed.
+                 Unused block "mon_S3/XLXI_49/XLXI_77" (BUF) removed.
+              The signal "mon_S3/XLXI_49/XLXN_88" is unused and has been removed.
+               Unused block "mon_S3/XLXI_49/XLXI_81" (BUF) removed.
+            The signal "mon_S3/XLXI_49/XLXN_92" is unused and has been removed.
+             Unused block "mon_S3/XLXI_49/XLXI_85" (BUF) removed.
+          The signal "mon_S3/XLXI_49/XLXN_90" is unused and has been removed.
+           Unused block "mon_S3/XLXI_49/XLXI_83" (BUF) removed.
+        The signal "mon_S3/XLXI_49/XLXN_96" is unused and has been removed.
+         Unused block "mon_S3/XLXI_49/XLXI_89" (BUF) removed.
+      The signal "mon_S3/XLXI_49/XLXN_94" is unused and has been removed.
+       Unused block "mon_S3/XLXI_49/XLXI_87" (BUF) removed.
+The signal "mon_S3/XLXI_49/XLXN_102" is unused and has been removed.
+ Unused block "mon_S3/XLXI_49/XLXI_95" (BUF) removed.
+  The signal "mon_S3/XLXI_49/xxx" is unused and has been removed.
+   Unused block "mon_S3/XLXI_49/XLXI_96" (FF) removed.
+    The signal "mon_S3/XLXI_49/XLXN_97" is unused and has been removed.
+     Unused block "mon_S3/XLXI_49/XLXI_92" (FF) removed.
+      The signal "mon_S3/XLXI_49/XLXN_98" is unused and has been removed.
+       Unused block "mon_S3/XLXI_49/XLXI_91" (BUF) removed.
+The signal "mon_S3/XLXN_88<0>" is unused and has been removed.
+The signal "sw<0>" is unused and has been removed.
+ Unused block "XLXI_3/I_36_37" (BUF) removed.
+  The signal "switches<0>" is unused and has been removed.
+   Unused block "switches<0>" (PAD) removed.
+The signal "sw<1>" is unused and has been removed.
+ Unused block "XLXI_3/I_36_36" (BUF) removed.
+  The signal "switches<1>" is unused and has been removed.
+   Unused block "switches<1>" (PAD) removed.
+The signal "sw<2>" is unused and has been removed.
+ Unused block "XLXI_3/I_36_35" (BUF) removed.
+  The signal "switches<2>" is unused and has been removed.
+   Unused block "switches<2>" (PAD) removed.
+The signal "sw<3>" is unused and has been removed.
+ Unused block "XLXI_3/I_36_34" (BUF) removed.
+  The signal "switches<3>" is unused and has been removed.
+   Unused block "switches<3>" (PAD) removed.
+The signal "sw<4>" is unused and has been removed.
+ Unused block "XLXI_3/I_36_30" (BUF) removed.
+  The signal "switches<4>" is unused and has been removed.
+   Unused block "switches<4>" (PAD) removed.
+The signal "sw<5>" is unused and has been removed.
+ Unused block "XLXI_3/I_36_31" (BUF) removed.
+  The signal "switches<5>" is unused and has been removed.
+   Unused block "switches<5>" (PAD) removed.
+The signal "sw<6>" is unused and has been removed.
+ Unused block "XLXI_3/I_36_32" (BUF) removed.
+  The signal "switches<6>" is unused and has been removed.
+   Unused block "switches<6>" (PAD) removed.
+The signal "sw<7>" is unused and has been removed.
+ Unused block "XLXI_3/I_36_33" (BUF) removed.
+  The signal "switches<7>" is unused and has been removed.
+   Unused block "switches<7>" (PAD) removed.
+Unused block "mon_S3/XLXI_54/GND" (ZERO) removed.
+Unused block "mon_S3/XLXI_54/VCC" (ONE) removed.
+Unused block "mon_S3/incCO/XLXI_1/XST_GND" (ZERO) removed.
+Unused block "mon_S3/selecCO/XLXI_1/I_36_9" (AND) removed.
+Unused block "mon_S3/selecCO/XLXI_17/I_36_9" (AND) removed.
+Unused block "mon_S3/selecCO/XLXI_18/I_36_9" (AND) removed.
+Unused block "mon_S3/selecCO/XLXI_19/I_36_9" (AND) removed.
+Unused block "mon_S3/selecCO/XLXI_2/I_36_9" (AND) removed.
+Unused block "mon_S3/selecCO/XLXI_20/I_36_9" (AND) removed.
+Unused block "mon_S3/selecCO/XLXI_3/I_36_9" (AND) removed.
+Unused block "mon_S3/selecCO/XLXI_4/I_36_9" (AND) removed.
+Unused block "mon_S3/incCO/XLXI_1/I_36_248" (MUX) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+AND2 		mon_S3/CR1/C0/XLXI_1
+OR2 		mon_S3/CR1/C0/XLXI_2
+AND2 		mon_S3/CR1/C1/XLXI_1
+OR2 		mon_S3/CR1/C1/XLXI_2
+AND2 		mon_S3/CR1/C10/XLXI_1
+OR2 		mon_S3/CR1/C10/XLXI_2
+AND2 		mon_S3/CR1/C11/XLXI_1
+OR2 		mon_S3/CR1/C11/XLXI_2
+AND2 		mon_S3/CR1/C12/XLXI_1
+OR2 		mon_S3/CR1/C12/XLXI_2
+AND2 		mon_S3/CR1/C13/XLXI_1
+OR2 		mon_S3/CR1/C13/XLXI_2
+AND2 		mon_S3/CR1/C14/XLXI_1
+OR2 		mon_S3/CR1/C14/XLXI_2
+AND2 		mon_S3/CR1/C15/XLXI_1
+OR2 		mon_S3/CR1/C15/XLXI_2
+AND2 		mon_S3/CR1/C2/XLXI_1
+OR2 		mon_S3/CR1/C2/XLXI_2
+AND2 		mon_S3/CR1/C3/XLXI_1
+OR2 		mon_S3/CR1/C3/XLXI_2
+AND2 		mon_S3/CR1/C4/XLXI_1
+OR2 		mon_S3/CR1/C4/XLXI_2
+AND2 		mon_S3/CR1/C5/XLXI_1
+OR2 		mon_S3/CR1/C5/XLXI_2
+AND2 		mon_S3/CR1/C6/XLXI_1
+OR2 		mon_S3/CR1/C6/XLXI_2
+AND2 		mon_S3/CR1/C7/XLXI_1
+OR2 		mon_S3/CR1/C7/XLXI_2
+AND2 		mon_S3/CR1/C8/XLXI_1
+OR2 		mon_S3/CR1/C8/XLXI_2
+AND2 		mon_S3/CR1/C9/XLXI_1
+OR2 		mon_S3/CR1/C9/XLXI_2
+AND2 		mon_S3/CR2/C0/XLXI_1
+OR2 		mon_S3/CR2/C0/XLXI_2
+AND2 		mon_S3/CR2/C1/XLXI_1
+OR2 		mon_S3/CR2/C1/XLXI_2
+AND2 		mon_S3/CR2/C10/XLXI_1
+OR2 		mon_S3/CR2/C10/XLXI_2
+AND2 		mon_S3/CR2/C11/XLXI_1
+OR2 		mon_S3/CR2/C11/XLXI_2
+AND2 		mon_S3/CR2/C12/XLXI_1
+OR2 		mon_S3/CR2/C12/XLXI_2
+AND2 		mon_S3/CR2/C13/XLXI_1
+OR2 		mon_S3/CR2/C13/XLXI_2
+AND2 		mon_S3/CR2/C14/XLXI_1
+OR2 		mon_S3/CR2/C14/XLXI_2
+AND2 		mon_S3/CR2/C15/XLXI_1
+OR2 		mon_S3/CR2/C15/XLXI_2
+AND2 		mon_S3/CR2/C2/XLXI_1
+OR2 		mon_S3/CR2/C2/XLXI_2
+AND2 		mon_S3/CR2/C3/XLXI_1
+OR2 		mon_S3/CR2/C3/XLXI_2
+AND2 		mon_S3/CR2/C4/XLXI_1
+OR2 		mon_S3/CR2/C4/XLXI_2
+AND2 		mon_S3/CR2/C5/XLXI_1
+OR2 		mon_S3/CR2/C5/XLXI_2
+AND2 		mon_S3/CR2/C6/XLXI_1
+OR2 		mon_S3/CR2/C6/XLXI_2
+AND2 		mon_S3/CR2/C7/XLXI_1
+OR2 		mon_S3/CR2/C7/XLXI_2
+AND2 		mon_S3/CR2/C8/XLXI_1
+OR2 		mon_S3/CR2/C8/XLXI_2
+AND2 		mon_S3/CR2/C9/XLXI_1
+OR2 		mon_S3/CR2/C9/XLXI_2
+AND2 		mon_S3/CR3/C0/XLXI_1
+OR2 		mon_S3/CR3/C0/XLXI_2
+AND2 		mon_S3/CR3/C1/XLXI_1
+OR2 		mon_S3/CR3/C1/XLXI_2
+AND2 		mon_S3/CR3/C10/XLXI_1
+OR2 		mon_S3/CR3/C10/XLXI_2
+AND2 		mon_S3/CR3/C11/XLXI_1
+OR2 		mon_S3/CR3/C11/XLXI_2
+AND2 		mon_S3/CR3/C12/XLXI_1
+OR2 		mon_S3/CR3/C12/XLXI_2
+AND2 		mon_S3/CR3/C13/XLXI_1
+OR2 		mon_S3/CR3/C13/XLXI_2
+AND2 		mon_S3/CR3/C14/XLXI_1
+OR2 		mon_S3/CR3/C14/XLXI_2
+AND2 		mon_S3/CR3/C15/XLXI_1
+OR2 		mon_S3/CR3/C15/XLXI_2
+AND2 		mon_S3/CR3/C2/XLXI_1
+OR2 		mon_S3/CR3/C2/XLXI_2
+AND2 		mon_S3/CR3/C3/XLXI_1
+OR2 		mon_S3/CR3/C3/XLXI_2
+AND2 		mon_S3/CR3/C4/XLXI_1
+OR2 		mon_S3/CR3/C4/XLXI_2
+AND2 		mon_S3/CR3/C5/XLXI_1
+OR2 		mon_S3/CR3/C5/XLXI_2
+AND2 		mon_S3/CR3/C6/XLXI_1
+OR2 		mon_S3/CR3/C6/XLXI_2
+AND2 		mon_S3/CR3/C7/XLXI_1
+OR2 		mon_S3/CR3/C7/XLXI_2
+AND2 		mon_S3/CR3/C8/XLXI_1
+OR2 		mon_S3/CR3/C8/XLXI_2
+AND2 		mon_S3/CR3/C9/XLXI_1
+OR2 		mon_S3/CR3/C9/XLXI_2
+AND2 		mon_S3/CR4/C0/XLXI_1
+OR2 		mon_S3/CR4/C0/XLXI_2
+AND2 		mon_S3/CR4/C1/XLXI_1
+OR2 		mon_S3/CR4/C1/XLXI_2
+AND2 		mon_S3/CR4/C10/XLXI_1
+OR2 		mon_S3/CR4/C10/XLXI_2
+AND2 		mon_S3/CR4/C11/XLXI_1
+OR2 		mon_S3/CR4/C11/XLXI_2
+AND2 		mon_S3/CR4/C12/XLXI_1
+OR2 		mon_S3/CR4/C12/XLXI_2
+AND2 		mon_S3/CR4/C13/XLXI_1
+OR2 		mon_S3/CR4/C13/XLXI_2
+AND2 		mon_S3/CR4/C14/XLXI_1
+OR2 		mon_S3/CR4/C14/XLXI_2
+AND2 		mon_S3/CR4/C15/XLXI_1
+OR2 		mon_S3/CR4/C15/XLXI_2
+AND2 		mon_S3/CR4/C2/XLXI_1
+OR2 		mon_S3/CR4/C2/XLXI_2
+AND2 		mon_S3/CR4/C3/XLXI_1
+OR2 		mon_S3/CR4/C3/XLXI_2
+AND2 		mon_S3/CR4/C4/XLXI_1
+OR2 		mon_S3/CR4/C4/XLXI_2
+AND2 		mon_S3/CR4/C5/XLXI_1
+OR2 		mon_S3/CR4/C5/XLXI_2
+AND2 		mon_S3/CR4/C6/XLXI_1
+OR2 		mon_S3/CR4/C6/XLXI_2
+AND2 		mon_S3/CR4/C7/XLXI_1
+OR2 		mon_S3/CR4/C7/XLXI_2
+AND2 		mon_S3/CR4/C8/XLXI_1
+OR2 		mon_S3/CR4/C8/XLXI_2
+AND2 		mon_S3/CR4/C9/XLXI_1
+OR2 		mon_S3/CR4/C9/XLXI_2
+AND2 		mon_S3/CR5/C0/XLXI_1
+OR2 		mon_S3/CR5/C0/XLXI_2
+AND2 		mon_S3/CR5/C1/XLXI_1
+OR2 		mon_S3/CR5/C1/XLXI_2
+AND2 		mon_S3/CR5/C10/XLXI_1
+OR2 		mon_S3/CR5/C10/XLXI_2
+AND2 		mon_S3/CR5/C11/XLXI_1
+OR2 		mon_S3/CR5/C11/XLXI_2
+AND2 		mon_S3/CR5/C12/XLXI_1
+OR2 		mon_S3/CR5/C12/XLXI_2
+AND2 		mon_S3/CR5/C13/XLXI_1
+OR2 		mon_S3/CR5/C13/XLXI_2
+AND2 		mon_S3/CR5/C14/XLXI_1
+OR2 		mon_S3/CR5/C14/XLXI_2
+AND2 		mon_S3/CR5/C15/XLXI_1
+OR2 		mon_S3/CR5/C15/XLXI_2
+AND2 		mon_S3/CR5/C2/XLXI_1
+OR2 		mon_S3/CR5/C2/XLXI_2
+AND2 		mon_S3/CR5/C3/XLXI_1
+OR2 		mon_S3/CR5/C3/XLXI_2
+AND2 		mon_S3/CR5/C4/XLXI_1
+OR2 		mon_S3/CR5/C4/XLXI_2
+AND2 		mon_S3/CR5/C5/XLXI_1
+OR2 		mon_S3/CR5/C5/XLXI_2
+AND2 		mon_S3/CR5/C6/XLXI_1
+OR2 		mon_S3/CR5/C6/XLXI_2
+AND2 		mon_S3/CR5/C7/XLXI_1
+OR2 		mon_S3/CR5/C7/XLXI_2
+AND2 		mon_S3/CR5/C8/XLXI_1
+OR2 		mon_S3/CR5/C8/XLXI_2
+AND2 		mon_S3/CR5/C9/XLXI_1
+OR2 		mon_S3/CR5/C9/XLXI_2
+AND2 		mon_S3/CR7seg/C0/XLXI_1
+OR2 		mon_S3/CR7seg/C0/XLXI_2
+AND2 		mon_S3/CR7seg/C1/XLXI_1
+OR2 		mon_S3/CR7seg/C1/XLXI_2
+AND2 		mon_S3/CR7seg/C10/XLXI_1
+OR2 		mon_S3/CR7seg/C10/XLXI_2
+AND2 		mon_S3/CR7seg/C11/XLXI_1
+OR2 		mon_S3/CR7seg/C11/XLXI_2
+AND2 		mon_S3/CR7seg/C12/XLXI_1
+OR2 		mon_S3/CR7seg/C12/XLXI_2
+AND2 		mon_S3/CR7seg/C13/XLXI_1
+OR2 		mon_S3/CR7seg/C13/XLXI_2
+AND2 		mon_S3/CR7seg/C14/XLXI_1
+OR2 		mon_S3/CR7seg/C14/XLXI_2
+AND2 		mon_S3/CR7seg/C15/XLXI_1
+OR2 		mon_S3/CR7seg/C15/XLXI_2
+AND2 		mon_S3/CR7seg/C2/XLXI_1
+OR2 		mon_S3/CR7seg/C2/XLXI_2
+AND2 		mon_S3/CR7seg/C3/XLXI_1
+OR2 		mon_S3/CR7seg/C3/XLXI_2
+AND2 		mon_S3/CR7seg/C4/XLXI_1
+OR2 		mon_S3/CR7seg/C4/XLXI_2
+AND2 		mon_S3/CR7seg/C5/XLXI_1
+OR2 		mon_S3/CR7seg/C5/XLXI_2
+AND2 		mon_S3/CR7seg/C6/XLXI_1
+OR2 		mon_S3/CR7seg/C6/XLXI_2
+AND2 		mon_S3/CR7seg/C7/XLXI_1
+OR2 		mon_S3/CR7seg/C7/XLXI_2
+AND2 		mon_S3/CR7seg/C8/XLXI_1
+OR2 		mon_S3/CR7seg/C8/XLXI_2
+AND2 		mon_S3/CR7seg/C9/XLXI_1
+OR2 		mon_S3/CR7seg/C9/XLXI_2
+AND2 		mon_S3/CRI/C0/XLXI_1
+OR2 		mon_S3/CRI/C0/XLXI_2
+AND2 		mon_S3/CRO/C0/XLXI_1
+OR2 		mon_S3/CRO/C0/XLXI_2
+AND2 		mon_S3/CRO/C1/XLXI_1
+OR2 		mon_S3/CRO/C1/XLXI_2
+AND2 		mon_S3/CRO/C10/XLXI_1
+OR2 		mon_S3/CRO/C10/XLXI_2
+AND2 		mon_S3/CRO/C11/XLXI_1
+OR2 		mon_S3/CRO/C11/XLXI_2
+AND2 		mon_S3/CRO/C12/XLXI_1
+OR2 		mon_S3/CRO/C12/XLXI_2
+AND2 		mon_S3/CRO/C13/XLXI_1
+OR2 		mon_S3/CRO/C13/XLXI_2
+AND2 		mon_S3/CRO/C14/XLXI_1
+OR2 		mon_S3/CRO/C14/XLXI_2
+AND2 		mon_S3/CRO/C15/XLXI_1
+OR2 		mon_S3/CRO/C15/XLXI_2
+AND2 		mon_S3/CRO/C2/XLXI_1
+OR2 		mon_S3/CRO/C2/XLXI_2
+AND2 		mon_S3/CRO/C3/XLXI_1
+OR2 		mon_S3/CRO/C3/XLXI_2
+AND2 		mon_S3/CRO/C4/XLXI_1
+OR2 		mon_S3/CRO/C4/XLXI_2
+AND2 		mon_S3/CRO/C5/XLXI_1
+OR2 		mon_S3/CRO/C5/XLXI_2
+AND2 		mon_S3/CRO/C6/XLXI_1
+OR2 		mon_S3/CRO/C6/XLXI_2
+AND2 		mon_S3/CRO/C7/XLXI_1
+OR2 		mon_S3/CRO/C7/XLXI_2
+AND2 		mon_S3/CRO/C8/XLXI_1
+OR2 		mon_S3/CRO/C8/XLXI_2
+AND2 		mon_S3/CRO/C9/XLXI_1
+OR2 		mon_S3/CRO/C9/XLXI_2
+AND2 		mon_S3/CRam/C0/XLXI_1
+OR2 		mon_S3/CRam/C0/XLXI_2
+AND2 		mon_S3/CRam/C1/XLXI_1
+OR2 		mon_S3/CRam/C1/XLXI_2
+AND2 		mon_S3/CRam/C10/XLXI_1
+OR2 		mon_S3/CRam/C10/XLXI_2
+AND2 		mon_S3/CRam/C11/XLXI_1
+OR2 		mon_S3/CRam/C11/XLXI_2
+AND2 		mon_S3/CRam/C12/XLXI_1
+OR2 		mon_S3/CRam/C12/XLXI_2
+AND2 		mon_S3/CRam/C13/XLXI_1
+OR2 		mon_S3/CRam/C13/XLXI_2
+AND2 		mon_S3/CRam/C14/XLXI_1
+OR2 		mon_S3/CRam/C14/XLXI_2
+AND2 		mon_S3/CRam/C15/XLXI_1
+OR2 		mon_S3/CRam/C15/XLXI_2
+AND2 		mon_S3/CRam/C2/XLXI_1
+OR2 		mon_S3/CRam/C2/XLXI_2
+AND2 		mon_S3/CRam/C3/XLXI_1
+OR2 		mon_S3/CRam/C3/XLXI_2
+AND2 		mon_S3/CRam/C4/XLXI_1
+OR2 		mon_S3/CRam/C4/XLXI_2
+AND2 		mon_S3/CRam/C5/XLXI_1
+OR2 		mon_S3/CRam/C5/XLXI_2
+AND2 		mon_S3/CRam/C6/XLXI_1
+OR2 		mon_S3/CRam/C6/XLXI_2
+AND2 		mon_S3/CRam/C7/XLXI_1
+OR2 		mon_S3/CRam/C7/XLXI_2
+AND2 		mon_S3/CRam/C8/XLXI_1
+OR2 		mon_S3/CRam/C8/XLXI_2
+AND2 		mon_S3/CRam/C9/XLXI_1
+OR2 		mon_S3/CRam/C9/XLXI_2
+AND2 		mon_S3/CRdest/C0/XLXI_1
+OR2 		mon_S3/CRdest/C0/XLXI_2
+AND2 		mon_S3/CRdest/C1/XLXI_1
+OR2 		mon_S3/CRdest/C1/XLXI_2
+AND2 		mon_S3/CRdest/C10/XLXI_1
+OR2 		mon_S3/CRdest/C10/XLXI_2
+AND2 		mon_S3/CRdest/C11/XLXI_1
+OR2 		mon_S3/CRdest/C11/XLXI_2
+AND2 		mon_S3/CRdest/C12/XLXI_1
+OR2 		mon_S3/CRdest/C12/XLXI_2
+AND2 		mon_S3/CRdest/C13/XLXI_1
+OR2 		mon_S3/CRdest/C13/XLXI_2
+AND2 		mon_S3/CRdest/C14/XLXI_1
+OR2 		mon_S3/CRdest/C14/XLXI_2
+AND2 		mon_S3/CRdest/C15/XLXI_1
+OR2 		mon_S3/CRdest/C15/XLXI_2
+AND2 		mon_S3/CRdest/C2/XLXI_1
+OR2 		mon_S3/CRdest/C2/XLXI_2
+AND2 		mon_S3/CRdest/C3/XLXI_1
+OR2 		mon_S3/CRdest/C3/XLXI_2
+AND2 		mon_S3/CRdest/C4/XLXI_1
+OR2 		mon_S3/CRdest/C4/XLXI_2
+AND2 		mon_S3/CRdest/C5/XLXI_1
+OR2 		mon_S3/CRdest/C5/XLXI_2
+AND2 		mon_S3/CRdest/C6/XLXI_1
+OR2 		mon_S3/CRdest/C6/XLXI_2
+AND2 		mon_S3/CRdest/C7/XLXI_1
+OR2 		mon_S3/CRdest/C7/XLXI_2
+AND2 		mon_S3/CRdest/C8/XLXI_1
+OR2 		mon_S3/CRdest/C8/XLXI_2
+AND2 		mon_S3/CRdest/C9/XLXI_1
+OR2 		mon_S3/CRdest/C9/XLXI_2
+AND2 		mon_S3/CRdm/C0/XLXI_1
+OR2 		mon_S3/CRdm/C0/XLXI_2
+AND2 		mon_S3/CRdm/C1/XLXI_1
+OR2 		mon_S3/CRdm/C1/XLXI_2
+AND2 		mon_S3/CRdm/C10/XLXI_1
+OR2 		mon_S3/CRdm/C10/XLXI_2
+AND2 		mon_S3/CRdm/C11/XLXI_1
+OR2 		mon_S3/CRdm/C11/XLXI_2
+AND2 		mon_S3/CRdm/C12/XLXI_1
+OR2 		mon_S3/CRdm/C12/XLXI_2
+AND2 		mon_S3/CRdm/C13/XLXI_1
+OR2 		mon_S3/CRdm/C13/XLXI_2
+AND2 		mon_S3/CRdm/C14/XLXI_1
+OR2 		mon_S3/CRdm/C14/XLXI_2
+AND2 		mon_S3/CRdm/C15/XLXI_1
+OR2 		mon_S3/CRdm/C15/XLXI_2
+AND2 		mon_S3/CRdm/C2/XLXI_1
+OR2 		mon_S3/CRdm/C2/XLXI_2
+AND2 		mon_S3/CRdm/C3/XLXI_1
+OR2 		mon_S3/CRdm/C3/XLXI_2
+AND2 		mon_S3/CRdm/C4/XLXI_1
+OR2 		mon_S3/CRdm/C4/XLXI_2
+AND2 		mon_S3/CRdm/C5/XLXI_1
+OR2 		mon_S3/CRdm/C5/XLXI_2
+AND2 		mon_S3/CRdm/C6/XLXI_1
+OR2 		mon_S3/CRdm/C6/XLXI_2
+AND2 		mon_S3/CRdm/C7/XLXI_1
+OR2 		mon_S3/CRdm/C7/XLXI_2
+AND2 		mon_S3/CRdm/C8/XLXI_1
+OR2 		mon_S3/CRdm/C8/XLXI_2
+AND2 		mon_S3/CRdm/C9/XLXI_1
+OR2 		mon_S3/CRdm/C9/XLXI_2
+AND2 		mon_S3/CRled/C0/XLXI_1
+OR2 		mon_S3/CRled/C0/XLXI_2
+AND2 		mon_S3/CRled/C1/XLXI_1
+OR2 		mon_S3/CRled/C1/XLXI_2
+AND2 		mon_S3/CRled/C10/XLXI_1
+OR2 		mon_S3/CRled/C10/XLXI_2
+AND2 		mon_S3/CRled/C11/XLXI_1
+OR2 		mon_S3/CRled/C11/XLXI_2
+AND2 		mon_S3/CRled/C12/XLXI_1
+OR2 		mon_S3/CRled/C12/XLXI_2
+AND2 		mon_S3/CRled/C13/XLXI_1
+OR2 		mon_S3/CRled/C13/XLXI_2
+AND2 		mon_S3/CRled/C14/XLXI_1
+OR2 		mon_S3/CRled/C14/XLXI_2
+AND2 		mon_S3/CRled/C15/XLXI_1
+OR2 		mon_S3/CRled/C15/XLXI_2
+AND2 		mon_S3/CRled/C2/XLXI_1
+OR2 		mon_S3/CRled/C2/XLXI_2
+AND2 		mon_S3/CRled/C3/XLXI_1
+OR2 		mon_S3/CRled/C3/XLXI_2
+AND2 		mon_S3/CRled/C4/XLXI_1
+OR2 		mon_S3/CRled/C4/XLXI_2
+AND2 		mon_S3/CRled/C5/XLXI_1
+OR2 		mon_S3/CRled/C5/XLXI_2
+AND2 		mon_S3/CRled/C6/XLXI_1
+OR2 		mon_S3/CRled/C6/XLXI_2
+AND2 		mon_S3/CRled/C7/XLXI_1
+OR2 		mon_S3/CRled/C7/XLXI_2
+AND2 		mon_S3/CRled/C8/XLXI_1
+OR2 		mon_S3/CRled/C8/XLXI_2
+AND2 		mon_S3/CRled/C9/XLXI_1
+OR2 		mon_S3/CRled/C9/XLXI_2
+AND2 		mon_S3/CRsrc1/C0/XLXI_1
+OR2 		mon_S3/CRsrc1/C0/XLXI_2
+AND2 		mon_S3/CRsrc1/C1/XLXI_1
+OR2 		mon_S3/CRsrc1/C1/XLXI_2
+AND2 		mon_S3/CRsrc1/C10/XLXI_1
+OR2 		mon_S3/CRsrc1/C10/XLXI_2
+AND2 		mon_S3/CRsrc1/C11/XLXI_1
+OR2 		mon_S3/CRsrc1/C11/XLXI_2
+AND2 		mon_S3/CRsrc1/C12/XLXI_1
+OR2 		mon_S3/CRsrc1/C12/XLXI_2
+AND2 		mon_S3/CRsrc1/C13/XLXI_1
+OR2 		mon_S3/CRsrc1/C13/XLXI_2
+AND2 		mon_S3/CRsrc1/C14/XLXI_1
+OR2 		mon_S3/CRsrc1/C14/XLXI_2
+AND2 		mon_S3/CRsrc1/C15/XLXI_1
+OR2 		mon_S3/CRsrc1/C15/XLXI_2
+AND2 		mon_S3/CRsrc1/C2/XLXI_1
+OR2 		mon_S3/CRsrc1/C2/XLXI_2
+AND2 		mon_S3/CRsrc1/C3/XLXI_1
+OR2 		mon_S3/CRsrc1/C3/XLXI_2
+AND2 		mon_S3/CRsrc1/C4/XLXI_1
+OR2 		mon_S3/CRsrc1/C4/XLXI_2
+AND2 		mon_S3/CRsrc1/C5/XLXI_1
+OR2 		mon_S3/CRsrc1/C5/XLXI_2
+AND2 		mon_S3/CRsrc1/C6/XLXI_1
+OR2 		mon_S3/CRsrc1/C6/XLXI_2
+AND2 		mon_S3/CRsrc1/C7/XLXI_1
+OR2 		mon_S3/CRsrc1/C7/XLXI_2
+AND2 		mon_S3/CRsrc1/C8/XLXI_1
+OR2 		mon_S3/CRsrc1/C8/XLXI_2
+AND2 		mon_S3/CRsrc1/C9/XLXI_1
+OR2 		mon_S3/CRsrc1/C9/XLXI_2
+AND2 		mon_S3/CRsrc2/C0/XLXI_1
+OR2 		mon_S3/CRsrc2/C0/XLXI_2
+AND2 		mon_S3/CRsrc2/C1/XLXI_1
+OR2 		mon_S3/CRsrc2/C1/XLXI_2
+AND2 		mon_S3/CRsrc2/C10/XLXI_1
+OR2 		mon_S3/CRsrc2/C10/XLXI_2
+AND2 		mon_S3/CRsrc2/C11/XLXI_1
+OR2 		mon_S3/CRsrc2/C11/XLXI_2
+AND2 		mon_S3/CRsrc2/C12/XLXI_1
+OR2 		mon_S3/CRsrc2/C12/XLXI_2
+AND2 		mon_S3/CRsrc2/C13/XLXI_1
+OR2 		mon_S3/CRsrc2/C13/XLXI_2
+AND2 		mon_S3/CRsrc2/C14/XLXI_1
+OR2 		mon_S3/CRsrc2/C14/XLXI_2
+AND2 		mon_S3/CRsrc2/C15/XLXI_1
+OR2 		mon_S3/CRsrc2/C15/XLXI_2
+AND2 		mon_S3/CRsrc2/C2/XLXI_1
+OR2 		mon_S3/CRsrc2/C2/XLXI_2
+AND2 		mon_S3/CRsrc2/C3/XLXI_1
+OR2 		mon_S3/CRsrc2/C3/XLXI_2
+AND2 		mon_S3/CRsrc2/C4/XLXI_1
+OR2 		mon_S3/CRsrc2/C4/XLXI_2
+AND2 		mon_S3/CRsrc2/C5/XLXI_1
+OR2 		mon_S3/CRsrc2/C5/XLXI_2
+AND2 		mon_S3/CRsrc2/C6/XLXI_1
+OR2 		mon_S3/CRsrc2/C6/XLXI_2
+AND2 		mon_S3/CRsrc2/C7/XLXI_1
+OR2 		mon_S3/CRsrc2/C7/XLXI_2
+AND2 		mon_S3/CRsrc2/C8/XLXI_1
+OR2 		mon_S3/CRsrc2/C8/XLXI_2
+AND2 		mon_S3/CRsrc2/C9/XLXI_1
+OR2 		mon_S3/CRsrc2/C9/XLXI_2
+AND2 		mon_S3/CRsw/C0/XLXI_1
+OR2 		mon_S3/CRsw/C0/XLXI_2
+AND2 		mon_S3/CRsw/C1/XLXI_1
+OR2 		mon_S3/CRsw/C1/XLXI_2
+AND2 		mon_S3/CRsw/C10/XLXI_1
+OR2 		mon_S3/CRsw/C10/XLXI_2
+AND2 		mon_S3/CRsw/C11/XLXI_1
+OR2 		mon_S3/CRsw/C11/XLXI_2
+AND2 		mon_S3/CRsw/C12/XLXI_1
+OR2 		mon_S3/CRsw/C12/XLXI_2
+AND2 		mon_S3/CRsw/C13/XLXI_1
+OR2 		mon_S3/CRsw/C13/XLXI_2
+AND2 		mon_S3/CRsw/C14/XLXI_1
+OR2 		mon_S3/CRsw/C14/XLXI_2
+AND2 		mon_S3/CRsw/C15/XLXI_1
+OR2 		mon_S3/CRsw/C15/XLXI_2
+AND2 		mon_S3/CRsw/C2/XLXI_1
+OR2 		mon_S3/CRsw/C2/XLXI_2
+AND2 		mon_S3/CRsw/C3/XLXI_1
+OR2 		mon_S3/CRsw/C3/XLXI_2
+AND2 		mon_S3/CRsw/C4/XLXI_1
+OR2 		mon_S3/CRsw/C4/XLXI_2
+AND2 		mon_S3/CRsw/C5/XLXI_1
+OR2 		mon_S3/CRsw/C5/XLXI_2
+AND2 		mon_S3/CRsw/C6/XLXI_1
+OR2 		mon_S3/CRsw/C6/XLXI_2
+AND2 		mon_S3/CRsw/C7/XLXI_1
+OR2 		mon_S3/CRsw/C7/XLXI_2
+AND2 		mon_S3/CRsw/C8/XLXI_1
+OR2 		mon_S3/CRsw/C8/XLXI_2
+AND2 		mon_S3/CRsw/C9/XLXI_1
+OR2 		mon_S3/CRsw/C9/XLXI_2
+FDCE 		mon_S3/R1/I_Q0
+   optimized to 0
+FDCE 		mon_S3/R1/I_Q1
+   optimized to 0
+FDCE 		mon_S3/R1/I_Q10
+   optimized to 0
+FDCE 		mon_S3/R1/I_Q11
+   optimized to 0
+FDCE 		mon_S3/R1/I_Q12
+   optimized to 0
+FDCE 		mon_S3/R1/I_Q13
+   optimized to 0
+FDCE 		mon_S3/R1/I_Q14
+   optimized to 0
+FDCE 		mon_S3/R1/I_Q15
+   optimized to 0
+FDCE 		mon_S3/R1/I_Q2
+   optimized to 0
+FDCE 		mon_S3/R1/I_Q3
+   optimized to 0
+FDCE 		mon_S3/R1/I_Q4
+   optimized to 0
+FDCE 		mon_S3/R1/I_Q5
+   optimized to 0
+FDCE 		mon_S3/R1/I_Q6
+   optimized to 0
+FDCE 		mon_S3/R1/I_Q7
+   optimized to 0
+FDCE 		mon_S3/R1/I_Q8
+   optimized to 0
+FDCE 		mon_S3/R1/I_Q9
+   optimized to 0
+FDCE 		mon_S3/R2/I_Q0
+   optimized to 0
+FDCE 		mon_S3/R2/I_Q1
+   optimized to 0
+FDCE 		mon_S3/R2/I_Q10
+   optimized to 0
+FDCE 		mon_S3/R2/I_Q11
+   optimized to 0
+FDCE 		mon_S3/R2/I_Q12
+   optimized to 0
+FDCE 		mon_S3/R2/I_Q13
+   optimized to 0
+FDCE 		mon_S3/R2/I_Q14
+   optimized to 0
+FDCE 		mon_S3/R2/I_Q15
+   optimized to 0
+FDCE 		mon_S3/R2/I_Q2
+   optimized to 0
+FDCE 		mon_S3/R2/I_Q3
+   optimized to 0
+FDCE 		mon_S3/R2/I_Q4
+   optimized to 0
+FDCE 		mon_S3/R2/I_Q5
+   optimized to 0
+FDCE 		mon_S3/R2/I_Q6
+   optimized to 0
+FDCE 		mon_S3/R2/I_Q7
+   optimized to 0
+FDCE 		mon_S3/R2/I_Q8
+   optimized to 0
+FDCE 		mon_S3/R2/I_Q9
+   optimized to 0
+FDCE 		mon_S3/R3/I_Q0
+   optimized to 0
+FDCE 		mon_S3/R3/I_Q1
+   optimized to 0
+FDCE 		mon_S3/R3/I_Q10
+   optimized to 0
+FDCE 		mon_S3/R3/I_Q11
+   optimized to 0
+FDCE 		mon_S3/R3/I_Q12
+   optimized to 0
+FDCE 		mon_S3/R3/I_Q13
+   optimized to 0
+FDCE 		mon_S3/R3/I_Q14
+   optimized to 0
+FDCE 		mon_S3/R3/I_Q15
+   optimized to 0
+FDCE 		mon_S3/R3/I_Q2
+   optimized to 0
+FDCE 		mon_S3/R3/I_Q3
+   optimized to 0
+FDCE 		mon_S3/R3/I_Q4
+   optimized to 0
+FDCE 		mon_S3/R3/I_Q5
+   optimized to 0
+FDCE 		mon_S3/R3/I_Q6
+   optimized to 0
+FDCE 		mon_S3/R3/I_Q7
+   optimized to 0
+FDCE 		mon_S3/R3/I_Q8
+   optimized to 0
+FDCE 		mon_S3/R3/I_Q9
+   optimized to 0
+FDCE 		mon_S3/R4/I_Q0
+   optimized to 0
+FDCE 		mon_S3/R4/I_Q1
+   optimized to 0
+FDCE 		mon_S3/R4/I_Q10
+   optimized to 0
+FDCE 		mon_S3/R4/I_Q11
+   optimized to 0
+FDCE 		mon_S3/R4/I_Q12
+   optimized to 0
+FDCE 		mon_S3/R4/I_Q13
+   optimized to 0
+FDCE 		mon_S3/R4/I_Q14
+   optimized to 0
+FDCE 		mon_S3/R4/I_Q15
+   optimized to 0
+FDCE 		mon_S3/R4/I_Q2
+   optimized to 0
+FDCE 		mon_S3/R4/I_Q3
+   optimized to 0
+FDCE 		mon_S3/R4/I_Q4
+   optimized to 0
+FDCE 		mon_S3/R4/I_Q5
+   optimized to 0
+FDCE 		mon_S3/R4/I_Q6
+   optimized to 0
+FDCE 		mon_S3/R4/I_Q7
+   optimized to 0
+FDCE 		mon_S3/R4/I_Q8
+   optimized to 0
+FDCE 		mon_S3/R4/I_Q9
+   optimized to 0
+FDCE 		mon_S3/R5/I_Q0
+   optimized to 0
+FDCE 		mon_S3/R5/I_Q1
+   optimized to 0
+FDCE 		mon_S3/R5/I_Q10
+   optimized to 0
+FDCE 		mon_S3/R5/I_Q11
+   optimized to 0
+FDCE 		mon_S3/R5/I_Q12
+   optimized to 0
+FDCE 		mon_S3/R5/I_Q13
+   optimized to 0
+FDCE 		mon_S3/R5/I_Q14
+   optimized to 0
+FDCE 		mon_S3/R5/I_Q15
+   optimized to 0
+FDCE 		mon_S3/R5/I_Q2
+   optimized to 0
+FDCE 		mon_S3/R5/I_Q3
+   optimized to 0
+FDCE 		mon_S3/R5/I_Q4
+   optimized to 0
+FDCE 		mon_S3/R5/I_Q5
+   optimized to 0
+FDCE 		mon_S3/R5/I_Q6
+   optimized to 0
+FDCE 		mon_S3/R5/I_Q7
+   optimized to 0
+FDCE 		mon_S3/R5/I_Q8
+   optimized to 0
+FDCE 		mon_S3/R5/I_Q9
+   optimized to 0
+FDCE 		mon_S3/R7seg/I_Q0
+   optimized to 0
+FDCE 		mon_S3/RI/I_Q0
+   optimized to 0
+FDCE 		mon_S3/Ram/I_Q0
+   optimized to 0
+FDCE 		mon_S3/Ram/I_Q1
+   optimized to 0
+FDCE 		mon_S3/Ram/I_Q10
+   optimized to 0
+FDCE 		mon_S3/Ram/I_Q11
+   optimized to 0
+FDCE 		mon_S3/Ram/I_Q12
+   optimized to 0
+FDCE 		mon_S3/Ram/I_Q13
+   optimized to 0
+FDCE 		mon_S3/Ram/I_Q14
+   optimized to 0
+FDCE 		mon_S3/Ram/I_Q15
+   optimized to 0
+FDCE 		mon_S3/Ram/I_Q2
+   optimized to 0
+FDCE 		mon_S3/Ram/I_Q3
+   optimized to 0
+FDCE 		mon_S3/Ram/I_Q4
+   optimized to 0
+FDCE 		mon_S3/Ram/I_Q5
+   optimized to 0
+FDCE 		mon_S3/Ram/I_Q6
+   optimized to 0
+FDCE 		mon_S3/Ram/I_Q7
+   optimized to 0
+FDCE 		mon_S3/Ram/I_Q8
+   optimized to 0
+FDCE 		mon_S3/Ram/I_Q9
+   optimized to 0
+FDCE 		mon_S3/Rdest/I_Q0
+   optimized to 0
+FDCE 		mon_S3/Rdest/I_Q1
+   optimized to 0
+FDCE 		mon_S3/Rdest/I_Q10
+   optimized to 0
+FDCE 		mon_S3/Rdest/I_Q11
+   optimized to 0
+FDCE 		mon_S3/Rdest/I_Q12
+   optimized to 0
+FDCE 		mon_S3/Rdest/I_Q13
+   optimized to 0
+FDCE 		mon_S3/Rdest/I_Q14
+   optimized to 0
+FDCE 		mon_S3/Rdest/I_Q15
+   optimized to 0
+FDCE 		mon_S3/Rdest/I_Q2
+   optimized to 0
+FDCE 		mon_S3/Rdest/I_Q3
+   optimized to 0
+FDCE 		mon_S3/Rdest/I_Q4
+   optimized to 0
+FDCE 		mon_S3/Rdest/I_Q5
+   optimized to 0
+FDCE 		mon_S3/Rdest/I_Q6
+   optimized to 0
+FDCE 		mon_S3/Rdest/I_Q7
+   optimized to 0
+FDCE 		mon_S3/Rdest/I_Q8
+   optimized to 0
+FDCE 		mon_S3/Rdest/I_Q9
+   optimized to 0
+FDCE 		mon_S3/Rdm/I_Q0
+   optimized to 0
+FDCE 		mon_S3/Rdm/I_Q1
+   optimized to 0
+FDCE 		mon_S3/Rdm/I_Q10
+   optimized to 0
+FDCE 		mon_S3/Rdm/I_Q11
+   optimized to 0
+FDCE 		mon_S3/Rdm/I_Q12
+   optimized to 0
+FDCE 		mon_S3/Rdm/I_Q13
+   optimized to 0
+FDCE 		mon_S3/Rdm/I_Q14
+   optimized to 0
+FDCE 		mon_S3/Rdm/I_Q15
+   optimized to 0
+FDCE 		mon_S3/Rdm/I_Q2
+   optimized to 0
+FDCE 		mon_S3/Rdm/I_Q3
+   optimized to 0
+FDCE 		mon_S3/Rdm/I_Q4
+   optimized to 0
+FDCE 		mon_S3/Rdm/I_Q5
+   optimized to 0
+FDCE 		mon_S3/Rdm/I_Q6
+   optimized to 0
+FDCE 		mon_S3/Rdm/I_Q7
+   optimized to 0
+FDCE 		mon_S3/Rdm/I_Q8
+   optimized to 0
+FDCE 		mon_S3/Rdm/I_Q9
+   optimized to 0
+FDCE 		mon_S3/Rled/I_Q0
+   optimized to 0
+FDCE 		mon_S3/Rled/I_Q1
+   optimized to 0
+FDCE 		mon_S3/Rled/I_Q10
+   optimized to 0
+FDCE 		mon_S3/Rled/I_Q11
+   optimized to 0
+FDCE 		mon_S3/Rled/I_Q12
+   optimized to 0
+FDCE 		mon_S3/Rled/I_Q13
+   optimized to 0
+FDCE 		mon_S3/Rled/I_Q14
+   optimized to 0
+FDCE 		mon_S3/Rled/I_Q15
+   optimized to 0
+FDCE 		mon_S3/Rled/I_Q2
+   optimized to 0
+FDCE 		mon_S3/Rled/I_Q3
+   optimized to 0
+FDCE 		mon_S3/Rled/I_Q4
+   optimized to 0
+FDCE 		mon_S3/Rled/I_Q5
+   optimized to 0
+FDCE 		mon_S3/Rled/I_Q6
+   optimized to 0
+FDCE 		mon_S3/Rled/I_Q7
+   optimized to 0
+FDCE 		mon_S3/Rled/I_Q8
+   optimized to 0
+FDCE 		mon_S3/Rled/I_Q9
+   optimized to 0
+FDCE 		mon_S3/Rsrc1/I_Q0
+   optimized to 0
+FDCE 		mon_S3/Rsrc1/I_Q1
+   optimized to 0
+FDCE 		mon_S3/Rsrc1/I_Q10
+   optimized to 0
+FDCE 		mon_S3/Rsrc1/I_Q11
+   optimized to 0
+FDCE 		mon_S3/Rsrc1/I_Q12
+   optimized to 0
+FDCE 		mon_S3/Rsrc1/I_Q13
+   optimized to 0
+FDCE 		mon_S3/Rsrc1/I_Q14
+   optimized to 0
+FDCE 		mon_S3/Rsrc1/I_Q15
+   optimized to 0
+FDCE 		mon_S3/Rsrc1/I_Q2
+   optimized to 0
+FDCE 		mon_S3/Rsrc1/I_Q3
+   optimized to 0
+FDCE 		mon_S3/Rsrc1/I_Q4
+   optimized to 0
+FDCE 		mon_S3/Rsrc1/I_Q5
+   optimized to 0
+FDCE 		mon_S3/Rsrc1/I_Q6
+   optimized to 0
+FDCE 		mon_S3/Rsrc1/I_Q7
+   optimized to 0
+FDCE 		mon_S3/Rsrc1/I_Q8
+   optimized to 0
+FDCE 		mon_S3/Rsrc1/I_Q9
+   optimized to 0
+FDCE 		mon_S3/Rsrc2/I_Q0
+   optimized to 0
+FDCE 		mon_S3/Rsrc2/I_Q1
+   optimized to 0
+FDCE 		mon_S3/Rsrc2/I_Q10
+   optimized to 0
+FDCE 		mon_S3/Rsrc2/I_Q11
+   optimized to 0
+FDCE 		mon_S3/Rsrc2/I_Q12
+   optimized to 0
+FDCE 		mon_S3/Rsrc2/I_Q13
+   optimized to 0
+FDCE 		mon_S3/Rsrc2/I_Q14
+   optimized to 0
+FDCE 		mon_S3/Rsrc2/I_Q15
+   optimized to 0
+FDCE 		mon_S3/Rsrc2/I_Q2
+   optimized to 0
+FDCE 		mon_S3/Rsrc2/I_Q3
+   optimized to 0
+FDCE 		mon_S3/Rsrc2/I_Q4
+   optimized to 0
+FDCE 		mon_S3/Rsrc2/I_Q5
+   optimized to 0
+FDCE 		mon_S3/Rsrc2/I_Q6
+   optimized to 0
+FDCE 		mon_S3/Rsrc2/I_Q7
+   optimized to 0
+FDCE 		mon_S3/Rsrc2/I_Q8
+   optimized to 0
+FDCE 		mon_S3/Rsrc2/I_Q9
+   optimized to 0
+FDCE 		mon_S3/Rsw/I_Q0
+   optimized to 0
+FDCE 		mon_S3/Rsw/I_Q1
+   optimized to 0
+FDCE 		mon_S3/Rsw/I_Q10
+   optimized to 0
+FDCE 		mon_S3/Rsw/I_Q11
+   optimized to 0
+FDCE 		mon_S3/Rsw/I_Q12
+   optimized to 0
+FDCE 		mon_S3/Rsw/I_Q13
+   optimized to 0
+FDCE 		mon_S3/Rsw/I_Q14
+   optimized to 0
+FDCE 		mon_S3/Rsw/I_Q15
+   optimized to 0
+FDCE 		mon_S3/Rsw/I_Q2
+   optimized to 0
+FDCE 		mon_S3/Rsw/I_Q3
+   optimized to 0
+FDCE 		mon_S3/Rsw/I_Q4
+   optimized to 0
+FDCE 		mon_S3/Rsw/I_Q5
+   optimized to 0
+FDCE 		mon_S3/Rsw/I_Q6
+   optimized to 0
+FDCE 		mon_S3/Rsw/I_Q7
+   optimized to 0
+FDCE 		mon_S3/Rsw/I_Q8
+   optimized to 0
+FDCE 		mon_S3/Rsw/I_Q9
+   optimized to 0
+AND3 		mon_S3/XLXI_50/mux_anodes/XLXI_1/I_M23/I_36_30
+AND3B1 		mon_S3/XLXI_50/mux_anodes/XLXI_2/I_M23/I_36_31
+AND3 		mon_S3/XLXI_50/mux_anodes/XLXI_3/I_M01/I_36_30
+AND3B1 		mon_S3/XLXI_50/mux_anodes/XLXI_4/I_M01/I_36_31
+AND3B1 		mon_S3/XLXI_50/mux_data/XLXI_4/I_M01/I_36_31
+GND 		mon_S3/XLXI_54/BU2/XST_GND
+AND2 		mon_S3/selecCO/XLXI_21/I_36_9
+AND2 		mon_S3/selecCO/XLXI_22/I_36_9
+AND2 		mon_S3/selecCO/XLXI_23/I_36_9
+AND2 		mon_S3/selecCO/XLXI_24/I_36_9
+AND2 		mon_S3/selecCO/XLXI_25/I_36_9
+AND2 		mon_S3/selecCO/XLXI_26/I_36_9
+AND2 		mon_S3/selecCO/XLXI_27/I_36_9
+AND2 		mon_S3/selecCO/XLXI_28/I_36_9
+OR2 		mon_S3/XLXI_50/mux_anodes/XLXI_1/I_M01/I_36_38
+OR2 		mon_S3/XLXI_50/mux_anodes/XLXI_2/I_M01/I_36_38
+OR2 		mon_S3/XLXI_50/mux_anodes/XLXI_3/I_M23/I_36_38
+OR2 		mon_S3/XLXI_50/mux_anodes/XLXI_4/I_M23/I_36_38
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Led<0>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Led<1>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Led<2>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Led<3>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Led<4>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Led<5>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Led<6>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Led<7>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| anodes<0>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| anodes<1>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| anodes<2>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| anodes<3>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| clk                                | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| sevenseg<0>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| sevenseg<1>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| sevenseg<2>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| sevenseg<3>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| sevenseg<4>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| sevenseg<5>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| sevenseg<6>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+mon_S3_incCO_XLXI_1_54                  
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

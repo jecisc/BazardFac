@@ -1,0 +1,30 @@
+Command line:
+   circuit3_isim_beh.exe
+     -simmode  gui
+     -simrunnum  2
+     -socket  36963
+
+Mon Sep 30 11:47:35 2013
+
+
+ Elaboration Time: 0.01 sec
+
+ Current Memory Usage: 115.54 Meg
+
+ Total Signals          : 37
+ Total Nets             : 30
+ Total Signal Drivers   : 3
+ Total Blocks           : 7
+ Total Primitive Blocks : 6
+ Total Processes        : 3
+ Total Traceable Variables  : 13
+ Total Scalar Nets and Variables : 513
+Total Line Count : 3
+
+ Total Simulation Time: 0.01 sec
+
+ Current Memory Usage: 122.888 Meg
+
+Mon Sep 30 11:48:26 2013
+
+
