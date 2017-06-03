@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <laFontaine>
+	<fables>
+		<fable livre="I" numero="10" titre="Le Loup et l'Agneau">
+			<ref aniref="a1"/>
+			<ref aniref="a2"/>
+		</fable>
+		<fable livre="IX" numero="10" titre="le Loup et le Chien maigre">
+			<ref aniref="a1"/>
+			<ref aniref="a3"/>
+		</fable>
+		<fable livre="XI" numero="6" titre="le Loup et le Renard">
+			<ref aniref="a1"/>
+			<ref aniref="a4"/>
+		</fable>
+		<fable livre="II" numero="19" titre="le Lion et l'Ane chassant">
+			<ref aniref="a5"/>
+			<ref aniref="a6"/>
+		</fable>
+		<fable livre="II" numero="11" titre="Le Lion et le Rat">
+			<ref aniref="a5"/>
+			<ref aniref="a7"/>
+		</fable>
+		<fable livre="VIII" numero="22" titre="le Chat et le Rat">
+			<ref aniref="a7"/>
+			<ref aniref="a8"/>
+		</fable>
+		<fable livre="VIII" numero="15" titre="le Rat et l'Eléphant">
+			<ref aniref="a7"/>
+			<ref aniref="a9"/>
+		</fable>
+		<fable livre="IX" numero="20" titre="les deux Rats, le Renard et l'Oeuf">
+			<ref aniref="a4"/>
+			<ref aniref="a7"/>
+		</fable>
+		<fable livre="VI" numero="14" titre="Le Lion malade et le Renard">
+			<ref aniref="a4"/>
+			<ref aniref="a5"/>
+		</fable>
+	</fables>
+	<animaux>
+		<animal anid="a9" nom="Eléphant"/>
+		<animal anid="a8" nom="Chat"/>
+		<animal anid="a7" nom="Rat"/>
+		<animal anid="a5" nom="Lion"/>
+		<animal anid="a6" nom="Ane"/>
+		<animal anid="a4" nom="Renard"/>
+		<animal anid="a1" nom="Loup"/>
+		<animal anid="a2" nom="Agneau"/>
+		<animal anid="a3" nom="Chien"/>
+	</animaux>
+</laFontaine>

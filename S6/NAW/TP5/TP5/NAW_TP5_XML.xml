@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CHAMPIONNAT DIVISION="Ligue1" SAISON="38" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="NAW_TP5.xsd">
+	<JOURNEE NUMERO="1" DATE="2015-01-01">
+		<RENCONTRE DOMICILE="Loos" EXTERIEUR="Lens" SCORED="0" SCOREE="2"/>
+	</JOURNEE>
+</CHAMPIONNAT>

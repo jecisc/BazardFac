@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE partie SYSTEM "C:\Users\Cyril\TP\NAW\TP1\bataille.dtd">
+<partie>
+	<joueur>
+		<nom id="Joueur1"/>
+		<grilleD>
+			<caseD col="2" lig="B" etat="0" taille_bateau="5"/>
+			<caseD col="3" lig="B" etat="0" taille_bateau="5"/>
+			<caseD col="4" lig="B" etat="0" taille_bateau="5"/>
+			<caseD col="5" lig="B" etat="0" taille_bateau="5"/>
+			<caseD col="6" lig="B" etat="0" taille_bateau="5"/>
+			<caseD col="2" lig="F" etat="0" taille_bateau="4"/>
+			<caseD col="2" lig="G" etat="0" taille_bateau="4"/>
+			<caseD col="2" lig="H" etat="0" taille_bateau="4"/>
+			<caseD col="2" lig="I" etat="0" taille_bateau="4"/>
+			<caseD col="6" lig="E" etat="0" taille_bateau="3"/>
+			<caseD col="7" lig="E" etat="0" taille_bateau="3"/>
+			<caseD col="8" lig="E" etat="0" taille_bateau="3"/>
+			<caseD col="8" lig="H" etat="0" taille_bateau="2"/>
+			<caseD col="8" lig="I" etat="0" taille_bateau="2"/>
+			<caseD col="2" lig="D" etat="0" taille_bateau="1"/>
+		</grilleD>
+		<joue>1</joue>
+	</joueur>
+	<joueur>
+		<nom id="Joueur2"/>
+		<grilleD>
+			<caseD col="9" lig="B" etat="0" taille_bateau="5"/>
+			<caseD col="9" lig="C" etat="0" taille_bateau="5"/>
+			<caseD col="9" lig="D" etat="0" taille_bateau="5"/>
+			<caseD col="9" lig="E" etat="0" taille_bateau="5"/>
+			<caseD col="9" lig="F" etat="0" taille_bateau="5"/>
+			<caseD col="3" lig="F" etat="0" taille_bateau="4"/>
+			<caseD col="4" lig="F" etat="0" taille_bateau="4"/>
+			<caseD col="5" lig="F" etat="0" taille_bateau="4"/>
+			<caseD col="6" lig="F" etat="0" taille_bateau="4"/>
+			<caseD col="4" lig="C" etat="0" taille_bateau="3"/>
+			<caseD col="5" lig="C" etat="0" taille_bateau="3"/>
+			<caseD col="6" lig="C" etat="0" taille_bateau="3"/>
+			<caseD col="9" lig="H" etat="0" taille_bateau="2"/>
+			<caseD col="9" lig="I" etat="0" taille_bateau="2"/>
+			<caseD col="5" lig="H" etat="0" taille_bateau="1"/>
+		</grilleD>
+		<joue>0</joue>
+	</joueur>
+	<tour nb="0"/>
+</partie>

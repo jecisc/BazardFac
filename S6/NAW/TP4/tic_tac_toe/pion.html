@@ -1,0 +1,254 @@
+<html>
+<head>
+	<title>Tic - Tac - Toe </title>
+	<script type="text/javascript">
+
+		//initilize
+		var cpt = 0;
+
+		var player1 = "Player 1";
+		var player2 = "Player 2";
+		var score1 =0;
+		var score2 =0;
+		var pion1 = "rond.jpg";
+		var pion2 = "croix.jpg";
+		var disablePion1;
+		var disablePion2;
+
+		var size = 3;
+		var board= new Array(size);
+		for (var i = 0; i< size; i++){
+			board[i] = new Array(size);
+			for(var  j = 0; j < size ; j++){
+				board[i][j] = 0;
+			}
+		}
+
+		function validForm(){
+			if(document.getElementById("player1").value != ""){
+				player1 = document.getElementById("player1").value;
+			}
+
+			if(document.getElementById("player2").value != ""){
+				player1 = document.getElementById("player2").value;
+			}
+
+			if (cpt == 0){
+				document.getElementById("actualPlayer").innerHTML = player1 + " turn's !";
+			}
+			else{
+				document.getElementById("actualPlayer").innerHTML = player2 + " turn's !";
+			}
+
+			document.getElementById("game").style.visibility = "visible";
+			document.getElementById("formu").style.visibility = "hidden";
+		}
+		function setPion(){
+			var pions1 = document.getElementsByName("pion1");
+			var pions2 = document.getElementsByName("pion2");
+
+			for(var elem1 in pions1) {
+				if(pions1[elem1].checked) {
+					pion1 = pions1[elem1].value;
+					if (disablePion2 != undefined) { disablePion2.disabled = false; }
+					disablePion2 = pions2[elem1];
+					disablePion2.disabled = true;
+				}
+			}
+
+			for(var elem2 in pions2) {
+				if(pions2[elem2].checked) {
+					pion2 = pions2[elem2].value;
+					if (disablePion1 != undefined) { disablePion1.disabled = false; }
+					disablePion1 = pions1[elem2];
+					disablePion1.disabled = true;
+				}
+			}
+			document.getElementById("game").style.visibility = "hidden";
+
+		}
+
+		// Define the action in case of someone click on a cell.
+		function xcase(e){
+			document.getElementById("badMove").innerHTML = "";
+			document.getElementById("winner").innerHTML = "";
+
+			accept(e);
+			isFinished();
+		}
+
+			function accept(e){
+				if (isBusy(e)){
+					document.getElementById("badMove").innerHTML = "You can't do that move.";
+				}
+				else{
+					var lig = e.getAttribute("id").charAt(1);
+					var col = e.getAttribute("id").charAt(2);
+					if (cpt == 0){
+						e.setAttribute("src", pion1);
+						board[lig][col]=1;
+						cpt = 1;
+						document.getElementById("actualPlayer").innerHTML = player2 + " turn's !";
+					}
+					else{
+						e.setAttribute("src", pion2);
+						board[lig][col]=-1;
+						cpt=0;
+						document.getElementById("actualPlayer").innerHTML = player1 + " turn's !";
+					}
+				}
+			}
+
+				function isBusy(e){
+					return !(e.getAttribute("src") == "rien.jpg")
+				}
+
+
+			// Check if the party is done or not.
+			function isFinished(){
+				checkForWinner();
+
+				if(boardFull()){
+					document.getElementById("winner").innerHTML = "The game is finish ! No winner sorry :(";
+					reset();
+				}
+			}
+
+				function checkForWinner(){
+					for(var indice=0; indice<size; indice++){
+						if (sumLine(indice) == size || sumCol(indice) == size){
+							win();
+						}
+					}
+					if(sumDiag1() == size || sumDiag2() == size){
+						win();
+					}
+				}
+
+					function sumDiag1(){
+						var res = 0;
+						for (i=0; i<size;i++){
+								res = res + board[i][i];
+						}
+						return Math.abs(res);
+					}
+
+					function sumDiag2(){
+						var res = 0;
+						for (i=0; i<size;i++){
+								res = res + board[i][size -i-1];
+						}
+						return Math.abs(res);
+					}
+
+					function sumLine(n){
+						var res = 0;
+						for(i=0; i<size;i++){
+							res = res + board[n][i];
+						}
+						return Math.abs(res);
+					}
+
+					function sumCol(n){
+						var res = 0;
+						for(var i=0; i<size;i++){
+							res = res + board[i][n];
+						}
+						return Math.abs(res);
+					}
+
+					function win(){
+						if (cpt==0){
+							document.getElementById("winner").innerHTML = player2 +" win ! :)";
+							score2++;
+						}
+						else{
+							document.getElementById("winner").innerHTML = player1 +" win ! :)";
+							score1++;
+						}
+						reset();
+					}
+
+					function reset(){
+						for(var i = 0; i<size; i++){
+							for(var j = 0; j < size; j++) {
+								board[i][j] = 0;
+								document.getElementById("c"+i+j).setAttribute("src", "rien.jpg");
+							}
+						}
+						document.getElementById("score").innerHTML = "Score : "+ score1 + " - " + score2;
+					}
+
+				function boardFull(){
+					for (i=0; i<size; i++){
+						for(j=0; j<size; j++){
+							if(board[i][j]==0){
+								return false;
+							}
+						}
+					}
+					return true;
+				}
+
+	</script>
+	<link href="ttt.css" type="text/css" rel="stylesheet"/>
+</head>
+<body onload="setPion()">
+
+	<h1> Welcome to the Tic Tac Toe ! </h1>
+
+	<form id="formu">
+		<label>Player 1 :<input type="text" id="player1" placeholder="Player1"/></label>
+		<br/>
+		<br/>
+		<br/>
+		<label><input type="radio" name="pion1" value="colere.jpg" onclick="setPion()"><img src="colere.jpg"></label>
+		<label><input type="radio" name="pion1" value="croix.jpg" onclick="setPion()"><img src="croix.jpg"></label>
+		<label>	<input type="radio" name="pion1" value="devil.jpg" onclick="setPion()"><img src="devil.jpg"></label>
+		<label><input type="radio" name="pion1" value="dollar.jpg" onclick="setPion()"><img src="dollar.jpg"></label>
+		<label><input type="radio" name="pion1" value="ghost.jpg" onclick="setPion()"><img src="ghost.jpg"></label>
+		<label><input type="radio" name="pion1" value="rond.jpg" onclick="setPion()" checked><img src="rond.jpg"></label>
+		<br/>
+		<br/>
+		<br/>
+		<label>Player 2 :<input type="text" id="player2" placeholder="Player2"/></label>
+		<br/>
+		<br/>
+		<br/>
+		<label>	<input type="radio" name="pion2" value="colere.jpg" onclick="setPion()"><img src="colere.jpg"></label>
+		<label>	<input type="radio" name="pion2" value="croix.jpg" onclick="setPion()" checked><img src="croix.jpg"></label>
+		<label>	<input type="radio" name="pion2" value="devil.jpg" onclick="setPion()"><img src="devil.jpg"></label>
+		<label>	<input type="radio" name="pion2" value="dollar.jpg" onclick="setPion()"><img src="dollar.jpg"></label>
+		<label>	<input type="radio" name="pion2" value="ghost.jpg" onclick="setPion()"><img src="ghost.jpg"></label>
+		<label>	<input type="radio" name="pion2" value="rond.jpg" onclick="setPion()"><img src="rond.jpg"></label>
+		<br/>
+		<br/>
+		<br/>
+		<input type="button" value="Register" onclick="validForm()">
+	</form>
+	<div  id="game">
+		<div id="winner"> </div>
+		<div id="badMove"></div>
+		<div id="actualPlayer"> Let's begin ! </div>
+		<div id="score"> </div>
+
+		<table border="1">
+			<tr>
+				<td><img id="c00" src="rien.jpg" onclick="xcase(this)"/></td>
+				<td><img id="c01" src="rien.jpg" onclick="xcase(this)"/></td>
+				<td><img id="c02" src="rien.jpg" onclick="xcase(this)"/></td>
+			</tr>
+			<tr>
+				<td><img id="c10" src="rien.jpg" onclick="xcase(this)"/></td>
+				<td><img id="c11" src="rien.jpg" onclick="xcase(this)"/></td>
+				<td><img id="c12" src="rien.jpg" onclick="xcase(this)"/></td>
+			</tr>
+			<tr>
+				<td><img id="c20" src="rien.jpg" onclick="xcase(this)"/></td>
+				<td><img id="c21" src="rien.jpg" onclick="xcase(this)"/></td>
+				<td><img id="c22" src="rien.jpg" onclick="xcase(this)"/></td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

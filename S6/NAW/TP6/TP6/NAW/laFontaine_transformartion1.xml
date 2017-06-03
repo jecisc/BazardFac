@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<laFontaine>
+	<fables>
+		<fable livre="I" numero="10" titre="Le Loup et l'Agneau"/>
+		<fable livre="IX" numero="10" titre="le Loup et le Chien maigre"/>
+		<fable livre="XI" numero="6" titre="le Loup et le Renard"/>
+		<fable livre="II" numero="19" titre="le Lion et l'Ane chassant"/>
+		<fable livre="II" numero="11" titre="Le Lion et le Rat"/>
+		<fable livre="VIII" numero="22" titre="le Chat et le Rat"/>
+		<fable livre="VIII" numero="15" titre="le Rat et l'Eléphant"/>
+		<fable livre="IX" numero="20" titre="les deux Rats, le Renard et l'Oeuf"/>
+		<fable livre="VI" numero="14" titre="Le Lion malade et le Renard"/>
+	</fables>
+	<animaux>
+		<animal anid="a9" nom="Eléphant">
+			<ref livre="VIII" numero="15"/>
+		</animal>
+		<animal anid="a8" nom="Chat">
+			<ref livre="VIII" numero="22"/>
+		</animal>
+		<animal anid="a7" nom="Rat">
+			<ref livre="II" numero="11"/>
+			<ref livre="VIII" numero="22"/>
+			<ref livre="VIII" numero="15"/>
+			<ref livre="IX" numero="20"/>
+		</animal>
+		<animal anid="a5" nom="Lion">
+			<ref livre="II" numero="19"/>
+			<ref livre="II" numero="11"/>
+			<ref livre="VI" numero="14"/>
+		</animal>
+		<animal anid="a6" nom="Ane">
+			<ref livre="II" numero="19"/>
+		</animal>
+		<animal anid="a4" nom="Renard">
+			<ref livre="XI" numero="6"/>
+			<ref livre="IX" numero="20"/>
+			<ref livre="VI" numero="14"/>
+		</animal>
+		<animal anid="a1" nom="Loup">
+			<ref livre="I" numero="10"/>
+			<ref livre="IX" numero="10"/>
+			<ref livre="XI" numero="6"/>
+		</animal>
+		<animal anid="a2" nom="Agneau">
+			<ref livre="I" numero="10"/>
+		</animal>
+		<animal anid="a3" nom="Chien">
+			<ref livre="IX" numero="10"/>
+		</animal>
+	</animaux>
+</laFontaine>

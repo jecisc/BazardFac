@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT bataillenavale (joueur1,joueur2,gagnant)>
+<!ELEMENT joueur1 (coupsportes,flotte)>
+<!ELEMENT joueur2 (coupsportes,flotte)>
+<!ELEMENT coupsportes (coup)*>
+<!ELEMENT coup EMPTY>
+<!ELEMENT gagnant EMPTY>
+<!ELEMENT flotte (bateau)*>
+<!ELEMENT bateau (position)*>
+<!ELEMENT position EMPTY>
+
+<!ATTLIST joueur1 nom ID #REQUIRED>
+<!ATTLIST joueur2 nom ID #REQUIRED>
+<!ATTLIST coup resultat CDATA #REQUIRED x CDATA #REQUIRED y CDATA #REQUIRED>
+<!ATTLIST bateau nom CDATA #REQUIRED>
+<!ATTLIST position x CDATA #REQUIRED y CDATA #REQUIRED>
+<!ATTLIST gagnant nom CDATA #REQUIRED>

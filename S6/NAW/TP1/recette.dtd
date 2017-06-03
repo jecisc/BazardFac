@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT recette (nom_recette, portion, preparation, cuisson, ingredients, guide, (repos?))>
+<!ELEMENT ingredients (i)+>
+<!ELEMENT i ((nom,nbre)|(nom|poids))>
+<!ELEMENT nom_recette (#PCDATA)>
+<!ELEMENT portion (#PCDATA)>
+<!ELEMENT preparation EMPTY>
+<!ATTLIST preparation value CDATA #REQUIRED unit CDATA #REQUIRED>
+<!ELEMENT cuisson EMPTY>
+<!ATTLIST cuisson value CDATA #REQUIRED unit CDATA #REQUIRED>
+<!ELEMENT repos EMPTY>
+<!ATTLIST repos value CDATA #REQUIRED unit CDATA #REQUIRED>
+<!ELEMENT nom (#PCDATA)>
+<!ATTLIST nom id ID #REQUIRED>
+<!ELEMENT nbre (#PCDATA)>
+<!ELEMENT poids (#PCDATA)>
+<!ATTLIST poids unit CDATA #REQUIRED>
+<!ELEMENT strong (#PCDATA)>
+<!ELEMENT guide (#PCDATA | block| renvoi| repos|strong|cuisson)*>
+<!ELEMENT block (#PCDATA | renvoi | repos| strong| cuisson)*>
+<!ELEMENT renvoi (#PCDATA)>
+<!ATTLIST renvoi ref IDREF #REQUIRED> 

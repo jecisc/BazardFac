@@ -1,0 +1,60 @@
+Exercice 1 :
+
+1) /data/item[type/text() = "BD"][pages >50]/prix
+2) /data/item[type = "BD"][Dessinateur][Coloriste]/titre/text()  (Data a au moins un fils item qui a un fils Dessinateur, un fil coloriste, un fils type qui est une BD)
+3) /data/item[type = "BD"][contains(resume, "Far West")]/titre/text()
+4) distinct-values(/data/item[serie]/Auteur/text())
+5) /data/item[Auteur= (/data/item[serie = "Minuscule"]/Auteur/text())]/titre/text()
+6) count(/data/item[serie= "Minuscule"])
+7) /data/item[serie= "Minuscule"][1]/datedeparution
+8) /data/item[serie= "Minuscule"][position()<3]/titre
+
+Exercice 2 :
+
+Question 2:
+voir DTD
+
+Question 3 :
+
+1) //personnage[descendance/personnage[@nom = "Louis IX"]]
+2) //personnage[descendance/personnage[descendance/personnage[@nom = "Louis IX"]]]
+3) //personnage[@nom = "Louis IX"]/descendance/personnage/descendance/personnage
+4) //personnage/roi[@deb < 1300 and@fin >1300]/..[@nom]
+5) FAUX: //personnage[@nom = "Louis X le Hutin"]/../personnage/dates[@nais > (//personnage[@nom = "Louis X le Hutin"]/dates/attribute(nais))]/..
+5) VRAIE REPONSE : //personnage[@nom = "Louis X le Hutin"]/following-sibling::personnage
+6) //personnage/roi[@fin >= 1301 and @deb <=1400]/..[@nom]
+7) //personnage/dates[@mort >= 1250 and @mort <=1350]/..[@nom]
+8) //personnage[empty(descendance)]
+9) //personnage[following-sibling::personnage/roi or preceding-sibling::personnage/roi][roi]
+10) count(//personnage[@nom="Philippe IV le Bel"]/descendance/personnage)
+11) //personnage[roi[@fin] = dates[@mort]]
+12) //personnage[(roi/@deb - dates/@nais) < 20]
+13) //personnage[empty(roi)]
+14) 
+
+
+at: key ifAbsentPut: block
+	"If key is present in the cache, return the associated value.
+	This is a hit and makes that key/value pair the most recently used.
+	If key is absent, use block to compute a new value and cache it.
+	Block can optionally take one argument, the key. 
+	This is a miss and will create a new key/value pair entry.
+	Furthermore this could result in the least recently used key/value pair 
+	being removed when the specified maximum cache weight is exceeded."
+
+	self
+		critical: [ 
+			| association |
+			association := keyIndex
+				associationAt: key
+				ifAbsent: [ 
+					| value |
+					value := block cull: key.	
+						"We have to check the presence of key again 
+						in case of the block execution already added the entry"
+					keyIndex associationAt: key ifAbsent: [ ^ self handleMiss: key -> value ] ].
+			^ self handleHit: association ]
+
+			
+			Into the "at:ifAbsentPut:" method we added a "ifAbsent" to check again the presence of the key in case of the block execution already added the entry.
+

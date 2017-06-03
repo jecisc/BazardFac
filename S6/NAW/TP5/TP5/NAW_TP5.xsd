@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2014 rel. 2 sp1 (http://www.altova.com) by USTL (Université des Sciences et Technologies de Lille) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" elementFormDefault="qualified" attributeFormDefault="unqualified" vc:minVersion="1.1">
+	<xs:element name="CHAMPIONNAT">
+		<xs:annotation>
+			<xs:documentation>Comment describing your root element</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="JOURNEE" maxOccurs="38">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="RENCONTRE" maxOccurs="10">
+								<xs:complexType>
+									<xs:attribute name="DOMICILE" type="xs:string" use="required"/>
+									<xs:attribute name="EXTERIEUR" type="xs:string" use="required"/>
+									<xs:attribute name="SCORED" type="xs:int" use="required"/>
+									<xs:attribute name="SCOREE" type="xs:int" use="required"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="NUMERO" type="xs:integer" use="required"/>
+						<xs:attribute name="DATE" type="xs:date" use="required"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="DIVISION" type="xs:string" use="required"/>
+			<xs:attribute name="SAISON" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

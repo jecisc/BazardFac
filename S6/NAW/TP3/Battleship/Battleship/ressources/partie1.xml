@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<bataille_navale>
+  <tour id="5"/>
+  <joueur nom="Nelson" id="ns" joue="1">
+    <defense>
+      <mer>
+        <case col="5" lig="C" etat="1"/>
+        <case col="5" lig="E" etat="1"/>
+      </mer>
+      <bateau longueur="5">
+        <case col="2" lig="B" etat="0"/>
+        <case col="3" lig="B" etat="0"/>
+        <case col="4" lig="B" etat="0"/>
+        <case col="5" lig="B" etat="0"/>
+        <case col="6" lig="B" etat="0"/>
+      </bateau>
+      <bateau longueur="4">
+        <case col="2" lig="F" etat="0"/>
+        <case col="2" lig="G" etat="0"/>
+        <case col="2" lig="H" etat="0"/>
+        <case col="2" lig="I" etat="0"/>
+      </bateau>
+      <bateau longueur="3">
+        <case col="6" lig="B" etat="1"/>
+        <case col="7" lig="B" etat="0"/>
+        <case col="8" lig="B" etat="0"/>
+      </bateau>
+      <bateau longueur="2">
+        <case col="4" lig="G" etat="1"/>
+        <case col="5" lig="G" etat="1"/>
+      </bateau>
+      <bateau longueur="2">
+        <case col="8" lig="H" etat="0"/>
+        <case col="8" lig="I" etat="0"/>
+      </bateau>
+      <bateau longueur="1">
+        <case col="8" lig="B" etat="0"/>
+      </bateau>
+      <bateau longueur="1">
+        <case col="2" lig="B" etat="0"/>
+      </bateau>
+    </defense>
+  </joueur>
+  <joueur nom="Villeneuve" id="vn" joue="0">
+    <defense>
+      <mer>
+        <case col="2" lig="D" etat="1"/>
+        <case col="5" lig="D" etat="1"/>
+      </mer>
+      <bateau longueur="5">
+        <case col="9" lig="B" etat="0"/>
+        <case col="9" lig="C" etat="0"/>
+        <case col="9" lig="D" etat="0"/>
+        <case col="9" lig="E" etat="0"/>
+        <case col="9" lig="F" etat="0"/>
+      </bateau>
+      <bateau longueur="4">
+        <case col="3" lig="F" etat="0"/>
+        <case col="4" lig="F" etat="0"/>
+        <case col="5" lig="F" etat="0"/>
+        <case col="6" lig="F" etat="0"/>
+      </bateau>
+      <bateau longueur="3">
+        <case col="4" lig="C" etat="0"/>
+        <case col="5" lig="C" etat="1"/>
+        <case col="6" lig="C" etat="0"/>
+      </bateau>
+      <bateau longueur="2">
+        <case col="2" lig="I" etat="0"/>
+        <case col="3" lig="I" etat="0"/>
+      </bateau>
+      <bateau longueur="2">
+        <case col="9" lig="H" etat="0"/>
+        <case col="9" lig="I" etat="0"/>
+      </bateau>
+      <bateau longueur="1">
+        <case col="2" lig="B" etat="0"/>
+      </bateau>
+      <bateau longueur="1">
+        <case col="5" lig="H" etat="1"/>
+      </bateau>
+    </defense>
+  </joueur>
+</bataille_navale>

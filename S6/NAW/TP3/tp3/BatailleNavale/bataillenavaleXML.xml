@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE bataillenavale SYSTEM "bataillenavaleDTD.dtd">
+<bataillenavale>
+    <joueur1 nom="Nelson">
+        <coupsportes>
+            <coup resultat="eau" x="5" y="B"/>
+            <coup resultat="eau" x="2" y="D"/>
+            <coup resultat="eau" x="4" y="G"/>
+            <coup resultat="coule" x="5" y="H"/>
+            <coup resultat="touche" x="5" y="C"/>
+            <coup resultat="touche" x="9" y="B"/>
+        </coupsportes>
+        <flotte>
+            <bateau nom="porte-avions">
+                <position x="2" y="B"/>
+                <position x="3" y="B"/>
+                <position x="4" y="B"/>
+                <position x="5" y="B"/>
+                <position x="6" y="B"/>
+            </bateau>
+            <bateau nom="cuirasse">
+                <position x="2" y="F"/>
+                <position x="2" y="G"/>
+                <position x="2" y="H"/>
+                <position x="2" y="I"/>
+            </bateau>
+            <bateau nom="croiseur">
+                <position x="6" y="E"/>
+                <position x="7" y="E"/>
+                <position x="8" y="E"/>
+            </bateau>
+            <bateau nom="destroyer">
+                <position x="4" y="G"/>
+                <position x="5" y="G"/>
+            </bateau>
+            <bateau nom="destroyer">
+                <position x="8" y="H"/>
+                <position x="8" y="I"/>
+            </bateau>
+            <bateau nom="sous-marin">
+                <position x="2" y="D"/>
+            </bateau>
+            <bateau nom="sous-marin">
+                <position x="8" y="B"/>
+            </bateau>
+        </flotte>
+    </joueur1>
+    <joueur2 nom="Villeneuve">
+        <coupsportes>
+            <coup resultat="eau" x="5" y="C"/>
+            <coup resultat="touche" x="4" y="G"/>
+            <coup resultat="coule" x="5" y="G"/>
+            <coup resultat="touche" x="6" y="E"/>
+            <coup resultat="eau" x="5" y="E"/>
+        </coupsportes>
+        <flotte>
+            <bateau nom="porte-avions">
+                <position x="9" y="B"/>
+                <position x="9" y="C"/>
+                <position x="9" y="D"/>
+                <position x="9" y="E"/>
+                <position x="9" y="F"/>
+            </bateau>
+            <bateau nom="cuirasse">
+                <position x="3" y="F"/>
+                <position x="4" y="F"/>
+                <position x="5" y="F"/>
+                <position x="6" y="F"/>
+            </bateau>
+            <bateau nom="croiseur">
+                <position x="4" y="C"/>
+                <position x="5" y="C"/>
+                <position x="6" y="C"/>
+            </bateau>
+            <bateau nom="destroyer">
+                <position x="2" y="I"/>
+                <position x="3" y="I"/>
+            </bateau>
+            <bateau nom="destroyer">
+                <position x="9" y="H"/>
+                <position x="9" y="I"/>
+            </bateau>
+            <bateau nom="sous-marin">
+               <position x="5" y="H"/>
+            </bateau>
+            <bateau nom="sous-marin">
+               <position x="2" y="B"/>
+            </bateau>
+        </flotte>
+    </joueur2>
+    <gagnant nom=""/>
+</bataillenavale>

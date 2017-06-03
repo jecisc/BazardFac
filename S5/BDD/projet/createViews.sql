@@ -1,0 +1,17 @@
+CREATE VIEW adherents_activites AS
+  SELECT PROJET_ADHERENT.id_adherent, nom , prenom , count(PROJET_ACTIVITE.id_activite) AS "nb_activites"
+  FROM PROJET_ADHERENT
+  LEFT JOIN PROJET_INSCRIPTION ON PROJET_ADHERENT.ID_ADHERENT = PROJET_INSCRIPTION.ID_ADHERENT
+  LEFT JOIN PROJET_ACTIVITE ON PROJET_ACTIVITE.ID_ACTIVITE = PROJET_INSCRIPTION.ID_ACTIVITE
+  GROUP BY PROJET_ADHERENT.id_adherent, nom , prenom
+  ORDER BY PROJET_ADHERENT.id_adherent;
+  
+CREATE VIEW heures_animateurs AS
+  SELECT PROJET_ANIMATEUR.id_animateur, nom, prenom, count(id_activite) AS "nb_ateliers",nb_heures,nb_heures * 40 AS "coût"
+  FROM PROJET_ANIMATEUR
+  LEFT JOIN PROJET_ACTIVITE ON PROJET_ANIMATEUR.ID_ANIMATEUR = PROJET_ACTIVITE.ID_ANIMATEUR
+  GROUP BY PROJET_ANIMATEUR.id_animateur, nom, prenom,nb_heures;
+  
+CREATE VIEW adresses AS
+  SELECT distinct nom || ' ' || prenom AS "nom_prenom",mail
+  FROM PROJET_ADHERENT;

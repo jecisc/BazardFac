@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>AJAX</title>
+    <script type="text/javascript">
+        function createXHR(){ var request = false;
+           try
+           {
+             request = new ActiveXObject('Msxml2.XMLHTTP');
+           }
+           catch (err2)
+           {
+           try {
+              request = new ActiveXObject('Microsoft.XMLHTTP');
+           }
+           catch (err3) {
+              try {  request = new XMLHttpRequest();}
+              catch (err1) { request = false;}
+            }
+           }
+          return request;
+        }
+        
+        function one_sec(){
+            var xhr = createXHR();
+            xhr.onreadystatechange = function(){
+                if(xhr.readyState == 4){
+                    if(xhr.status == 200){
+                        document.getElementById("date").innerHTML += xhr.responseText + "</br>";
+                    }
+                    else{
+                        document.getElementById("date").innerHTML += "Error : " + xhr.status;
+                    }
+                }
+            }
+            xhr.open("GET", "1sec.php", true);
+            xhr.send(null);
+        }
+        
+        function five_sec(){
+            var xhr = createXHR();
+            xhr.onreadystatechange = function(){
+                if(xhr.readyState == 4){
+                    if(xhr.status == 200){
+                        document.getElementById("date").innerHTML += xhr.responseText + "</br>";
+                    }
+                    else{
+                        document.getElementById("date").innerHTML += "Error : " + xhr.status;
+                    }
+                }
+            }
+            xhr.open("GET", "5sec.php", true);
+            xhr.send(null);
+        }
+    
+    </script>
+</head>
+<body>
+    <input type="button" name="1sec" value="+1s" onclick="one_sec()"/>
+    <input type="button" name="5sec" value="+5s" onclick="five_sec()"/>
+    <div id="date">
+    
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT partie (joueur, joueur, tour)> <!-- Une partie a deux joueurs et un numero de tour. -->
+<!ELEMENT tour (#PCDATA)> 
+<!ELEMENT joueur (nom, grilleA, grilleD, joue)>
+<!ELEMENT nom (#PCDATA)>
+<!ATTLIST nom id ID #REQUIRED>
+<!ELEMENT joue EMPTY> <!-- Permet de savoir si c'est au tour de ce joueur de jouer.-->
+<!ATTLIST joue can CDATA #REQUIRED>
+<!ELEMENT grilleA (caseA)*> <!-- grille d'attaque -->
+<!ELEMENT grilleD (caseD)*> <!--grille de defence -->
+<!ELEMENT caseA EMPTY>
+<!ATTLIST case col CDATA #REQUIRED lig CDATA #REQUIRED etat CDATA #REQUIRED> <!-- Une case d'attaque a une ligne, une colonne et un etat-->
+<!ELEMENT caseD EMPTY>
+<!ATTLIST case col CDATA #REQUIRED lig CDATA #REQUIRED etat CDATA #REQUIRED taille_bateau CDATA #REQUIRED> <!--Une case de defence a une ligne, une colonne, un etat et une taille de bateau. Si la taille est 0, il n'y a pas de bateau, sinon la taille permet de savoir quel bateau est la. -->

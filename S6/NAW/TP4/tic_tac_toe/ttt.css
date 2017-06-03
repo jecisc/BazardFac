@@ -1,0 +1,40 @@
+body{
+    background-attachment: fixed;
+    background-image: url("background.png");
+    color: rgb(255, 255, 255);
+    font-family: "Helvetica Neue",Helvetica,Verdana,Arial,Helvetica,sans-serif;
+    line-height: 1.4em;
+    margin: 80px 0 0;
+}
+
+#game, #formu{
+    background: none repeat scroll 0 0 rgba(16, 16, 16, 0.8);
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.898);
+    color: rgb(119, 119, 119);
+    margin: 0 10px 10px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 5%;
+}
+
+#game{
+    float: left;
+    margin-left: 10%;
+}
+
+#formu{
+    float: right;
+    margin-right: 10%;
+}
+
+table{
+    margin: 10%;
+
+}
+
+h1 {
+    color: rgb(255,255,255);
+    text-align: center;
+
+}
